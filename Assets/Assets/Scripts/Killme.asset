@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Killme
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[{"name":"Script","value":null,"$version":"A"}],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":213.5126,"y":-46.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-162.0,"y":-101.0},"guid":"c22e477f-37d2-4cb4-b36d-8abd6d71a6fa","$version":"A","$type":"Bolt.LateUpdate","$id":"10"},{"chainable":false,"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":null},"position":{"x":343.0,"y":-152.0},"guid":"6fb23c8d-61a5-4c75-9cc4-fae68fbe1791","$version":"A","$type":"Bolt.InvokeMember","$id":"12"},{"defaultValues":{},"position":{"x":206.0,"y":-222.0},"guid":"209856ba-783b-4ce3-b90d-3698b25c086d","$version":"A","$type":"Bolt.Self","$id":"15"},{"defaultValues":{"duration":{"$content":1.1,"$type":"System.Single"},"unscaledTime":{"$content":false,"$type":"System.Boolean"}},"position":{"x":51.0,"y":-84.0},"guid":"2db450ee-2c2a-4c5e-bd06-e0a8aaabb3cc","$version":"A","$type":"Bolt.Cooldown","$id":"17"},{"sourceUnit":{"$ref":"10"},"sourceKey":"trigger","destinationUnit":{"$ref":"17"},"destinationKey":"enter","guid":"0f8d8a00-f4fd-429f-8bec-cfeee68d25da","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"becameReady","destinationUnit":{"$ref":"12"},"destinationKey":"enter","guid":"d3966e73-45b8-4c6e-b8e3-c3d6963464e3","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"self","destinationUnit":{"$ref":"12"},"destinationKey":"%obj","guid":"c21b3715-2656-4191-9bb6-c6a470145f05","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
