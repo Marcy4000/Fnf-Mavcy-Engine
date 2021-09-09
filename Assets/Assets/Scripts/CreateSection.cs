@@ -38,12 +38,6 @@ public class CreateSection : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
-        {
-            SceneManager.LoadScene(1);
-        }
-    }
+    
 
 }
