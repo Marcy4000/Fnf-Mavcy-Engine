@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     public Animator storyButton;
     public Animator freeplayButton;
     public Animator optionsButton;
+    public Animator background;
 
     public AudioSource scrollMenu;
     public AudioSource selectMenu;
@@ -43,7 +44,7 @@ public class MainMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.KeypadEnter)&& selectedMenu == 1)
         {
-            StartCoroutine(LoadTestLevel());
+            StartCoroutine(LoadFreeplayMenu());
         }
     }
 
@@ -69,10 +70,11 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    IEnumerator LoadTestLevel()
+    IEnumerator LoadFreeplayMenu()
     {
         selectMenu.Play();
         freeplayButton.SetTrigger("Clicked");
+        background.SetTrigger("Click");
 
         yield return new WaitForSeconds(1.7f);
         

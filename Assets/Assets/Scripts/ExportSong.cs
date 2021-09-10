@@ -86,29 +86,29 @@ public class ExportSong : MonoBehaviour
             currentChart = section.Values;
             leftFullChart.AddRange(currentChart);
         }
-        for (int i = 0; i < menager.highestSectionIdSelected; i++)
+        for (int l = 0; l < menager.highestSectionIdSelected; l++)
         {
             CreateSection section;
             List<bool> currentChart;
-            section = downSection[i].GetComponent<CreateSection>();
+            section = downSection[l].GetComponent<CreateSection>();
 
             currentChart = section.Values;
             downFullChart.AddRange(currentChart);
         }
-        for (int i = 0; i < menager.highestSectionIdSelected; i++)
+        for (int k = 0; k < menager.highestSectionIdSelected; k++)
         {
             CreateSection section;
             List<bool> currentChart;
-            section = upSection[i].GetComponent<CreateSection>();
+            section = upSection[k].GetComponent<CreateSection>();
 
             currentChart = section.Values;
             upFullChart.AddRange(currentChart);
         }
-        for (int i = 0; i < menager.highestSectionIdSelected; i++)
+        for (int s = 0; s < menager.highestSectionIdSelected; s++)
         {
             CreateSection section;
             List<bool> currentChart;
-            section = rightSection[i].GetComponent<CreateSection>();
+            section = rightSection[s].GetComponent<CreateSection>();
 
             currentChart = section.Values;
             rightFullChart.AddRange(currentChart);
