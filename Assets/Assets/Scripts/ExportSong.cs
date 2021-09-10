@@ -77,41 +77,46 @@ public class ExportSong : MonoBehaviour
         song.notesUp = noteListUp.Values.ToArray();
         song.notesRight = noteListRight.Values.ToArray();
         */
-        for (int i = 0; i < menager.highestSectionIdSelected; i++)
+        for (int i = 0; i < menager.highestSectionIdSelected + 1; i++)
         {
             CreateSection section;
             List<bool> currentChart;
             section = leftSection[i].GetComponent<CreateSection>();
             
             currentChart = section.Values;
-            leftFullChart.AddRange(currentChart);
+            //leftFullChart.AddRange(currentChart);
+            currentChart.ForEach(item => leftFullChart.Add(item));
         }
-        for (int l = 0; l < menager.highestSectionIdSelected; l++)
+        for (int l = 0; l < menager.highestSectionIdSelected + 1; l++)
         {
             CreateSection section;
             List<bool> currentChart;
             section = downSection[l].GetComponent<CreateSection>();
 
             currentChart = section.Values;
-            downFullChart.AddRange(currentChart);
+            //downFullChart.AddRange(currentChart);
+            currentChart.ForEach(item => downFullChart.Add(item));
         }
-        for (int k = 0; k < menager.highestSectionIdSelected; k++)
+        for (int k = 0; k < menager.highestSectionIdSelected + 1; k++)
         {
             CreateSection section;
             List<bool> currentChart;
             section = upSection[k].GetComponent<CreateSection>();
 
             currentChart = section.Values;
-            upFullChart.AddRange(currentChart);
+            //upFullChart.AddRange(currentChart);
+            currentChart.ForEach(item => upFullChart.Add(item));
         }
-        for (int s = 0; s < menager.highestSectionIdSelected; s++)
+        for (int s = 0; s < menager.highestSectionIdSelected + 1; s++)
         {
             CreateSection section;
             List<bool> currentChart;
             section = rightSection[s].GetComponent<CreateSection>();
 
             currentChart = section.Values;
-            rightFullChart.AddRange(currentChart);
+            //rightFullChart.AddRange(currentChart);
+            currentChart.ForEach(item => rightFullChart.Add(item));
+
         }
         song.notesLeft = leftFullChart.ToArray();
         song.notesDown = downFullChart.ToArray();
