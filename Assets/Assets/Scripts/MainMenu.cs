@@ -9,6 +9,9 @@ public class MainMenu : MonoBehaviour
     public Animator freeplayButton;
     public Animator optionsButton;
 
+    public AudioSource scrollMenu;
+    public AudioSource selectMenu;
+
     public int selectedMenu;
 
     // Update is called once per frame
@@ -17,11 +20,13 @@ public class MainMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             selectedMenu++;
+            scrollMenu.Play();
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             selectedMenu--;
+            scrollMenu.Play();
         }
 
         if (selectedMenu >= 3)
@@ -38,7 +43,7 @@ public class MainMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.KeypadEnter)&& selectedMenu == 1)
         {
-            SceneManager.LoadScene(1);
+            StartCoroutine(LoadTestLevel());
         }
     }
 
@@ -62,5 +67,15 @@ public class MainMenu : MonoBehaviour
             freeplayButton.SetBool("isSelected", false);
             optionsButton.SetBool("isSelected", true);
         }
+    }
+
+    IEnumerator LoadTestLevel()
+    {
+        selectMenu.Play();
+        freeplayButton.SetTrigger("Clicked");
+
+        yield return new WaitForSeconds(1.7f);
+        
+        SceneManager.LoadScene(1);
     }
 }
