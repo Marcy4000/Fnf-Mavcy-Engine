@@ -270,8 +270,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -291,6 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   misses: 0
   missCounter: {fileID: 1330517335}
+  healthBar: {fileID: 1317809086}
 --- !u!1 &21313525
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,13 +879,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!61 &526465219
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -946,6 +947,7 @@ MonoBehaviour:
   bfAnimator: {fileID: 21313527}
   keyToCheck: 100
   bfSingValue: 1
+  healthBar: {fileID: 1317809086}
 --- !u!1 &629317846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,6 +1806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317809084}
   - component: {fileID: 1317809085}
+  - component: {fileID: 1317809086}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -1885,6 +1888,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1317809086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317809083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d443c520929b9fd4091dafbc30df0185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpBar: {fileID: 1317809085}
+  hp: 50
 --- !u!1 &1330517333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,13 +2149,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!61 &1409675580
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2200,6 +2217,7 @@ MonoBehaviour:
   bfAnimator: {fileID: 21313527}
   keyToCheck: 102
   bfSingValue: 0
+  healthBar: {fileID: 1317809086}
 --- !u!1 &1413236214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,13 +2491,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!61 &1790152998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2541,6 +2559,7 @@ MonoBehaviour:
   bfAnimator: {fileID: 21313527}
   keyToCheck: 107
   bfSingValue: 3
+  healthBar: {fileID: 1317809086}
 --- !u!1 &1817006247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2736,13 +2755,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!61 &1836620764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2804,6 +2823,7 @@ MonoBehaviour:
   bfAnimator: {fileID: 21313527}
   keyToCheck: 106
   bfSingValue: 2
+  healthBar: {fileID: 1317809086}
 --- !u!1 &1896813329
 GameObject:
   m_ObjectHideFlags: 0
@@ -3194,15 +3214,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 646916456575630327, guid: 70b4be9aae226b74590a6d34cde23eb5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 646916456575630330, guid: 70b4be9aae226b74590a6d34cde23eb5, type: 3}
       propertyPath: m_Name
       value: leftSection
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 70b4be9aae226b74590a6d34cde23eb5, type: 3}
 --- !u!1001 &3319478636160043843
 PrefabInstance:
@@ -3372,15 +3390,13 @@ PrefabInstance:
       propertyPath: m_CellSize.y
       value: 157
       objectReference: {fileID: 0}
-    - target: {fileID: 4110556933984129874, guid: d9a9096440222a7469d68371429c2636, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4110556933984129887, guid: d9a9096440222a7469d68371429c2636, type: 3}
       propertyPath: m_Name
       value: RightSection
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: d9a9096440222a7469d68371429c2636, type: 3}
 --- !u!1001 &5834027385664859823
 PrefabInstance:
@@ -3389,10 +3405,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 205613489}
     m_Modifications:
-    - target: {fileID: 5834027386069622480, guid: 26a6d8c75914b8440bedfcb90d70e2bc, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5834027386069622481, guid: 26a6d8c75914b8440bedfcb90d70e2bc, type: 3}
       propertyPath: m_CellSize.x
       value: 154
@@ -3489,7 +3501,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpSection
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 26a6d8c75914b8440bedfcb90d70e2bc, type: 3}
 --- !u!1001 &6251050670541587314
 PrefabInstance:
@@ -3505,10 +3519,6 @@ PrefabInstance:
     - target: {fileID: 6251050671233229296, guid: fe9fb25cbb287524694faf3cb4d4d14f, type: 3}
       propertyPath: m_CellSize.y
       value: 157
-      objectReference: {fileID: 0}
-    - target: {fileID: 6251050671233229297, guid: fe9fb25cbb287524694faf3cb4d4d14f, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6251050671233229298, guid: fe9fb25cbb287524694faf3cb4d4d14f, type: 3}
       propertyPath: m_Name
@@ -3598,5 +3608,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe9fb25cbb287524694faf3cb4d4d14f, type: 3}

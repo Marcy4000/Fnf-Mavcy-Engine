@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public MenuMenager menuMenager;
+    
     public Animator storyButton;
     public Animator freeplayButton;
     public Animator optionsButton;
-    public Animator background;
 
     public AudioSource scrollMenu;
     public AudioSource selectMenu;
@@ -42,9 +43,13 @@ public class MainMenu : MonoBehaviour
 
         CheckMenuState();
 
-        if (Input.GetKeyDown(KeyCode.KeypadEnter)&& selectedMenu == 1)
+        if (Input.GetKeyDown(KeyCode.Return) && selectedMenu == 1)
         {
-            StartCoroutine(LoadFreeplayMenu());
+            menuMenager.StartCorutines(selectedMenu);
+        }
+        if (Input.GetKeyDown(KeyCode.Return) && selectedMenu == 2)
+        {
+            menuMenager.StartCorutines(selectedMenu);
         }
     }
 
@@ -70,14 +75,5 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    IEnumerator LoadFreeplayMenu()
-    {
-        selectMenu.Play();
-        freeplayButton.SetTrigger("Clicked");
-        background.SetTrigger("Click");
-
-        yield return new WaitForSeconds(1.7f);
-        
-        SceneManager.LoadScene(1);
-    }
+    
 }

@@ -51,7 +51,7 @@ public class ExportSong : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             SceneManager.LoadScene(1);
         }
@@ -158,21 +158,4 @@ public class Exporting
     public bool[] notesDown;
     public bool[] notesUp;
     public bool[] notesRight;
-}
-
-public static class Extension
-{
-    public static T[] Unify<T>(this T[] first, T[] second)
-    {
-        if (first == null)
-        {
-            return second;
-        }
-        if (second == null)
-        {
-            return first;
-        }
-
-        return first.Concat(second).ToArray();
-    }
 }

@@ -12,6 +12,8 @@ public class NoteCheckThing : MonoBehaviour
     public KeyCode keyToCheck;
     public int bfSingValue;
 
+    public HealthBar healthBar;
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         GameObject note;
@@ -33,7 +35,6 @@ public class NoteCheckThing : MonoBehaviour
         if (Input.GetKeyUp(keyToCheck))
         {
             arrowAnimator.SetFloat("Fuck", 0);
-            bfAnimator.SetBool("Singing", false);
         }
         if (Input.GetKey(keyToCheck))
         {
@@ -51,7 +52,7 @@ public class NoteCheckThing : MonoBehaviour
     {
         clicked = true;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
 
         clicked = false;
     }
@@ -63,9 +64,12 @@ public class NoteCheckThing : MonoBehaviour
         arrowAnimator.SetFloat("Fuck", 2);
         bfAnimator.SetBool("Singing", true);
         bfAnimator.SetFloat("Blend", bfSingValue);
+        healthBar.AddHp();
 
         yield return new WaitForSeconds(0.1f);
-
+        
         colliding = false;
+        bfAnimator.SetBool("Singing", false);
+
     }
 }

@@ -9,6 +9,7 @@ public class MissDetector : MonoBehaviour
 
     public int misses = 0;
     public TMP_Text missCounter;
+    public HealthBar healthBar;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,5 +17,6 @@ public class MissDetector : MonoBehaviour
         Destroy(note);
         misses++;
         missCounter.text = "Misses: " + misses;
+        healthBar.SubtractHp();
     }
 }
