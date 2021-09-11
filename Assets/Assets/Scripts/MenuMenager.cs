@@ -19,12 +19,15 @@ public class MenuMenager : MonoBehaviour
 
     public GameObject startMenu;
     public GameObject mainMenu;
+    public GameObject optionsMenu;
+    public GameObject freeplayMenu;
+
     public MainMenu mainMenuScript;
 
     public AudioSource selectSound;
     public AudioSource backSound;
 
-    public GameObject optionsMenu;
+    
 
     // Update is called once per frame
     void Update()
@@ -33,7 +36,7 @@ public class MenuMenager : MonoBehaviour
         {
             StartCoroutine(LoadMainMenuFromStart());
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && currentMenu == 2)
+        if (Input.GetKeyDown(KeyCode.Escape) && currentMenu == 2 || Input.GetKeyDown(KeyCode.Escape) && currentMenu == 1)
         {
             StartCoroutine(LoadMainMenu());
         }
@@ -78,9 +81,9 @@ public class MenuMenager : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         optionsMenu.SetActive(false);
+        freeplayMenu.SetActive(false);
         mainMenu.SetActive(true);
         currentMenu = 1;
-
     }
 
     public IEnumerator LoadFreeplayMenu()
@@ -91,10 +94,13 @@ public class MenuMenager : MonoBehaviour
         yield return new WaitForSeconds(1);
         
         blackFade.SetTrigger("Transition");
+        currentMenu = 1;
         
         yield return new WaitForSeconds(1.2f);
 
-        SceneManager.LoadScene(1);
+        mainMenu.SetActive(false);
+        freeplayMenu.SetActive(true);
+        mainMenuScript.selectedMenu = 0;
     }
 
     public IEnumerator LoadOptionsMenu()

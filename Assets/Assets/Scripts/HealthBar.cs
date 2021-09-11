@@ -20,6 +20,7 @@ public class HealthBar : MonoBehaviour
         {
             hp = 0;
         }
+
     }
 
     public void AddHp()

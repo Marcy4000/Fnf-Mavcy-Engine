@@ -126,7 +126,14 @@ public class LoadSong : MonoBehaviour
     
     private string GetFilePath(string songName)
     {
-        return Application.persistentDataPath + "/" + songName + ".json";
+        if (GlobalDataSfutt.songNameToLoad != "" || GlobalDataSfutt.songNameToLoad != null)
+        {
+            return Application.persistentDataPath + "/" + GlobalDataSfutt.songNameToLoad;
+        }
+        else
+        {
+            return Application.persistentDataPath + "/" + songName + ".json";
+        }
     }
 }
 
