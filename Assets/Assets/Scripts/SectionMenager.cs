@@ -12,11 +12,7 @@ public class SectionMenager : MonoBehaviour
     public int highestSectionIdSelected;
 
     public ExportSong exportSong;
-    
-    public GameObject leftSection;
-    public GameObject downSection;
-    public GameObject upSection;
-    public GameObject rightSection;
+
     public List<GameObject> sectionView;
     public GameObject sectionViewPrefab;
     public Transform parent;
@@ -29,6 +25,7 @@ public class SectionMenager : MonoBehaviour
         
         for (int i = 0; i < 99; i++)
         {
+            //Creating 99 sections and adding them to an array
             sectionView.Add(Instantiate(sectionViewPrefab, parent));
             SectionId section;
             section = sectionView[i].GetComponent<SectionId>();
@@ -40,6 +37,7 @@ public class SectionMenager : MonoBehaviour
         }
         for (int i = 0; i < 99; i++)
         {
+            //then deactivate every section that isn't selected
             if (i != sectionId)
             {
                 sectionView[i].SetActive(false);

@@ -4,6 +4,7 @@ using UnityEngine;
 using Bolt;
 using System.IO;
 using UnityEngine.UI;
+using NAudio;
 
 public class LoadSong : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class LoadSong : MonoBehaviour
     public int bpm;
     public float scrollSpeed;
     public string songName = "Giuseppe";
+    public Songdata songdata;
+    
     [SerializeField] Exported song = new Exported();
 
     public GameObject leftNote;
@@ -25,16 +28,37 @@ public class LoadSong : MonoBehaviour
     public GameObject UpSection;
     public GameObject RightSection;
 
+    public AudioSource inst;
+    public AudioSource voices;
+
+    GridLayoutGroup LeftThing;
+    GridLayoutGroup DownThing;
+    GridLayoutGroup UpThing;
+    GridLayoutGroup RightThing;
+
     void Start()
     {
         GameObject scene = GameObject.Find("Scene Variables");
-        
+        LeftThing = LeftSection.GetComponent<GridLayoutGroup>();
+        DownThing = DownSection.GetComponent<GridLayoutGroup>();
+        UpThing = UpSection.GetComponent<GridLayoutGroup>();
+        RightThing = RightSection.GetComponent<GridLayoutGroup>();
+
         string json = ReadShit(songName);
         JsonUtility.FromJsonOverwrite(json, song);
         Debug.Log(song.songName);
         
         Variables.Scene(gameObject).Set("Bpm", song.bpm);
         Variables.Scene(gameObject).Set("ScrollSpeed", song.scrollSpeed);
+        songdata.bpm = song.bpm;
+        scrollSpeed = song.scrollSpeed;
+        bpm = song.bpm;
+
+        inst.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + "/" + song.songName + "/" + "Inst.mp3"));
+        voices.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + "/" + song.songName + "/" +"Voices.mp3"));
+        inst.Play();
+        voices.Play();
+
 
         for (int i = 0; i < song.notesLeft.Length; i++)//Left
         {
@@ -87,15 +111,10 @@ public class LoadSong : MonoBehaviour
     public void DeactivateBitches()
     {
         //deactivating layout component, or notes are just going to move at random when destroyed
-        GridLayoutGroup LeftThing;
-        GridLayoutGroup DownThing;
-        GridLayoutGroup UpThing;
-        GridLayoutGroup RightThing;
-
-        LeftThing = LeftSection.GetComponent<GridLayoutGroup>();
-        DownThing = DownSection.GetComponent<GridLayoutGroup>();
-        UpThing = UpSection.GetComponent<GridLayoutGroup>();
-        RightThing = RightSection.GetComponent<GridLayoutGroup>();
+        LeftThing.spacing.Set(0, 10 * scrollSpeed);
+        DownThing.spacing.Set(0, 10 * scrollSpeed);
+        UpThing.spacing.Set(0, 10 * scrollSpeed);
+        RightThing.spacing.Set(0, 10 * scrollSpeed);
 
         LeftThing.enabled = false;
         DownThing.enabled = false;

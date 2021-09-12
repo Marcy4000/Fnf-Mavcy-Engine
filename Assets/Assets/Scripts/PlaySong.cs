@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.IO;
+using NAudio;
 
 public class PlaySong : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class PlaySong : MonoBehaviour
         GameObject gameObject1;
         gameObject1 = GameObject.Find("FreeplayMenu");
         freeplay = gameObject1.GetComponent<FreeplayMenu>();
+
     }
 
     public void LoadSong(TMP_Text songName)
