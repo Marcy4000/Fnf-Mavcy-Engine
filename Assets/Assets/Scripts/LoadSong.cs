@@ -54,10 +54,18 @@ public class LoadSong : MonoBehaviour
         scrollSpeed = song.scrollSpeed;
         bpm = song.bpm;
 
-        inst.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + "/" + song.songName + "/" + "Inst.mp3"));
-        voices.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + "/" + song.songName + "/" +"Voices.mp3"));
-        inst.Play();
-        voices.Play();
+        try
+        {
+            inst.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3"));
+            voices.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + song.songName + "/" +"Voices.mp3"));
+            Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3");
+
+        }
+        catch (System.Exception)
+        {
+            Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3" +"file path does not exist u idiot, going to main menu");
+            GlobalDataSfutt.GoToMainMenu();
+        }
 
 
         for (int i = 0; i < song.notesLeft.Length; i++)//Left
