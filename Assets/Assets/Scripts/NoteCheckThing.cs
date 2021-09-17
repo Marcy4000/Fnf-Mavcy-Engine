@@ -35,6 +35,7 @@ public class NoteCheckThing : MonoBehaviour
         if (Input.GetKeyUp(keyToCheck))
         {
             arrowAnimator.SetFloat("Fuck", 0);
+            bfAnimator.SetBool("Singing", false);
         }
         if (Input.GetKey(keyToCheck))
         {
@@ -69,7 +70,6 @@ public class NoteCheckThing : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         
         colliding = false;
-        bfAnimator.SetBool("Singing", false);
 
     }
 }

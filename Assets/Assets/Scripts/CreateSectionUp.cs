@@ -22,7 +22,7 @@ public class CreateSectionUp : MonoBehaviour
     //create a list of the toggles, kinda useless. just needed fot the update list method
     void Start()
     {
-        string json = ReadShit(GlobalDataSfutt.songNameToLoad);
+        string json = GlobalDataSfutt.ReadShit(GlobalDataSfutt.songNameToLoad);
         JsonUtility.FromJsonOverwrite(json, song);
 
         SectionId = id.currentSectionId;
@@ -66,39 +66,6 @@ public class CreateSectionUp : MonoBehaviour
             thing.isOn = song.notesUp[coolName];
         }
         UpdateList();
-    }
-
-    //copied from youtube lol
-    private string ReadShit(string songName)
-    {
-        string path = GetFilePath(songName);
-        Debug.Log("trying to find shit at " + path);
-        if (File.Exists(path))
-        {
-            using (StreamReader reader = new StreamReader(path))
-            {
-                string json = reader.ReadToEnd();
-                Debug.Log("Loaded shit succesfully, the extracted json is " + json);
-                return json;
-            }
-        }
-        else
-        {
-            Debug.LogError("Shit not found, u sure it even exists?");
-            return "";
-        }
-    }
-
-    private string GetFilePath(string songName)
-    {
-        if (GlobalDataSfutt.songNameToLoad != "" || GlobalDataSfutt.songNameToLoad != null)
-        {
-            return Application.persistentDataPath + "/" + GlobalDataSfutt.songNameToLoad;
-        }
-        else
-        {
-            return Application.persistentDataPath + "/" + songName + ".json";
-        }
     }
 }
 

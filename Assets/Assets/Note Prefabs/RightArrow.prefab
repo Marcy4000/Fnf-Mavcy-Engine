@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: -1521449999142500642}
   - component: {fileID: 427512134592807691}
   - component: {fileID: -796694331216552490}
+  - component: {fileID: -9093442087899707228}
+  - component: {fileID: -9105943819271452405}
   m_Layer: 5
   m_Name: RightArrow
   m_TagString: Untagged
@@ -100,7 +102,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 6
+  m_Constraints: 7
 --- !u!61 &5474495415438818696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -171,4 +173,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   song: {fileID: 0}
-  transform: {fileID: 0}
+  noteTransform: {fileID: 0}
+  countdown: {fileID: 0}
+--- !u!114 &-9093442087899707228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043840670831819439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d78241f1cd6184d9c0378f4a39a819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHoldNote: 0
+  holdTime: 0
+  holdNoteThing: {fileID: 7232501005413485824, guid: cb807ef7918d09944b32f32d767d2f30, type: 3}
+--- !u!114 &-9105943819271452405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043840670831819439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: -3
+    m_Top: 108
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0

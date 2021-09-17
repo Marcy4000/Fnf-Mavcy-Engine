@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChartEditor.unity
     guid: 6dd60ffe46ffb25418b1733b5efdfaaa
+  - enabled: 1
+    path: Assets/Scenes/DeathScreen.unity
+    guid: 6d171ecd07880a141a45a1f72c40af91
   m_configObjects: {}

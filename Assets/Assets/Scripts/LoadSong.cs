@@ -44,7 +44,7 @@ public class LoadSong : MonoBehaviour
         UpThing = UpSection.GetComponent<GridLayoutGroup>();
         RightThing = RightSection.GetComponent<GridLayoutGroup>();
 
-        string json = ReadShit(songName);
+        string json = GlobalDataSfutt.ReadShit(songName);
         JsonUtility.FromJsonOverwrite(json, song);
         Debug.Log(song.songName);
         
@@ -128,39 +128,6 @@ public class LoadSong : MonoBehaviour
         DownThing.enabled = false;
         UpThing.enabled = false;
         RightThing.enabled = false;
-    }
-
-    //copied from youtube lol
-    private string ReadShit(string songName)
-    {
-        string path = GetFilePath(songName);
-        Debug.Log("trying to find shit at " + path);
-        if (File.Exists(path))
-        {
-            using(StreamReader reader = new StreamReader(path))
-            {
-                string json = reader.ReadToEnd();
-                Debug.Log("Loaded shit succesfully, the extracted json is " + json);
-                return json;
-            }
-        }
-        else
-        {
-            Debug.LogError("Shit not found, u sure it even exists?");
-            return "";
-        }
-    }
-    
-    private string GetFilePath(string songName)
-    {
-        if (GlobalDataSfutt.songNameToLoad != "" || GlobalDataSfutt.songNameToLoad != null)
-        {
-            return Application.persistentDataPath + "/" + GlobalDataSfutt.songNameToLoad;
-        }
-        else
-        {
-            return Application.persistentDataPath + "/" + songName + ".json";
-        }
     }
 }
 
