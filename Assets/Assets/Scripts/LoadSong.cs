@@ -72,7 +72,12 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesLeft[i] == true)
             {
-                Object.Instantiate(leftNote, LeftSection.transform);
+                GameObject currentNote = Object.Instantiate(leftNote, LeftSection.transform);
+                if (song.holdNotesLeft[i] > 0)
+                {
+                    currentNote.GetComponent<Note>().isHoldNote = true;
+                    currentNote.GetComponent<Note>().holdTime = song.holdNotesLeft[i];
+                }
             }
             else
             {
@@ -83,7 +88,12 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesDown[l] == true)
             {
-                Object.Instantiate(DownNote, DownSection.transform);
+                GameObject currentNote = Object.Instantiate(DownNote, DownSection.transform);
+                if (song.holdNotesDown[l] > 0)
+                {
+                    currentNote.GetComponent<Note>().isHoldNote = true;
+                    currentNote.GetComponent<Note>().holdTime = song.holdNotesDown[l];
+                }
             }
             else
             {
@@ -94,7 +104,12 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesUp[k] == true)
             {
-                Object.Instantiate(UpNote, UpSection.transform);
+                GameObject currentNote = Object.Instantiate(UpNote, UpSection.transform);
+                if (song.holdNotesUp[k] > 0)
+                {
+                    currentNote.GetComponent<Note>().isHoldNote = true;
+                    currentNote.GetComponent<Note>().holdTime = song.holdNotesUp[k];
+                }
             }
             else
             {
@@ -105,7 +120,12 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesRight[q] == true)
             {
-                Object.Instantiate(RightNote, RightSection.transform);
+                GameObject currentNote = Object.Instantiate(RightNote, RightSection.transform);
+                if (song.holdNotesRight[q] > 0)
+                {
+                    currentNote.GetComponent<Note>().isHoldNote = true;
+                    currentNote.GetComponent<Note>().holdTime = song.holdNotesRight[q];
+                }
             }
             else
             {
@@ -144,4 +164,9 @@ public class Exported
     public bool[] notesDown;
     public bool[] notesUp;
     public bool[] notesRight;
+
+    public int[] holdNotesLeft;
+    public int[] holdNotesDown;
+    public int[] holdNotesUp;
+    public int[] holdNotesRight;
 }

@@ -11,6 +11,7 @@ public class CreateSectionDown : MonoBehaviour
 
     public List<GameObject> TogglesObject;
     public List<bool> Values;
+    public List<int> HoldTime;
     [SerializeField] SongJsonn song = new SongJsonn();
 
     Exported exported;
@@ -47,7 +48,8 @@ public class CreateSectionDown : MonoBehaviour
 
             thing = Value.GetComponent<Toggle>();
             Values.Add(thing.isOn);
-            
+            HoldTime.Add(thing.GetComponent<ToggleHoldNote>().HoldNoteTime);
+
         }
     }
 
@@ -68,6 +70,21 @@ public class CreateSectionDown : MonoBehaviour
         UpdateList();
     }
 
+    public void ClearSection()
+    {
+        for (int i = 0; i < 16; i++)
+        {
+            Toggle thing;
+            GameObject stuff;
+            int coolName;
+            coolName = i + (16 * SectionId);
+            stuff = TogglesObject.ElementAt(i);
+            thing = stuff.GetComponent<Toggle>();
+            thing.isOn = false;
+        }
+        UpdateList();
+    }
+
 }
 
 [System.Serializable]
@@ -83,4 +100,9 @@ public class SongJsonn
     public bool[] notesDown;
     public bool[] notesUp;
     public bool[] notesRight;
+
+    public int[] holdNotesLeft;
+    public int[] holdNotesDown;
+    public int[] holdNotesUp;
+    public int[] holdNotesRight;
 }

@@ -61,6 +61,13 @@ public class SectionMenager : MonoBehaviour
         
     }
 
+    public void CallFuncion()
+    {
+        SectionId section;
+        section = sectionView[sectionId].GetComponent<SectionId>();
+        section.Clear();
+    }
+
     public void AddSectionId()
     {
         if (sectionId < 99)

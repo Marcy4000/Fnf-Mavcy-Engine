@@ -12,16 +12,23 @@ public class Note : MonoBehaviour
 
     private void OnEnable()
     {
+        StartCoroutine(StartThing());
+    }
+
+    IEnumerator StartThing()
+    {
+        yield return new WaitForEndOfFrame();
+        
         if (isHoldNote)
         {
             StartCoroutine(CreateNoteThing());
         }
         else
         {
-            return;
+            yield return 0;
         }
     }
-
+    
     IEnumerator CreateNoteThing()
     {
         VerticalLayoutGroup layoutGroup;

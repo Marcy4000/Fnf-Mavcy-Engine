@@ -5,16 +5,17 @@ using UnityEngine;
 public class SectionId : MonoBehaviour
 {
     public int currentSectionId;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public CreateSectionLeft sectionLeft;
+    public CreateSectionDown sectionDown;
+    public CreateSectionUp sectionUp;
+    public CreateSectionRight sectionRight;
+    
+    public void Clear()
     {
-        
+        sectionLeft.ClearSection();
+        sectionDown.ClearSection();
+        sectionUp.ClearSection();
+        sectionRight.ClearSection();
     }
 }

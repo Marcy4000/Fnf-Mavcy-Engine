@@ -26,6 +26,11 @@ public class ExportSong : MonoBehaviour
     public List<bool> upFullChart;
     public List<bool> rightFullChart;
 
+    public List<int> leftFullHold;
+    public List<int> downFullHold;
+    public List<int> upFullHold;
+    public List<int> rightFullHold;
+
 
     void Start()
     {
@@ -86,47 +91,65 @@ public class ExportSong : MonoBehaviour
         {
             CreateSectionLeft section;
             List<bool> currentChart;
+            List<int> currentHoldTimes;
             section = leftSection[i].GetComponent<CreateSectionLeft>();
             
             currentChart = section.Values;
+            currentHoldTimes = section.HoldTime;
             //leftFullChart.AddRange(currentChart);
             currentChart.ForEach(item => leftFullChart.Add(item));
+            currentHoldTimes.ForEach(item => leftFullHold.Add(item));
         }
         for (int l = 0; l < menager.highestSectionIdSelected + 1; l++)
         {
             CreateSectionDown section;
             List<bool> currentChart;
+            List<int> currentHoldTimes;
             section = downSection[l].GetComponent<CreateSectionDown>();
 
             currentChart = section.Values;
+            currentHoldTimes = section.HoldTime;
             //downFullChart.AddRange(currentChart);
             currentChart.ForEach(item => downFullChart.Add(item));
+            currentHoldTimes.ForEach(item => downFullHold.Add(item));
         }
         for (int k = 0; k < menager.highestSectionIdSelected + 1; k++)
         {
             CreateSectionUp section;
             List<bool> currentChart;
+            List<int> currentHoldTimes;
             section = upSection[k].GetComponent<CreateSectionUp>();
 
             currentChart = section.Values;
+            currentHoldTimes = section.HoldTime;
             //upFullChart.AddRange(currentChart);
             currentChart.ForEach(item => upFullChart.Add(item));
+            currentHoldTimes.ForEach(item => upFullHold.Add(item));
         }
         for (int s = 0; s < menager.highestSectionIdSelected + 1; s++)
         {
             CreateSectionRight section;
             List<bool> currentChart;
+            List<int> currentHoldTimes;
             section = rightSection[s].GetComponent<CreateSectionRight>();
 
             currentChart = section.Values;
+            currentHoldTimes = section.HoldTime;
             //rightFullChart.AddRange(currentChart);
             currentChart.ForEach(item => rightFullChart.Add(item));
+            currentHoldTimes.ForEach(item => rightFullHold.Add(item));
 
         }    
         song.notesLeft = leftFullChart.ToArray();
         song.notesDown = downFullChart.ToArray();
         song.notesUp = upFullChart.ToArray();
         song.notesRight = rightFullChart.ToArray();
+
+        song.holdNotesLeft = leftFullHold.ToArray();
+        song.holdNotesDown = downFullHold.ToArray();
+        song.holdNotesUp = upFullHold.ToArray();
+        song.holdNotesRight = rightFullHold.ToArray();
+
 
         //if song name is empty just default to name
         if (song.bpm == 0)
@@ -163,4 +186,9 @@ public class Exporting
     public bool[] notesDown;
     public bool[] notesUp;
     public bool[] notesRight;
+
+    public int[] holdNotesLeft;
+    public int[] holdNotesDown;
+    public int[] holdNotesUp;
+    public int[] holdNotesRight;
 }
