@@ -27,16 +27,18 @@ public class MenuMenager : MonoBehaviour
     public AudioSource selectSound;
     public AudioSource backSound;
 
+    public bool IsClicked;
+
     
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && currentMenu == 0 || Input.GetKeyDown(KeyCode.Space) && currentMenu == 0)
+        if (Input.GetKeyDown(KeyCode.Return) && currentMenu == 0 && !IsClicked || Input.GetKeyDown(KeyCode.Space) && currentMenu == 0 && !IsClicked)
         {
             StartCoroutine(LoadMainMenuFromStart());
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && currentMenu == 2 || Input.GetKeyDown(KeyCode.Escape) && currentMenu == 1)
+        if (Input.GetKeyDown(KeyCode.Escape) && currentMenu == 2 && !IsClicked || Input.GetKeyDown(KeyCode.Escape) && currentMenu == 1 && !IsClicked)
         {
             StartCoroutine(LoadMainMenu());
         }
@@ -57,6 +59,7 @@ public class MenuMenager : MonoBehaviour
 
     public IEnumerator LoadMainMenuFromStart()
     {
+        IsClicked = true;
         selectSound.Play();
         whiteFade.SetTrigger("Start");
         startText.SetBool("Pressed", true);
@@ -67,6 +70,7 @@ public class MenuMenager : MonoBehaviour
 
         yield return new WaitForSeconds(1);
 
+        IsClicked = false;
         startMenu.SetActive(false);
         mainMenu.SetActive(true);
         currentMenu = 1;
@@ -75,11 +79,13 @@ public class MenuMenager : MonoBehaviour
 
     public IEnumerator LoadMainMenu()
     {
+        IsClicked = true;
         backSound.Play();
         blackFade.SetTrigger("Transition");
 
         yield return new WaitForSeconds(1);
 
+        IsClicked = false;
         optionsMenu.SetActive(false);
         freeplayMenu.SetActive(false);
         mainMenu.SetActive(true);
@@ -88,6 +94,7 @@ public class MenuMenager : MonoBehaviour
 
     public IEnumerator LoadFreeplayMenu()
     {
+        IsClicked = true;
         selectSound.Play();
         freeplayButton.SetTrigger("Clicked");
         background.SetTrigger("Click");
@@ -98,6 +105,7 @@ public class MenuMenager : MonoBehaviour
         
         yield return new WaitForSeconds(1.2f);
 
+        IsClicked = false;
         mainMenu.SetActive(false);
         freeplayMenu.SetActive(true);
         mainMenuScript.selectedMenu = 0;
@@ -105,6 +113,7 @@ public class MenuMenager : MonoBehaviour
 
     public IEnumerator LoadOptionsMenu()
     {
+        IsClicked = true;
         selectSound.Play();
         optionsButton.SetTrigger("Clicked");
         background.SetTrigger("Click");
@@ -119,5 +128,6 @@ public class MenuMenager : MonoBehaviour
         optionsMenu.SetActive(true);
         mainMenu.SetActive(false);
         mainMenuScript.selectedMenu = 0;
+        IsClicked = false;
     }
 }

@@ -1311,6 +1311,7 @@ MonoBehaviour:
   mainMenuScript: {fileID: 1734292583}
   selectSound: {fileID: 719457673}
   backSound: {fileID: 1919735978}
+  IsClicked: 0
 --- !u!82 &719457673
 AudioSource:
   m_ObjectHideFlags: 0

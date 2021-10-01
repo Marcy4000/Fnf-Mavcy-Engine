@@ -7,7 +7,7 @@ using System.IO;
 public static class GlobalDataSfutt
 {
 
-    public static string songNameToLoad;
+    public static string songNameToLoad = "DefaultSusName";
 
     public static void GoToMainMenu()
     {

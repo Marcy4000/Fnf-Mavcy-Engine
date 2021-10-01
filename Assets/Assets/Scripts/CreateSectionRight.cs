@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System.IO;
 
 public class CreateSectionRight : MonoBehaviour
@@ -11,11 +10,11 @@ public class CreateSectionRight : MonoBehaviour
 
     public List<GameObject> TogglesObject;
     public List<bool> Values;
+    public List<float> noteTime;
     public List<int> HoldTime;
     [SerializeField] SongJsonnnn song = new SongJsonnnn();
 
-    Exported exported;
-
+    public float songTime, crocket;
     public int SectionId = 0;
     public SectionId id;
 
@@ -33,23 +32,33 @@ public class CreateSectionRight : MonoBehaviour
             TogglesObject.Add(child.gameObject);
         }
         StartCoroutine(DoTheLoading());
-
         
     }
     //updates chart list with booleans, gonna change this soon
     public void UpdateList()
     {
         Values.Clear();
-        
+        noteTime.Clear();
+        HoldTime.Clear();
+
         foreach (GameObject Value in TogglesObject)
         {
-            
             Toggle thing;
 
             thing = Value.GetComponent<Toggle>();
             Values.Add(thing.isOn);
             HoldTime.Add(thing.GetComponent<ToggleHoldNote>().HoldNoteTime);
-
+        }
+        for (int i = 0; i < 16; i++)
+        {
+            if (Values[i] == true)
+            {
+                noteTime.Add((((150 * i) + crocket) + (2400 + crocket) * SectionId) * -1);
+            }
+            else
+            {
+                noteTime.Add(0);
+            }
         }
     }
 
@@ -65,8 +74,17 @@ public class CreateSectionRight : MonoBehaviour
             coolName = i + (16 * SectionId);
             stuff = TogglesObject.ElementAt(i);
             thing = stuff.GetComponent<Toggle>();
-            thing.isOn = song.notesRight[coolName];
+            //thing.isOn = song.notesRight[coolName];
+            if (song.notesRight[coolName] != 0)
+            {
+                thing.isOn = true;
+            }
+            else
+            {
+                thing.isOn = false;
+            }
         }
+        crocket = (60000f / song.bpm) / 16;
         UpdateList();
     }
 
@@ -76,8 +94,6 @@ public class CreateSectionRight : MonoBehaviour
         {
             Toggle thing;
             GameObject stuff;
-            int coolName;
-            coolName = i + (16 * SectionId);
             stuff = TogglesObject.ElementAt(i);
             thing = stuff.GetComponent<Toggle>();
             thing.isOn = false;
@@ -96,10 +112,11 @@ public class SongJsonnnn
     public float scrollSpeed = 7f;
 
     //probally i should not use booleans, but i'm too lazy to change
-    public bool[] notesLeft;
-    public bool[] notesDown;
-    public bool[] notesUp;
-    public bool[] notesRight;
+    //Changed from booleans :3
+    public float[] notesLeft;
+    public float[] notesDown;
+    public float[] notesUp;
+    public float[] notesRight;
 
     public int[] holdNotesLeft;
     public int[] holdNotesDown;

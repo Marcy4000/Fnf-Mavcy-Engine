@@ -1,27 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Bolt;
 using System.IO;
 using UnityEngine.UI;
-using NAudio;
 
 public class LoadSong : MonoBehaviour
 {
-    [HideInInspector]public GameObject scene;
+    [HideInInspector] public GameObject scene;
 
     public int bpm;
     public float scrollSpeed;
     public string songName = "Giuseppe";
     public Songdata songdata;
-    
+
     [SerializeField] Exported song = new Exported();
 
     public GameObject leftNote;
     public GameObject DownNote;
     public GameObject UpNote;
     public GameObject RightNote;
-    public GameObject Space;
+    //public GameObject Space;
 
     public GameObject LeftSection;
     public GameObject DownSection;
@@ -47,7 +44,7 @@ public class LoadSong : MonoBehaviour
         string json = GlobalDataSfutt.ReadShit(songName);
         JsonUtility.FromJsonOverwrite(json, song);
         Debug.Log(song.songName);
-        
+
         Variables.Scene(gameObject).Set("Bpm", song.bpm);
         Variables.Scene(gameObject).Set("ScrollSpeed", song.scrollSpeed);
         songdata.bpm = song.bpm;
@@ -57,83 +54,70 @@ public class LoadSong : MonoBehaviour
         try
         {
             inst.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3"));
-            voices.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + song.songName + "/" +"Voices.mp3"));
+            voices.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Voices.mp3"));
             Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3");
 
         }
         catch (System.Exception)
         {
-            Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3" +"file path does not exist u idiot, going to main menu");
+            Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3" + "file path does not exist u idiot, going to main menu");
             GlobalDataSfutt.GoToMainMenu();
         }
 
 
         for (int i = 0; i < song.notesLeft.Length; i++)//Left
         {
-            if (song.notesLeft[i] == true)
+            if (song.notesLeft[i] != 0)
             {
-                GameObject currentNote = Object.Instantiate(leftNote, LeftSection.transform);
+                GameObject currentNote = Object.Instantiate(leftNote, new Vector3(1243, song.notesLeft[i] - 80f, 0), Quaternion.identity, LeftSection.transform);
                 if (song.holdNotesLeft[i] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
                     currentNote.GetComponent<Note>().holdTime = song.holdNotesLeft[i];
                 }
             }
-            else
-            {
-                Object.Instantiate(Space, LeftSection.transform);
-            }
+
         }
         for (int l = 0; l < song.notesDown.Length; l++)//down
         {
-            if (song.notesDown[l] == true)
+            if (song.notesDown[l] != 0)
             {
-                GameObject currentNote = Object.Instantiate(DownNote, DownSection.transform);
+                GameObject currentNote = Object.Instantiate(DownNote, new Vector3(1393, song.notesDown[l] - 80f, 0), Quaternion.identity, DownSection.transform);
                 if (song.holdNotesDown[l] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
                     currentNote.GetComponent<Note>().holdTime = song.holdNotesDown[l];
                 }
             }
-            else
-            {
-                Object.Instantiate(Space, DownSection.transform);
-            }
+
         }
         for (int k = 0; k < song.notesUp.Length; k++)//Up
         {
-            if (song.notesUp[k] == true)
+            if (song.notesUp[k] != 0)
             {
-                GameObject currentNote = Object.Instantiate(UpNote, UpSection.transform);
+                GameObject currentNote = Object.Instantiate(UpNote, new Vector3(1543, song.notesUp[k] - 80f, 0), Quaternion.identity, UpSection.transform);
                 if (song.holdNotesUp[k] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
                     currentNote.GetComponent<Note>().holdTime = song.holdNotesUp[k];
                 }
             }
-            else
-            {
-                Object.Instantiate(Space, UpSection.transform);
-            }
+
         }
         for (int q = 0; q < song.notesRight.Length; q++)//Right
         {
-            if (song.notesRight[q] == true)
+            if (song.notesRight[q] != 0)
             {
-                GameObject currentNote = Object.Instantiate(RightNote, RightSection.transform);
+                GameObject currentNote = Object.Instantiate(RightNote, new Vector3(1693, song.notesRight[q] - 80f, 0), Quaternion.identity, RightSection.transform);
                 if (song.holdNotesRight[q] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
                     currentNote.GetComponent<Note>().holdTime = song.holdNotesRight[q];
                 }
             }
-            else
-            {
-                Object.Instantiate(Space, RightSection.transform);
-            }
+
         }
 
-       
     }
 
     public void DeactivateBitches()
@@ -160,10 +144,12 @@ public class Exported
     public int bpm = 150;
     public float scrollSpeed = 7f;
 
-    public bool[] notesLeft;
-    public bool[] notesDown;
-    public bool[] notesUp;
-    public bool[] notesRight;
+    //probally i should not use booleans, but i'm too lazy to change
+    //Changed from booleans :3
+    public float[] notesLeft;
+    public float[] notesDown;
+    public float[] notesUp;
+    public float[] notesRight;
 
     public int[] holdNotesLeft;
     public int[] holdNotesDown;

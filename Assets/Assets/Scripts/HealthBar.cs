@@ -31,11 +31,11 @@ public class HealthBar : MonoBehaviour
 
     public void AddHp()
     {
-        hp = hp + 5;
+        hp += 5;
     }
 
     public void SubtractHp()
     {
-        hp = hp - 10;
+        hp -= 10;
     }
 }

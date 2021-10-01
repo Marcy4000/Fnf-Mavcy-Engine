@@ -11,11 +11,13 @@ public class CreateSectionUp : MonoBehaviour
 
     public List<GameObject> TogglesObject;
     public List<bool> Values;
+    public List<float> noteTime;
     public List<int> HoldTime;
     [SerializeField] SongJsonnn song = new SongJsonnn();
 
     Exported exported;
 
+    public float crocket;
     public int SectionId = 0;
     public SectionId id;
 
@@ -40,16 +42,27 @@ public class CreateSectionUp : MonoBehaviour
     public void UpdateList()
     {
         Values.Clear();
-        
+        noteTime.Clear();
+        HoldTime.Clear();
+
         foreach (GameObject Value in TogglesObject)
         {
-            
             Toggle thing;
 
             thing = Value.GetComponent<Toggle>();
             Values.Add(thing.isOn);
             HoldTime.Add(thing.GetComponent<ToggleHoldNote>().HoldNoteTime);
-
+        }
+        for (int i = 0; i < 16; i++)
+        {
+            if (Values[i] == true)
+            {
+                noteTime.Add((((150 * i) + crocket) + (2400  + crocket) * SectionId) * -1);
+            }
+            else
+            {
+                noteTime.Add(0);
+            }
         }
     }
 
@@ -65,8 +78,17 @@ public class CreateSectionUp : MonoBehaviour
             coolName = i + (16 * SectionId);
             stuff = TogglesObject.ElementAt(i);
             thing = stuff.GetComponent<Toggle>();
-            thing.isOn = song.notesUp[coolName];
+            //thing.isOn = song.notesUp[coolName];
+            if (song.notesUp[coolName] != 0)
+            {
+                thing.isOn = true;
+            }
+            else
+            {
+                thing.isOn = false;
+            }
         }
+        crocket = (60000f / song.bpm) / 16;
         UpdateList();
     }
 
@@ -95,10 +117,11 @@ public class SongJsonnn
     public float scrollSpeed = 7f;
 
     //probally i should not use booleans, but i'm too lazy to change
-    public bool[] notesLeft;
-    public bool[] notesDown;
-    public bool[] notesUp;
-    public bool[] notesRight;
+    //Changed from booleans :3
+    public float[] notesLeft;
+    public float[] notesDown;
+    public float[] notesUp;
+    public float[] notesRight;
 
     public int[] holdNotesLeft;
     public int[] holdNotesDown;

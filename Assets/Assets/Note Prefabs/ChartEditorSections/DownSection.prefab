@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4110556933984129887
+--- !u!1 &6251050671233229298
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4110556933984129872}
-  - component: {fileID: 4110556933984129873}
+  - component: {fileID: 6251050671233229299}
+  - component: {fileID: 6251050671233229296}
   m_Layer: 5
-  m_Name: RightSection
-  m_TagString: HoldNote
+  m_Name: DownSection
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &4110556933984129872
+--- !u!224 &6251050671233229299
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4110556933984129887}
+  m_GameObject: {fileID: 6251050671233229298}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,16 +33,16 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 223, y: -1548.3124}
+  m_AnchoredPosition: {x: -77.00098, y: -1548.3124}
   m_SizeDelta: {x: 49.999, y: 2106.2502}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4110556933984129873
+--- !u!114 &6251050671233229296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4110556933984129887}
+  m_GameObject: {fileID: 6251050671233229298}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}

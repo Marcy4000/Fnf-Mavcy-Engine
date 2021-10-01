@@ -11,12 +11,10 @@ GameObject:
   - component: {fileID: 3700352211432515170}
   - component: {fileID: 3700352211432515193}
   - component: {fileID: 3700352211432515198}
-  - component: {fileID: 3700352211432515199}
   - component: {fileID: 3700352211432515196}
   - component: {fileID: 3700352211432515197}
-  - component: {fileID: 5492831361578934761}
   m_Layer: 5
-  m_Name: 'LeftArrowHold '
+  m_Name: LeftArrowHoldEditor
   m_TagString: HoldNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,21 +86,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 39.405396, y: 24.77729}
   m_EdgeRadius: 0
---- !u!114 &3700352211432515199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3700352211432515171}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4862a3692a265a84cabf16cea096a79e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  song: {fileID: 0}
-  noteTransform: {fileID: 0}
-  countdown: {fileID: 0}
 --- !u!222 &3700352211432515196
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -141,25 +124,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5492831361578934761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3700352211432515171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34c8722031091d846967d7df57469e60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftChecker: {fileID: 0}
-  downChecker: {fileID: 0}
-  upChecker: {fileID: 0}
-  rightChecker: {fileID: 0}
-  leftAnimator: {fileID: 0}
-  downAnimator: {fileID: 0}
-  upAnimator: {fileID: 0}
-  rightAnimator: {fileID: 0}
-  canavas: {fileID: 0}
-  currentNoteDirection: 0

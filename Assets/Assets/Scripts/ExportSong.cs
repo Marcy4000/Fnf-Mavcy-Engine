@@ -1,35 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.IO;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
 public class ExportSong : MonoBehaviour
 {
     [HideInInspector]public SectionMenager menager;
+    [SerializeField] Exporting song = new Exporting(); //idk what this is but it works so...
 
 
     public TMP_InputField songName;
     public TMP_InputField bpm;
     public TMP_InputField scrollSpeed;
-    [SerializeField] Exporting song = new Exporting(); //idk what this is but it works so...
     public GameObject[] leftSection;
     public GameObject[] downSection;
     public GameObject[] upSection;
     public GameObject[] rightSection;
 
-    public List<bool> leftFullChart;
-    public List<bool> downFullChart;
-    public List<bool> upFullChart;
-    public List<bool> rightFullChart;
+    public List<float> leftFullChart;
+    public List<float> downFullChart;
+    public List<float> upFullChart;
+    public List<float> rightFullChart;
 
     public List<int> leftFullHold;
     public List<int> downFullHold;
     public List<int> upFullHold;
     public List<int> rightFullHold;
+
+    public AudioSource inst = new AudioSource(), voices = new AudioSource();
+    public static float songTime;
 
 
     void Start()
@@ -50,8 +51,18 @@ public class ExportSong : MonoBehaviour
         */
         GameObject manager = GameObject.Find("SectionMenu");
         menager = manager.GetComponent<SectionMenager>();
+        try
+        {
+            inst.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3"));
+            voices.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Voices.mp3"));
+            Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3");
+            songTime = inst.clip.length;
+        }
+        catch (System.Exception)
+        {
+            Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3" + "file path does not exist u idiot, going to main menu");
+        }
 
-        
     }
 
     private void Update()
@@ -65,6 +76,7 @@ public class ExportSong : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+
     }
 
 
@@ -90,11 +102,11 @@ public class ExportSong : MonoBehaviour
         for (int i = 0; i < menager.highestSectionIdSelected + 1; i++)
         {
             CreateSectionLeft section;
-            List<bool> currentChart;
+            List<float> currentChart;
             List<int> currentHoldTimes;
             section = leftSection[i].GetComponent<CreateSectionLeft>();
-            
-            currentChart = section.Values;
+
+            currentChart = section.noteTime;
             currentHoldTimes = section.HoldTime;
             //leftFullChart.AddRange(currentChart);
             currentChart.ForEach(item => leftFullChart.Add(item));
@@ -103,11 +115,11 @@ public class ExportSong : MonoBehaviour
         for (int l = 0; l < menager.highestSectionIdSelected + 1; l++)
         {
             CreateSectionDown section;
-            List<bool> currentChart;
+            List<float> currentChart;
             List<int> currentHoldTimes;
             section = downSection[l].GetComponent<CreateSectionDown>();
 
-            currentChart = section.Values;
+            currentChart = section.noteTime;
             currentHoldTimes = section.HoldTime;
             //downFullChart.AddRange(currentChart);
             currentChart.ForEach(item => downFullChart.Add(item));
@@ -116,11 +128,11 @@ public class ExportSong : MonoBehaviour
         for (int k = 0; k < menager.highestSectionIdSelected + 1; k++)
         {
             CreateSectionUp section;
-            List<bool> currentChart;
+            List<float> currentChart;
             List<int> currentHoldTimes;
             section = upSection[k].GetComponent<CreateSectionUp>();
 
-            currentChart = section.Values;
+            currentChart = section.noteTime;
             currentHoldTimes = section.HoldTime;
             //upFullChart.AddRange(currentChart);
             currentChart.ForEach(item => upFullChart.Add(item));
@@ -129,17 +141,17 @@ public class ExportSong : MonoBehaviour
         for (int s = 0; s < menager.highestSectionIdSelected + 1; s++)
         {
             CreateSectionRight section;
-            List<bool> currentChart;
+            List<float> currentChart;
             List<int> currentHoldTimes;
             section = rightSection[s].GetComponent<CreateSectionRight>();
 
-            currentChart = section.Values;
+            currentChart = section.noteTime;
             currentHoldTimes = section.HoldTime;
             //rightFullChart.AddRange(currentChart);
             currentChart.ForEach(item => rightFullChart.Add(item));
             currentHoldTimes.ForEach(item => rightFullHold.Add(item));
 
-        }    
+        }
         song.notesLeft = leftFullChart.ToArray();
         song.notesDown = downFullChart.ToArray();
         song.notesUp = upFullChart.ToArray();
@@ -149,6 +161,10 @@ public class ExportSong : MonoBehaviour
         song.holdNotesDown = downFullHold.ToArray();
         song.holdNotesUp = upFullHold.ToArray();
         song.holdNotesRight = rightFullHold.ToArray();
+
+
+
+
 
 
         //if song name is empty just default to name
@@ -180,12 +196,13 @@ public class Exporting
     public string songName = "DefaultSusName";
     public int bpm = 150;
     public float scrollSpeed = 7f;
-    
+
     //probally i should not use booleans, but i'm too lazy to change
-    public bool[] notesLeft;
-    public bool[] notesDown;
-    public bool[] notesUp;
-    public bool[] notesRight;
+    //Changed from booleans :3
+    public float[] notesLeft;
+    public float[] notesDown;
+    public float[] notesUp;
+    public float[] notesRight;
 
     public int[] holdNotesLeft;
     public int[] holdNotesDown;

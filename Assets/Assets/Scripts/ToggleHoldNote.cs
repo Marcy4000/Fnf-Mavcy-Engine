@@ -7,8 +7,9 @@ using UnityEngine.EventSystems;
 public class ToggleHoldNote : MonoBehaviour
 {
     public int HoldNoteTime = 0;
-    public Toggle toggle;
-    public HoldNoteMenu noteMenu;
+    [HideInInspector]public Toggle toggle;
+    [HideInInspector]public HoldNoteMenu noteMenu;
+    public GameObject holdNoteThing;
 
     private void Start()
     {
@@ -32,6 +33,7 @@ public class ToggleHoldNote : MonoBehaviour
     public void AddToCounter()
     {
         HoldNoteTime++;
+        AddUiElement();
     }
 
     public void SubtractFromCounter()
@@ -39,6 +41,23 @@ public class ToggleHoldNote : MonoBehaviour
         if (HoldNoteTime > 0)
         {
             HoldNoteTime--;
+            AddUiElement();
+        }
+    }
+
+    public void AddUiElement()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (transform.GetChild(i).CompareTag("HoldNote"))
+            {
+                Destroy(GetComponent<Transform>().GetChild(i).gameObject);
+            }
+        }
+        for (int i = 0; i < HoldNoteTime; i++)
+        {
+            GameObject swagName;
+            swagName = Instantiate(holdNoteThing, this.transform);
         }
     }
 }

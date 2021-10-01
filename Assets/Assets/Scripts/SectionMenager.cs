@@ -7,6 +7,7 @@ using TMPro;
 public class SectionMenager : MonoBehaviour
 {
     public TMP_Text counter;
+    public TMP_InputField bpm;
 
     public int sectionId;
     public int highestSectionIdSelected;

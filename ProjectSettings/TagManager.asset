@@ -8,6 +8,7 @@ TagManager:
   - DownSection
   - UpSection
   - RightSection
+  - HoldNote
   layers:
   - Default
   - TransparentFX

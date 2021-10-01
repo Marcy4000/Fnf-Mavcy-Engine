@@ -26,7 +26,7 @@ public class FreeplayMenu : MonoBehaviour
             Button thing = Instantiate(button, contents.content.transform);
             text = thing.GetComponentInChildren<TMP_Text>();
             text.text = info[i].Name;
-            totalHeight = totalHeight + 84;
+            totalHeight += 84;
         }
         contents.content.sizeDelta = new Vector2(0, totalHeight);
     }
