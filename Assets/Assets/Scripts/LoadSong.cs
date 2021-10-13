@@ -10,7 +10,7 @@ public class LoadSong : MonoBehaviour
     public int bpm;
     public float scrollSpeed;
     public string songName = "Giuseppe";
-    public Songdata songdata;
+    //public Songdata songdata;
 
     [SerializeField] Exported song = new Exported();
 
@@ -47,7 +47,7 @@ public class LoadSong : MonoBehaviour
 
         Variables.Scene(gameObject).Set("Bpm", song.bpm);
         Variables.Scene(gameObject).Set("ScrollSpeed", song.scrollSpeed);
-        songdata.bpm = song.bpm;
+        //songdata.bpm = song.bpm;
         scrollSpeed = song.scrollSpeed;
         bpm = song.bpm;
 
@@ -69,11 +69,11 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesLeft[i] != 0)
             {
-                GameObject currentNote = Object.Instantiate(leftNote, new Vector3(1243, song.notesLeft[i] - 80f, 0), Quaternion.identity, LeftSection.transform);
+                GameObject currentNote = Object.Instantiate(leftNote, new Vector3(1243, (song.notesLeft[i]) * song.scrollSpeed , 0), Quaternion.identity, LeftSection.transform);
                 if (song.holdNotesLeft[i] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
-                    currentNote.GetComponent<Note>().holdTime = song.holdNotesLeft[i];
+                    currentNote.GetComponent<Note>().holdTime = song.holdNotesLeft[i] * (int)scrollSpeed;
                 }
             }
 
@@ -82,7 +82,7 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesDown[l] != 0)
             {
-                GameObject currentNote = Object.Instantiate(DownNote, new Vector3(1393, song.notesDown[l] - 80f, 0), Quaternion.identity, DownSection.transform);
+                GameObject currentNote = Object.Instantiate(DownNote, new Vector3(1393, (song.notesDown[l]) * song.scrollSpeed, 0), Quaternion.identity, DownSection.transform);
                 if (song.holdNotesDown[l] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
@@ -95,7 +95,7 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesUp[k] != 0)
             {
-                GameObject currentNote = Object.Instantiate(UpNote, new Vector3(1543, song.notesUp[k] - 80f, 0), Quaternion.identity, UpSection.transform);
+                GameObject currentNote = Object.Instantiate(UpNote, new Vector3(1543, (song.notesUp[k]) * song.scrollSpeed, 0), Quaternion.identity, UpSection.transform);
                 if (song.holdNotesUp[k] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
@@ -108,7 +108,7 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesRight[q] != 0)
             {
-                GameObject currentNote = Object.Instantiate(RightNote, new Vector3(1693, song.notesRight[q] - 80f, 0), Quaternion.identity, RightSection.transform);
+                GameObject currentNote = Object.Instantiate(RightNote, new Vector3(1693, (song.notesRight[q]) * song.scrollSpeed, 0), Quaternion.identity, RightSection.transform);
                 if (song.holdNotesRight[q] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
