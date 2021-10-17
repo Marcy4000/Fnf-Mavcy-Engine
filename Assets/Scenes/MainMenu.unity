@@ -585,7 +585,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1480}
+  m_SizeDelta: {x: 1920, y: 2080.508}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &219538691
 MonoBehaviour:
@@ -3194,6 +3194,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8970433695156456936, guid: 03ad83fb790c7834fb98647860965e4a, type: 3}
   m_PrefabInstance: {fileID: 8970433696076079009}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1462882891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8970433695156456938, guid: 03ad83fb790c7834fb98647860965e4a, type: 3}
+  m_PrefabInstance: {fileID: 8970433696076079009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462882888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1462882893
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4722,6 +4733,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 719457671}
     m_Modifications:
+    - target: {fileID: 2681061003584786799, guid: 12681b78e807d874088b6c430372e046, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2080.508
+      objectReference: {fileID: 0}
     - target: {fileID: 2681061003846003004, guid: 12681b78e807d874088b6c430372e046, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4923,6 +4938,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8970433695156456938, guid: 03ad83fb790c7834fb98647860965e4a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970433695156456938, guid: 03ad83fb790c7834fb98647860965e4a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970433695156456938, guid: 03ad83fb790c7834fb98647860965e4a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970433695156456938, guid: 03ad83fb790c7834fb98647860965e4a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8970433695156456939, guid: 03ad83fb790c7834fb98647860965e4a, type: 3}
       propertyPath: item
       value: 
@@ -4935,6 +4966,10 @@ PrefabInstance:
       propertyPath: blackFade
       value: 
       objectReference: {fileID: 1323742596}
+    - target: {fileID: 8970433695156456939, guid: 03ad83fb790c7834fb98647860965e4a, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 1462882891}
     - target: {fileID: 8970433695156456939, guid: 03ad83fb790c7834fb98647860965e4a, type: 3}
       propertyPath: scrollSound
       value: 

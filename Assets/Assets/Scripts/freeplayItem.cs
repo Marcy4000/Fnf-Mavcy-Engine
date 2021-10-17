@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class freeplayItem : MonoBehaviour
 {
     public FreeplayMenu freeplay;
+    public string songName;
     public int id;
 
     private void Start()
@@ -14,7 +15,6 @@ public class freeplayItem : MonoBehaviour
         GameObject gameObject1;
         gameObject1 = GameObject.Find("FreeplayMenu");
         freeplay = gameObject1.GetComponent<FreeplayMenu>();
-
     }
 
     public void LoadSong(TMP_Text songName)
@@ -26,7 +26,7 @@ public class freeplayItem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return) && freeplay.selectedItem == id)
         {
-            StartCoroutine(ActuallyLoadSong(this.GetComponent<TMP_Text>().text));
+            StartCoroutine(ActuallyLoadSong(songName));
         }
     }
 

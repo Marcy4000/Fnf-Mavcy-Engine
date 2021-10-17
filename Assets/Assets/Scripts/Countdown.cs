@@ -27,17 +27,17 @@ public class Countdown : MonoBehaviour
         hasCoundDownStarted = true;
         countdown.SetBool("IsActive", true);
         three.Play();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(Songdata.crotchet);
 
         two.Play();
         countdown.SetTrigger("Ready?");
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(Songdata.crotchet);
 
         one.Play();
         countdown.SetTrigger("Set");
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(Songdata.crotchet);
 
         go.Play();
         countdown.SetTrigger("Go");

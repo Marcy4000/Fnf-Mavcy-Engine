@@ -11,10 +11,16 @@ public class NoteCheckThing : MonoBehaviour
     public Animator bfAnimator;
     public KeyCode keyToCheck;
     public int bfSingValue;
+    public List<GameObject> notes;
+    public List<float> notesToCheck;
+    public float currentNoteToCheck;
+    public float nextNoteToCheck;
+    public int currentIndex;
+
 
     public HealthBar healthBar;
 
-    private void OnTriggerStay2D(Collider2D collision)
+    /*private void OnTriggerStay2D(Collider2D collision)
     {
         GameObject note;
         note = collision.gameObject;
@@ -24,7 +30,7 @@ public class NoteCheckThing : MonoBehaviour
             StartCoroutine(DestroyNote(note));
         }
 
-    }
+    }*/
 
     private void Update()
     {
@@ -47,6 +53,26 @@ public class NoteCheckThing : MonoBehaviour
                 }
             }
         }
+
+        if (clicked)
+        {
+            StartCoroutine(CheckNote());
+        }
+        if (Songdata.barNumber > currentNoteToCheck && nextNoteToCheck != -1)
+        {
+            currentIndex++;
+            currentNoteToCheck = nextNoteToCheck;
+            healthBar.SubtractHp();
+            if (currentIndex < notesToCheck.Count - 1)
+            {
+                nextNoteToCheck = notesToCheck[currentIndex + 1];
+            }
+            else
+            {
+                nextNoteToCheck = -1;
+            }
+        }
+
     }
 
     IEnumerator SetClicked()
@@ -58,7 +84,34 @@ public class NoteCheckThing : MonoBehaviour
         clicked = false;
     }
 
-    IEnumerator DestroyNote(GameObject noteObject)
+    IEnumerator CheckNote()
+    {
+        if (Songdata.barNumber == currentNoteToCheck)
+        {
+            colliding = true;
+            arrowAnimator.SetFloat("Fuck", 2);
+            Destroy(notes[currentIndex]);
+            bfAnimator.SetBool("Singing", true);
+            bfAnimator.SetFloat("Blend", bfSingValue);
+            healthBar.AddHp();
+            currentIndex++;
+            currentNoteToCheck = nextNoteToCheck;
+            if (currentIndex < notesToCheck.Count - 1)
+            {
+                nextNoteToCheck = notesToCheck[currentIndex + 1];
+            }
+            else
+            {
+                nextNoteToCheck = -1;
+            }
+
+            yield return new WaitForSeconds(0.1f);
+
+            colliding = false;
+        }
+    }
+    
+    /*IEnumerator DestroyNote(GameObject noteObject)
     {
         Destroy(noteObject);
         colliding = true;
@@ -71,5 +124,5 @@ public class NoteCheckThing : MonoBehaviour
         
         colliding = false;
 
-    }
+    }*/
 }

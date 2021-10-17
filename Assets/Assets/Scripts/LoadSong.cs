@@ -7,6 +7,8 @@ public class LoadSong : MonoBehaviour
 {
     [HideInInspector] public GameObject scene;
 
+    public BfAnimations bf;
+
     public int bpm;
     public float scrollSpeed;
     public string songName = "Giuseppe";
@@ -33,6 +35,8 @@ public class LoadSong : MonoBehaviour
     GridLayoutGroup UpThing;
     GridLayoutGroup RightThing;
 
+    public NoteCheckThing leftChecker, downChecker, upChecker, rightChecker; 
+
     void Start()
     {
         GameObject scene = GameObject.Find("Scene Variables");
@@ -47,7 +51,7 @@ public class LoadSong : MonoBehaviour
 
         Variables.Scene(gameObject).Set("Bpm", song.bpm);
         Variables.Scene(gameObject).Set("ScrollSpeed", song.scrollSpeed);
-        //songdata.bpm = song.bpm;
+        Songdata.bpm = song.bpm;
         scrollSpeed = song.scrollSpeed;
         bpm = song.bpm;
 
@@ -64,12 +68,24 @@ public class LoadSong : MonoBehaviour
             GlobalDataSfutt.GoToMainMenu();
         }
 
+        if (Songdata.bpm != 0)
+        {
+            bf.crocket = 60 / Songdata.bpm;
+        }
+        Songdata.Initialize();
 
         for (int i = 0; i < song.notesLeft.Length; i++)//Left
         {
             if (song.notesLeft[i] != 0)
             {
-                GameObject currentNote = Object.Instantiate(leftNote, new Vector3(1243, (song.notesLeft[i]) * song.scrollSpeed , 0), Quaternion.identity, LeftSection.transform);
+                GameObject currentNote = Object.Instantiate(leftNote, new Vector3(1243, (song.notesLeft[i]) - 100, 0), Quaternion.identity, LeftSection.transform);
+                leftChecker.notesToCheck.Add((song.notesLeft[i] / 150 * -1));
+                leftChecker.notes.Add(currentNote);
+                if (leftChecker.notesToCheck[0] > -0.1f && leftChecker.notesToCheck[0] < 0.1f || leftChecker.notesToCheck[0] == 0.0006666667f)
+                {
+                    leftChecker.notesToCheck[0] = 0;
+                    leftChecker.currentNoteToCheck = 0;
+                }
                 if (song.holdNotesLeft[i] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
@@ -82,7 +98,14 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesDown[l] != 0)
             {
-                GameObject currentNote = Object.Instantiate(DownNote, new Vector3(1393, (song.notesDown[l]) * song.scrollSpeed, 0), Quaternion.identity, DownSection.transform);
+                GameObject currentNote = Object.Instantiate(DownNote, new Vector3(1393, (song.notesDown[l]) - 100, 0), Quaternion.identity, DownSection.transform);
+                downChecker.notesToCheck.Add((song.notesDown[l] / 150 * -1));
+                downChecker.notes.Add(currentNote);
+                if (downChecker.notesToCheck[0] > -0.1f && downChecker.notesToCheck[0] < 0.1f || downChecker.notesToCheck[0] == 0.0006666667f)
+                {
+                    downChecker.notesToCheck[0] = 0;
+                    downChecker.currentNoteToCheck = 0;
+                }
                 if (song.holdNotesDown[l] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
@@ -95,7 +118,14 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesUp[k] != 0)
             {
-                GameObject currentNote = Object.Instantiate(UpNote, new Vector3(1543, (song.notesUp[k]) * song.scrollSpeed, 0), Quaternion.identity, UpSection.transform);
+                GameObject currentNote = Object.Instantiate(UpNote, new Vector3(1543, (song.notesUp[k]) - 100, 0), Quaternion.identity, UpSection.transform);
+                upChecker.notesToCheck.Add((song.notesUp[k] / 150 * -1));
+                upChecker.notes.Add(currentNote);
+                if (upChecker.notesToCheck[0] > -0.1f && upChecker.notesToCheck[0] < 0.1f || upChecker.notesToCheck[0] == 0.0006666667f)
+                {
+                    upChecker.notesToCheck[0] = 0;
+                    upChecker.currentNoteToCheck = 0;
+                }
                 if (song.holdNotesUp[k] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
@@ -108,7 +138,14 @@ public class LoadSong : MonoBehaviour
         {
             if (song.notesRight[q] != 0)
             {
-                GameObject currentNote = Object.Instantiate(RightNote, new Vector3(1693, (song.notesRight[q]) * song.scrollSpeed, 0), Quaternion.identity, RightSection.transform);
+                GameObject currentNote = Object.Instantiate(RightNote, new Vector3(1693, (song.notesRight[q])- 100, 0), Quaternion.identity, RightSection.transform);
+                rightChecker.notesToCheck.Add((song.notesRight[q] / 150 * -1));
+                rightChecker.notes.Add(currentNote);
+                if (rightChecker.notesToCheck[0] > -0.1f && rightChecker.notesToCheck[0] < 0.1f || rightChecker.notesToCheck[0] == 0.0006666667f)
+                {
+                    rightChecker.notesToCheck[0] = 0;
+                    rightChecker.currentNoteToCheck = 0;
+                }
                 if (song.holdNotesRight[q] > 0)
                 {
                     currentNote.GetComponent<Note>().isHoldNote = true;
@@ -117,7 +154,24 @@ public class LoadSong : MonoBehaviour
             }
 
         }
+        leftChecker.currentNoteToCheck = leftChecker.notesToCheck[0];
+        leftChecker.nextNoteToCheck = leftChecker.notesToCheck[1];
+        
+        downChecker.currentNoteToCheck = downChecker.notesToCheck[0];
+        downChecker.nextNoteToCheck = downChecker.notesToCheck[1];
+        
+        upChecker.currentNoteToCheck = upChecker.notesToCheck[0];
+        upChecker.nextNoteToCheck = upChecker.notesToCheck[1];
+        
+        rightChecker.currentNoteToCheck = rightChecker.notesToCheck[0];
+        rightChecker.nextNoteToCheck = rightChecker.notesToCheck[1];
 
+        
+    }
+
+    private void Update()
+    {
+        Songdata.SetSongTime(inst);
     }
 
     public void DeactivateBitches()

@@ -56,12 +56,17 @@ public class CreateSectionLeft : MonoBehaviour
         {
             if (Values[i] == true)
             {
-                noteTime.Add((((150 * i) + crocket) + (2400 + crocket) * SectionId) * -1);
+                noteTime.Add(((150 * i) + 2400 * SectionId) * -1);
             }
             else
             {
                 noteTime.Add(0);
             }
+        }
+
+        if (Values[0] == true && SectionId == 0)
+        {
+            noteTime[0] = 0.1f;
         }
     }
 

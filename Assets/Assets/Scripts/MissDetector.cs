@@ -17,6 +17,6 @@ public class MissDetector : MonoBehaviour
         Destroy(note);
         misses++;
         missCounter.text = "Misses: " + misses;
-        healthBar.SubtractHp();
+        //healthBar.SubtractHp();
     }
 }

@@ -29,7 +29,7 @@ public class ExportSong : MonoBehaviour
     public List<int> upFullHold;
     public List<int> rightFullHold;
 
-    public AudioSource inst = new AudioSource(), voices = new AudioSource();
+    public AudioSource inst, voices;
     public static float songTime;
 
 
@@ -53,14 +53,14 @@ public class ExportSong : MonoBehaviour
         menager = manager.GetComponent<SectionMenager>();
         try
         {
-            inst.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3"));
-            voices.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Voices.mp3"));
+            inst.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/" + "Inst.mp3"));
+            voices.clip = NAudioPlayer.FromMp3Data(File.ReadAllBytes(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/" + "Voices.mp3"));
             Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3");
             songTime = inst.clip.length;
         }
         catch (System.Exception)
         {
-            Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3" + "file path does not exist u idiot, going to main menu");
+            Debug.Log(Application.persistentDataPath + "/Songs/" + song.songName + "/" + "Inst.mp3" + " file path does not exist u idiot");
         }
 
     }
@@ -75,6 +75,19 @@ public class ExportSong : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && inst.isPlaying == false)
+        {
+            inst.Play();
+            voices.Play();
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && inst.isPlaying == true)
+        {
+            inst.Stop();
+            voices.Stop();
+            inst.time = 0;
+            voices.time = 0;
         }
 
     }
@@ -161,10 +174,6 @@ public class ExportSong : MonoBehaviour
         song.holdNotesDown = downFullHold.ToArray();
         song.holdNotesUp = upFullHold.ToArray();
         song.holdNotesRight = rightFullHold.ToArray();
-
-
-
-
 
 
         //if song name is empty just default to name
