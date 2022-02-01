@@ -5,7 +5,7 @@ using UnityEngine;
 public class Countdown : MonoBehaviour
 {
     public GoUp notes;
-    public LoadSong songLoader;
+    //public LoadSong songLoader;
 
     public bool hasCountDownFinished;
     public bool hasCoundDownStarted;
@@ -17,7 +17,7 @@ public class Countdown : MonoBehaviour
 
     public Animator countdown;
 
-    private void OnEnable()
+    public void CountdownStart()
     {
         StartCoroutine(StartCountDown());
     }
@@ -43,7 +43,7 @@ public class Countdown : MonoBehaviour
         countdown.SetTrigger("Go");
         hasCountDownFinished = true;
         countdown.SetBool("IsActive", false);
-        songLoader.inst.Play();
-        songLoader.voices.Play();
+        //songLoader.inst.Play();
+        //songLoader.voices.Play();
     }
 }

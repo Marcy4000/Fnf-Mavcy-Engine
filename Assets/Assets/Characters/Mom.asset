@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24131dd96d9e38a4bbd6d648e2cab4ef, type: 3}
+  m_Name: Mom
+  m_EditorClassIdentifier: 
+  Name: mom
+  overrideAnimator: {fileID: 22100000, guid: 72db72fa6de75d243a57adf04207f572, type: 2}
+  icon: {fileID: -1793737574000532837, guid: cbb0b51cda366874194c913c100c4a32, type: 3}
+  deadIcon: {fileID: 1770722092851887759, guid: cbb0b51cda366874194c913c100c4a32, type: 3}
+  iconSize: {x: 108, y: 120}

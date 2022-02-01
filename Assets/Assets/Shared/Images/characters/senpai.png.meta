@@ -1,7 +1,127 @@
 fileFormatVersion: 2
 guid: 8dd0431dda1ead143a01376484cdf280
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7346882345934223237
+    second: senpai_0
+  - first:
+      213: -7618288906410357586
+    second: senpai_1
+  - first:
+      213: -1043566686563807459
+    second: senpai_2
+  - first:
+      213: -3337870025928867562
+    second: senpai_3
+  - first:
+      213: -4997482321563912647
+    second: senpai_4
+  - first:
+      213: 5841531896687866344
+    second: senpai_5
+  - first:
+      213: -1412500255316932188
+    second: senpai_6
+  - first:
+      213: 7826411055982394869
+    second: senpai_7
+  - first:
+      213: 6340616889070333524
+    second: senpai_8
+  - first:
+      213: 2291477736427791800
+    second: senpai_9
+  - first:
+      213: 3470607323273554308
+    second: senpai_10
+  - first:
+      213: 1486421927773104089
+    second: senpai_11
+  - first:
+      213: -1529548123284434381
+    second: senpai_12
+  - first:
+      213: 4357012683921041313
+    second: senpai_13
+  - first:
+      213: 5824513127287159482
+    second: senpai_14
+  - first:
+      213: 2098858853596991225
+    second: senpai_15
+  - first:
+      213: -4608936400455987748
+    second: senpai_16
+  - first:
+      213: 4513596298979102948
+    second: senpai_17
+  - first:
+      213: -7112744431758731707
+    second: senpai_18
+  - first:
+      213: -6421684507810532299
+    second: senpai_19
+  - first:
+      213: -4695217689643605427
+    second: senpai_20
+  - first:
+      213: -2196953351061073191
+    second: senpai_21
+  - first:
+      213: -2726836150633525622
+    second: senpai_22
+  - first:
+      213: -5563680134731607712
+    second: senpai_23
+  - first:
+      213: -6690223678666449331
+    second: senpai_24
+  - first:
+      213: -7458937379713900026
+    second: senpai_25
+  - first:
+      213: -381783611871968879
+    second: senpai_26
+  - first:
+      213: -2858184990902596507
+    second: senpai_27
+  - first:
+      213: 8784382776898373663
+    second: senpai_28
+  - first:
+      213: 3382532455156102874
+    second: senpai_29
+  - first:
+      213: -2134610401967691912
+    second: senpai_30
+  - first:
+      213: -6737219220954466619
+    second: senpai_31
+  - first:
+      213: -7244898056159501499
+    second: senpai_32
+  - first:
+      213: -5337249668744070467
+    second: senpai_33
+  - first:
+      213: 1877710414796199264
+    second: senpai_34
+  - first:
+      213: -1509671021863854644
+    second: senpai_35
+  - first:
+      213: 6173483706233229211
+    second: senpai_36
+  - first:
+      213: 2734065837763516794
+    second: senpai_37
+  - first:
+      213: 3676091938739585554
+    second: senpai_38
+  - first:
+      213: -5304506875207727666
+    second: senpai_39
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +152,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +161,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +188,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +221,847 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: senpai_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 364
+        width: 59
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5877ff3719e55f560800000000000000
+      internalID: 7346882345934223237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 364
+        width: 58
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac8c116a96664690800000000000000
+      internalID: -7618288906410357586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_2
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 365
+        width: 66
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fceeba0a18481f0800000000000000
+      internalID: -1043566686563807459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_3
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 365
+        width: 63
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611061e65e08da1d0800000000000000
+      internalID: -3337870025928867562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_4
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 365
+        width: 63
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93673eb6e4065aab0800000000000000
+      internalID: -4997482321563912647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_5
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 365
+        width: 67
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1b13e6f4a411150800000000000000
+      internalID: 5841531896687866344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_6
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 365
+        width: 67
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a98fa4608ac56ce0800000000000000
+      internalID: -1412500255316932188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_7
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 364
+        width: 55
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd350aa36ffc9c60800000000000000
+      internalID: 7826411055982394869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_8
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 364
+        width: 57
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e21e177756ef750800000000000000
+      internalID: 6340616889070333524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_9
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 365
+        width: 62
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5ae7a4cd6fccf10800000000000000
+      internalID: 2291477736427791800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_10
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 365
+        width: 60
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489e692f8f21a2030800000000000000
+      internalID: 3470607323273554308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_11
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 359
+        width: 60
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7644f2ed4d0a410800000000000000
+      internalID: 1486421927773104089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_12
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 359
+        width: 62
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33214c4f514f5cae0800000000000000
+      internalID: -1529548123284434381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_13
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 365
+        width: 63
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a72cfa93f7377c30800000000000000
+      internalID: 4357012683921041313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_14
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 365
+        width: 62
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abafc8564d3d4d050800000000000000
+      internalID: 5824513127287159482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_15
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 191
+        width: 59
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe0552d105a02d10800000000000000
+      internalID: 2098858853596991225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_16
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 191
+        width: 61
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd047253c4c900c0800000000000000
+      internalID: -4608936400455987748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_17
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 191
+        width: 65
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0da2c7be383ae30800000000000000
+      internalID: 4513596298979102948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_18
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 191
+        width: 63
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54612eecf947a4d90800000000000000
+      internalID: -7112744431758731707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_19
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 185
+        width: 64
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534f254b6f791e6a0800000000000000
+      internalID: -6421684507810532299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_20
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 185
+        width: 66
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42a9a9336c37deb0800000000000000
+      internalID: -4695217689643605427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_21
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 191
+        width: 66
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d296e1319ad281e0800000000000000
+      internalID: -2196953351061073191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_22
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 191
+        width: 65
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e8bc8e7f4582ad0800000000000000
+      internalID: -2726836150633525622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_23
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 191
+        width: 65
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061dc652566d9c2b0800000000000000
+      internalID: -5563680134731607712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_24
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 191
+        width: 67
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4edd25b20d8723a0800000000000000
+      internalID: -6690223678666449331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_25
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 191
+        width: 67
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6022548e8f78c7890800000000000000
+      internalID: -7458937379713900026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_26
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 191
+        width: 67
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1914e49e3d1a3baf0800000000000000
+      internalID: -381783611871968879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_27
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 191
+        width: 67
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cc5e2e4efa558d0800000000000000
+      internalID: -2858184990902596507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_28
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 191
+        width: 67
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18461c089568e970800000000000000
+      internalID: 8784382776898373663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_29
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 191
+        width: 66
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad63fc6b85b21fe20800000000000000
+      internalID: 3382532455156102874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_30
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 18
+        width: 66
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877acd826275062e0800000000000000
+      internalID: -2134610401967691912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_31
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 18
+        width: 65
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6331950d69082a0800000000000000
+      internalID: -6737219220954466619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_32
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 18
+        width: 65
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543e1b06a93f47b90800000000000000
+      internalID: -7244898056159501499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_33
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 18
+        width: 65
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba30f844b74ee5b0800000000000000
+      internalID: -5337249668744070467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_34
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 18
+        width: 65
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0659af87ca7fe0a10800000000000000
+      internalID: 1877710414796199264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_35
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 18
+        width: 67
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd9a1644329c0be0800000000000000
+      internalID: -1509671021863854644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_36
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 18
+        width: 67
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f81b8e8be9ca550800000000000000
+      internalID: 6173483706233229211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_37
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 18
+        width: 67
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79dc6cc46a51f520800000000000000
+      internalID: 2734065837763516794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_38
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 18
+        width: 67
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212004a342a140330800000000000000
+      internalID: 3676091938739585554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: senpai_39
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 18
+        width: 67
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec540aaf91b9266b0800000000000000
+      internalID: -5304506875207727666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

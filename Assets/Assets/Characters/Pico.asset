@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24131dd96d9e38a4bbd6d648e2cab4ef, type: 3}
+  m_Name: Pico
+  m_EditorClassIdentifier: 
+  Name: pico
+  overrideAnimator: {fileID: 22100000, guid: b145c467331557f47bfd361212f27703, type: 2}
+  flipX: 1
+  icon: {fileID: -4056849372604721465, guid: 520d664230fdbe04f9dec42d43fed59e, type: 3}
+  deadIcon: {fileID: 3061938214349762538, guid: 520d664230fdbe04f9dec42d43fed59e, type: 3}
+  iconSize: {x: 120, y: 98}

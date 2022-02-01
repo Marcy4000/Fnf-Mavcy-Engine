@@ -6,8 +6,18 @@ using System.IO;
 
 public static class GlobalDataSfutt
 {
-
     public static string songNameToLoad = "DefaultSusName";
+    public static int selectedStage = 0;
+    public static bool ghostTapping;
+    public static string[] stages = new string[]
+    {
+        "stage",
+        "spooky",
+        "alley",
+        "car",
+        "mall",
+        "school"
+    };
 
     public static void GoToMainMenu()
     {
@@ -36,9 +46,9 @@ public static class GlobalDataSfutt
 
     public static string GetFilePath(string songName)
     {
-        if (GlobalDataSfutt.songNameToLoad != "" || GlobalDataSfutt.songNameToLoad != null)
+        if (songNameToLoad != "" || songNameToLoad != null)
         {
-            return Application.persistentDataPath + "/" + GlobalDataSfutt.songNameToLoad;
+            return Application.persistentDataPath + "/" + songNameToLoad;
         }
         else
         {

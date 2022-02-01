@@ -20,11 +20,15 @@ public class HoldNoteMenu : MonoBehaviour
 
     public void AddToCounter()
     {
+        if (lastPlacedNote == null)
+            return;
         lastPlacedNote.GetComponent<ToggleHoldNote>().AddToCounter();
     }
 
     public void SubtToCounter()
     {
+        if (lastPlacedNote == null)
+            return;
         lastPlacedNote.GetComponent<ToggleHoldNote>().SubtractFromCounter();
     }
 

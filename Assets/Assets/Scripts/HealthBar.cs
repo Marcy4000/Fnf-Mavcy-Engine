@@ -7,11 +7,27 @@ using UnityEngine.SceneManagement;
 public class HealthBar : MonoBehaviour
 {
     public Slider hpBar;
+    public static HealthBar instance;
+    public Sprite bf, bfDed, opponent, opponentDed;
+    public Image playerIcon, opponentIcon;
+    private RectTransform playerRec, opponentRec;
     public int hp = 50;
+
+    private void Start()
+    {
+        instance = this;
+        playerRec = playerIcon.GetComponent<RectTransform>();
+        opponentRec = opponentIcon.GetComponent<RectTransform>();
+    }
+
+    public void Initialize()
+    {
+        playerIcon.sprite = bf;
+        opponentIcon.sprite = opponent;
+    }
 
     private void Update()
     {
-        hpBar.value = hp;
         if (hp > 100)
         {
             hp = 100;
@@ -22,20 +38,44 @@ public class HealthBar : MonoBehaviour
             hp = 0;
         }
 
+        hpBar.value = hp;
+
+        if (hp < 30 && bf != null)
+        {
+            playerIcon.sprite = bfDed;
+            playerRec.sizeDelta = new Vector2(bfDed.rect.width, bfDed.rect.height);
+        }
+        else
+        {
+            playerIcon.sprite = bf;
+            playerRec.sizeDelta = new Vector2(bf.rect.width, bf.rect.height);
+        }
+
+        if (hp > 70 && opponent != null)
+        {
+            opponentIcon.sprite = opponentDed;
+            opponentRec.sizeDelta = new Vector2(opponentDed.rect.width, opponentDed.rect.height);
+        }
+        else
+        {
+            opponentIcon.sprite = opponent;
+            opponentRec.sizeDelta = new Vector2(opponent.rect.width, opponent.rect.height);
+        }
+
         if (hp <= 0)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(3, LoadSceneMode.Single);
         }
 
     }
 
     public void AddHp()
     {
-        hp += 5;
+        hp += 2;
     }
 
     public void SubtractHp()
     {
-        hp -= 10;
+        hp -= 5;
     }
 }

@@ -14,15 +14,17 @@ public class GfBop : MonoBehaviour
     {
         gfAnimator = this.GetComponent<Animator>();
         lastBeat = 0;
-        if (Songdata.bpm != 0)
-        {
-            crocket = 60 / Songdata.bpm;
-        }
+        crocket = Songdata.crotchet;
+    }
+
+    private void OnEnable()
+    {
+        lastBeat = 0;
     }
 
     private void Update()
     {
-        if (Songdata.songPosition > lastBeat + crocket)
+        if (Songdata.songPosition > lastBeat + Songdata.crotchet)
         {
             switch (isLeft)
             {
@@ -36,7 +38,7 @@ public class GfBop : MonoBehaviour
                     break;
             }
 
-            lastBeat += crocket;
+            lastBeat += Songdata.crotchet;
         }
     }
 }

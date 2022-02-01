@@ -1,7 +1,97 @@
 fileFormatVersion: 2
 guid: df6d93a71467a5b499011abe62ba3357
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 9019777125958039094
+    second: Pico_FNF_assetss_0
+  - first:
+      213: -7446228981039608402
+    second: Pico_FNF_assetss_1
+  - first:
+      213: -1357258859385652021
+    second: Pico_FNF_assetss_2
+  - first:
+      213: 6952167331297485431
+    second: Pico_FNF_assetss_3
+  - first:
+      213: 2724624711296105449
+    second: Pico_FNF_assetss_4
+  - first:
+      213: 8510870190814905811
+    second: Pico_FNF_assetss_5
+  - first:
+      213: 4709896881436502213
+    second: Pico_FNF_assetss_6
+  - first:
+      213: -5825548334306978019
+    second: Pico_FNF_assetss_7
+  - first:
+      213: 1585028833417992551
+    second: Pico_FNF_assetss_8
+  - first:
+      213: -8428501397252869655
+    second: Pico_FNF_assetss_9
+  - first:
+      213: 4757326632579237341
+    second: Pico_FNF_assetss_10
+  - first:
+      213: -4410542145643635667
+    second: Pico_FNF_assetss_11
+  - first:
+      213: 526563564466154254
+    second: Pico_FNF_assetss_12
+  - first:
+      213: -4603364576209100539
+    second: Pico_FNF_assetss_13
+  - first:
+      213: 2990891871671998313
+    second: Pico_FNF_assetss_14
+  - first:
+      213: 4819017867657721941
+    second: Pico_FNF_assetss_15
+  - first:
+      213: -2409832844466844905
+    second: Pico_FNF_assetss_16
+  - first:
+      213: 1884707214073400291
+    second: Pico_FNF_assetss_17
+  - first:
+      213: 5555511740300939722
+    second: Pico_FNF_assetss_18
+  - first:
+      213: -7728164219040253919
+    second: Pico_FNF_assetss_19
+  - first:
+      213: 5293022405095171232
+    second: Pico_FNF_assetss_20
+  - first:
+      213: 3155313867394946293
+    second: Pico_FNF_assetss_21
+  - first:
+      213: 7014321853709892102
+    second: Pico_FNF_assetss_22
+  - first:
+      213: 8440896559953171735
+    second: Pico_FNF_assetss_23
+  - first:
+      213: 850761128735239235
+    second: Pico_FNF_assetss_24
+  - first:
+      213: 2893935216331439228
+    second: Pico_FNF_assetss_25
+  - first:
+      213: 4479548983792442225
+    second: Pico_FNF_assetss_26
+  - first:
+      213: 1636060474107394635
+    second: Pico_FNF_assetss_27
+  - first:
+      213: 7986371003894245258
+    second: Pico_FNF_assetss_28
+  - first:
+      213: -8090370797162711597
+    second: Pico_FNF_assetss_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +131,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,10 +155,34 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +191,637 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1666
+        width: 494
+        height: 382
+      alignment: 9
+      pivot: {x: 0.61336035, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6363ce9d18fac2d70800000000000000
+      internalID: 9019777125958039094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_1
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1656
+        width: 516
+        height: 392
+      alignment: 9
+      pivot: {x: 0.64728683, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead4aec813ea9a890800000000000000
+      internalID: -7446228981039608402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_2
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 1617
+        width: 495
+        height: 431
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bccf01a224c0a2de0800000000000000
+      internalID: -1357258859385652021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_3
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1623
+        width: 499
+        height: 425
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772ef098a5f0b7060800000000000000
+      internalID: 6952167331297485431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_4
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 1623
+        width: 499
+        height: 425
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb3e0f3dbfcfc520800000000000000
+      internalID: 2724624711296105449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_5
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 1588
+        width: 435
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5cbf4985fac1670800000000000000
+      internalID: 8510870190814905811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_6
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 1580
+        width: 442
+        height: 468
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c82eb2724aec5140800000000000000
+      internalID: 4709896881436502213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1102
+        width: 448
+        height: 468
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1793cfa7ae772fa0800000000000000
+      internalID: -5825548334306978019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_8
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1102
+        width: 443
+        height: 468
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76991ae73572ff510800000000000000
+      internalID: 1585028833417992551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_9
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1096
+        width: 444
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1fbd3a2a2f70b80800000000000000
+      internalID: -8428501397252869655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_10
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 1096
+        width: 442
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5046fed5b650240800000000000000
+      internalID: 4757326632579237341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_11
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1095
+        width: 443
+        height: 475
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c950e594b9ac2c0800000000000000
+      internalID: -4410542145643635667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_12
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 1108
+        width: 449
+        height: 462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b2ba3a5cabe4700800000000000000
+      internalID: 526563564466154254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_13
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 1106
+        width: 455
+        height: 464
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501a07fbe409d10c0800000000000000
+      internalID: -4603364576209100539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_14
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 1108
+        width: 449
+        height: 462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967dc949f48c18920800000000000000
+      internalID: 2990891871671998313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585
+        width: 458
+        height: 500
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558bff7e73790e240800000000000000
+      internalID: 4819017867657721941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_16
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 585
+        width: 459
+        height: 500
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b0c79bbcd8e8ed0800000000000000
+      internalID: -2409832844466844905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_17
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 585
+        width: 459
+        height: 500
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb0670c933d72a10800000000000000
+      internalID: 1884707214073400291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_18
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 609
+        width: 458
+        height: 475
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac156225e74291d40800000000000000
+      internalID: 5555511740300939722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_19
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 612
+        width: 442
+        height: 472
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128b83e969b00c490800000000000000
+      internalID: -7728164219040253919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_20
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 609
+        width: 458
+        height: 475
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4a1e375d7947940800000000000000
+      internalID: 5293022405095171232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_21
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 563
+        width: 442
+        height: 522
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f490fcae3de9cb20800000000000000
+      internalID: 3155313867394946293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_22
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 563
+        width: 444
+        height: 522
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a33aeff80e75160800000000000000
+      internalID: 7014321853709892102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 444
+        height: 522
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71553d113b6142570800000000000000
+      internalID: 8440896559953171735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_24
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 58
+        width: 432
+        height: 495
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c69f23db28ecb00800000000000000
+      internalID: 850761128735239235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_25
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 63
+        width: 432
+        height: 490
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cbd6c1fb2592820800000000000000
+      internalID: 2893935216331439228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_26
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 58
+        width: 432
+        height: 495
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b19ec211e8a2e30800000000000000
+      internalID: 4479548983792442225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_27
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 27
+        width: 451
+        height: 527
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a7a3e355474b610800000000000000
+      internalID: 1636060474107394635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_28
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 23
+        width: 444
+        height: 530
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87a89b4d1a45de60800000000000000
+      internalID: 7986371003894245258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pico_FNF_assetss_29
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 23
+        width: 444
+        height: 531
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d53ce5ef9a39bf80800000000000000
+      internalID: -8090370797162711597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

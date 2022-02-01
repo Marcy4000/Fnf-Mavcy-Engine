@@ -1,0 +1,1080 @@
+fileFormatVersion: 2
+guid: 9b0ac051f0893a246ad80e2c34752435
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6475391978579974325
+    second: animatedEvilSchool_0
+  - first:
+      213: 6639696788650201381
+    second: animatedEvilSchool_1
+  - first:
+      213: -4655383632990942026
+    second: animatedEvilSchool_2
+  - first:
+      213: 341016259180983658
+    second: animatedEvilSchool_3
+  - first:
+      213: 4950115675215031884
+    second: animatedEvilSchool_4
+  - first:
+      213: -989910961579547754
+    second: animatedEvilSchool_5
+  - first:
+      213: 4548307891426802620
+    second: animatedEvilSchool_6
+  - first:
+      213: -1214014088047575416
+    second: animatedEvilSchool_7
+  - first:
+      213: -1376114345800853759
+    second: animatedEvilSchool_8
+  - first:
+      213: 4650284643379253359
+    second: animatedEvilSchool_9
+  - first:
+      213: -161440740731762036
+    second: animatedEvilSchool_10
+  - first:
+      213: 58390909435470169
+    second: animatedEvilSchool_11
+  - first:
+      213: 28762066431238749
+    second: animatedEvilSchool_12
+  - first:
+      213: 8242920129892941417
+    second: animatedEvilSchool_13
+  - first:
+      213: 1030659988613865437
+    second: animatedEvilSchool_14
+  - first:
+      213: -4113737491772061553
+    second: animatedEvilSchool_15
+  - first:
+      213: -2820525512758477737
+    second: animatedEvilSchool_16
+  - first:
+      213: 8806521880152510490
+    second: animatedEvilSchool_17
+  - first:
+      213: -7882955855162274232
+    second: animatedEvilSchool_18
+  - first:
+      213: -2803609571944659873
+    second: animatedEvilSchool_19
+  - first:
+      213: -134765260061836840
+    second: animatedEvilSchool_20
+  - first:
+      213: -5286135348372116392
+    second: animatedEvilSchool_21
+  - first:
+      213: 4260117607348369291
+    second: animatedEvilSchool_22
+  - first:
+      213: 6017946733376126642
+    second: animatedEvilSchool_23
+  - first:
+      213: -5264441427711632889
+    second: animatedEvilSchool_24
+  - first:
+      213: 755681262904267141
+    second: animatedEvilSchool_25
+  - first:
+      213: 4940374379177377762
+    second: animatedEvilSchool_26
+  - first:
+      213: -6937958325091746
+    second: animatedEvilSchool_27
+  - first:
+      213: 2867339648779262001
+    second: animatedEvilSchool_28
+  - first:
+      213: 4981257185505465489
+    second: animatedEvilSchool_29
+  - first:
+      213: 4407074125816042990
+    second: animatedEvilSchool_30
+  - first:
+      213: 9118360927472615587
+    second: animatedEvilSchool_31
+  - first:
+      213: -3766910360717169772
+    second: animatedEvilSchool_32
+  - first:
+      213: 8159077679061712838
+    second: animatedEvilSchool_33
+  - first:
+      213: -5220693475249617370
+    second: animatedEvilSchool_34
+  - first:
+      213: -4027682903967802071
+    second: animatedEvilSchool_35
+  - first:
+      213: -4704337216126946815
+    second: animatedEvilSchool_36
+  - first:
+      213: -6935453351543493288
+    second: animatedEvilSchool_37
+  - first:
+      213: 108757410055089784
+    second: animatedEvilSchool_38
+  - first:
+      213: -1850698829390480404
+    second: animatedEvilSchool_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animatedEvilSchool_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3760
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b85ca842b63dd950800000000000000
+      internalID: 6475391978579974325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_1
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 3760
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5211cc7fc01f42c50800000000000000
+      internalID: 6639696788650201381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_2
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 3760
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc48664041c46fb0800000000000000
+      internalID: -4655383632990942026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_3
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 3760
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a657d1f1b788bb400800000000000000
+      internalID: 341016259180983658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_4
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 3760
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ee842daf752b440800000000000000
+      internalID: 4950115675215031884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_5
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 3760
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69329c7a9312342f0800000000000000
+      internalID: -989910961579547754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_6
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 3760
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbb995ede5de1f30800000000000000
+      internalID: 4548307891426802620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3238
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88eba997e94f62fe0800000000000000
+      internalID: -1214014088047575416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_8
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 3238
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10798302b4f07ece0800000000000000
+      internalID: -1376114345800853759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_9
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 3238
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f601311be31298040800000000000000
+      internalID: 4650284643379253359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_10
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 3238
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a486c608272cdf0800000000000000
+      internalID: -161440740731762036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_11
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 3238
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951630709327fc000800000000000000
+      internalID: 58390909435470169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_12
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 3238
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52e3a072fe266000800000000000000
+      internalID: 28762066431238749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_13
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 3238
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e7f2e6f2cb46270800000000000000
+      internalID: 8242920129892941417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2716
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf99898cc3ad4e00800000000000000
+      internalID: 1030659988613865437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_15
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 2716
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8848b7fb8119e6c0800000000000000
+      internalID: -4113737491772061553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_16
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 2716
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cba1c6dfa7bd8d0800000000000000
+      internalID: -2820525512758477737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_17
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 2716
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a101235bdfc073a70800000000000000
+      internalID: 8806521880152510490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_18
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 2716
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e87f85a6d1a9290800000000000000
+      internalID: -7882955855162274232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_19
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 2716
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f548a5fc2f39719d0800000000000000
+      internalID: -2803609571944659873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_20
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 2716
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d973f1c5b7312ef0800000000000000
+      internalID: -134765260061836840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2194
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ce4a568efd3a6b0800000000000000
+      internalID: -5286135348372116392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_22
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 2194
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87f26f846afe1b30800000000000000
+      internalID: 4260117607348369291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_23
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 2194
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be3b186baa048350800000000000000
+      internalID: 6017946733376126642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_24
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 2194
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ad568e962f0f6b0800000000000000
+      internalID: -5264441427711632889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_25
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 2194
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581d3d6da18bc7a00800000000000000
+      internalID: 755681262904267141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_26
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 2194
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2effe48925cbf8440800000000000000
+      internalID: 4940374379177377762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_27
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 2194
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e520192b6f957eff0800000000000000
+      internalID: -6937958325091746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_28
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1672
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13891eff736dac720800000000000000
+      internalID: 2867339648779262001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_29
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1672
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1945ae4b40bf02540800000000000000
+      internalID: 4981257185505465489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_30
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 1672
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee594185192192d30800000000000000
+      internalID: 4407074125816042990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_31
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1672
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a08ecfc3fcea8e70800000000000000
+      internalID: 9118360927472615587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_32
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 1672
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49be6b02cfe39bbc0800000000000000
+      internalID: -3766910360717169772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_33
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 1672
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfba43abedda3170800000000000000
+      internalID: 8159077679061712838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_34
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 1672
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6260c86d1fe5c87b0800000000000000
+      internalID: -5220693475249617370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_35
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1150
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92dd5190dbbca18c0800000000000000
+      internalID: -4027682903967802071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_36
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1150
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1027a110a36d6beb0800000000000000
+      internalID: -4704337216126946815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_37
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 1150
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d25f02ce150cf90800000000000000
+      internalID: -6935453351543493288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_38
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1150
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e6609c942628100800000000000000
+      internalID: 108757410055089784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatedEvilSchool_39
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 1150
+        width: 313
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebf2f7583ff056e0800000000000000
+      internalID: -1850698829390480404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -23,8 +23,8 @@ public class FreeplayMenu : MonoBehaviour
     void Start()
     {
         layoutGroup = contents.GetComponent<VerticalLayoutGroup>();
-        DirectoryInfo dir = new DirectoryInfo(Application.persistentDataPath);
-        FileInfo[] info = dir.GetFiles("*.json");
+        DirectoryInfo dir = new DirectoryInfo(Application.persistentDataPath + "/Songs/");
+        DirectoryInfo[] info = dir.GetDirectories();
         for (int i = 0; i < info.Length; i++)
         {
             TMP_Text text;
@@ -34,15 +34,8 @@ public class FreeplayMenu : MonoBehaviour
             itemComponent = lmao.GetComponent<freeplayItem>();
             itemComponent.id = i;
             text = lmao.GetComponent<TMP_Text>();
-            string toRemove = ".json";
-            string result = string.Empty;
-            int j = info[i].Name.IndexOf(toRemove);
-            if (i >= 0)
-            {
-                result = info[i].Name.Remove(j, toRemove.Length);
-            }
             itemComponent.songName = info[i].Name;
-            text.text = result;
+            text.text = info[i].Name;
 
             //totalHeight = totalHeight + 84;
         }
@@ -60,68 +53,68 @@ public class FreeplayMenu : MonoBehaviour
             selectedItem--;
             scrollSound.Play();
             currentPosition = layoutGroup.padding.top;
-            StartCoroutine(ChangeSomeValue(currentPosition, currentPosition + 210, 0.2f));
-            //StartCoroutine(MoveList(0));
+            //StartCoroutine(ChangeSomeValue(currentPosition, currentPosition + 210, 0.2f));
+            StartCoroutine(MoveList(0));
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             selectedItem++;
             scrollSound.Play();
             currentPosition = layoutGroup.padding.top;
-            StartCoroutine(ChangeSomeValue(currentPosition, currentPosition - 210, 0.2f));
-            //StartCoroutine(MoveList(1));
+            //StartCoroutine(ChangeSomeValue(currentPosition, currentPosition - 210, 0.2f));
+            StartCoroutine(MoveList(1));
         }
 
         if (selectedItem > lenght -1)
         {
             selectedItem = 0;
             currentPosition = layoutGroup.padding.top;
-            StartCoroutine(ChangeSomeValue(currentPosition, 0, 0.35f));
-            //StartCoroutine(MoveList(3));
+            //StartCoroutine(ChangeSomeValue(currentPosition, 0, 0.35f));
+            StartCoroutine(MoveList(3));
         }
         if (selectedItem < 0)
         {
             selectedItem = lenght - 1;
             currentPosition = layoutGroup.padding.top;
-            StartCoroutine(ChangeSomeValue(currentPosition, 210 * (lenght - 1) * -1, 0.35f));
-            //StartCoroutine(MoveList(2));
+            //StartCoroutine(ChangeSomeValue(currentPosition, 210 * (lenght - 1) * -1, 0.35f));
+            StartCoroutine(MoveList(2));
         }
     }
 
-    /*IEnumerator MoveList(int Operation)
+    IEnumerator MoveList(int Operation)
     {
         switch (Operation)
         {
             case 0:
-                for (int i = 0; i < 208 / 8; i++)
+                for (int i = 0; i < 26; i++)
                 {
                     layoutGroup.padding.top = layoutGroup.padding.top + 8;
                     yield return null;
                 }
                 break;
             case 1:
-                for (int i = 0; i < 208 / 8; i++)
+                for (int i = 0; i < 26; i++)
                 {
                     layoutGroup.padding.top = layoutGroup.padding.top - 8;
                     yield return null;
                 }
                 break;
             case 2:
-                for (int i = 0; i < (208 * lenght) / 28; i++)
+                for (int i = 0; i < (208 * lenght) / (8 * lenght); i++)
                 {
-                    layoutGroup.padding.top = layoutGroup.padding.top - 28;
+                    layoutGroup.padding.top = layoutGroup.padding.top - 8 * lenght;
                     yield return null;
                 }
                 break;
             case 3:
-                for (int i = 0; i < (208 * lenght) / 28; i++)
+                for (int i = 0; i < (208 * lenght) / (8 * lenght); i++)
                 {
-                    layoutGroup.padding.top = layoutGroup.padding.top + 28;
+                    layoutGroup.padding.top = layoutGroup.padding.top + 8 * lenght;
                     yield return null;
                 }
                 break;
         }
-    }*/
+    }
     
     //Lmao copied from stack overflow
     public IEnumerator ChangeSomeValue(int oldValue, int newValue, float duration)

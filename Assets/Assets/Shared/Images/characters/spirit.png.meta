@@ -1,7 +1,310 @@
 fileFormatVersion: 2
 guid: c85bbde355dde8944acbca64a97b0ffa
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5725872871977202542
+    second: spirit_0
+  - first:
+      213: -1471702141919712319
+    second: spirit_1
+  - first:
+      213: -5659215995960606092
+    second: spirit_2
+  - first:
+      213: -5582697401181791223
+    second: spirit_3
+  - first:
+      213: 6817623265196288906
+    second: spirit_4
+  - first:
+      213: 7611272092322606891
+    second: spirit_5
+  - first:
+      213: 2007515833843088714
+    second: spirit_6
+  - first:
+      213: -3416592585790598561
+    second: spirit_7
+  - first:
+      213: 3942238809178749475
+    second: spirit_8
+  - first:
+      213: 5436678746363273109
+    second: spirit_9
+  - first:
+      213: 2242726781748889297
+    second: spirit_10
+  - first:
+      213: 4660065455152096747
+    second: spirit_11
+  - first:
+      213: -5544563725776559377
+    second: spirit_12
+  - first:
+      213: -6551696575921378795
+    second: spirit_13
+  - first:
+      213: -3637765984856985554
+    second: spirit_14
+  - first:
+      213: -6860948090992023522
+    second: spirit_15
+  - first:
+      213: -5630265064704765186
+    second: spirit_16
+  - first:
+      213: -8230437835042249035
+    second: spirit_17
+  - first:
+      213: 6338908986874738720
+    second: spirit_18
+  - first:
+      213: 1375695330962443095
+    second: spirit_19
+  - first:
+      213: -9172128041825593802
+    second: spirit_20
+  - first:
+      213: -9149837693758358880
+    second: spirit_21
+  - first:
+      213: 1080707459172503068
+    second: spirit_22
+  - first:
+      213: -366644483770541635
+    second: spirit_23
+  - first:
+      213: 2558396664920578314
+    second: spirit_24
+  - first:
+      213: 9211487868712405418
+    second: spirit_25
+  - first:
+      213: 7245626572611395634
+    second: spirit_26
+  - first:
+      213: -8557381645670097887
+    second: spirit_27
+  - first:
+      213: -3043951731437981601
+    second: spirit_28
+  - first:
+      213: -1676877076396952876
+    second: spirit_29
+  - first:
+      213: 4095528381030439241
+    second: spirit_30
+  - first:
+      213: -6572863170343996910
+    second: spirit_31
+  - first:
+      213: 1536256810871396074
+    second: spirit_32
+  - first:
+      213: 4425666718453972618
+    second: spirit_33
+  - first:
+      213: 8018748759738316502
+    second: spirit_34
+  - first:
+      213: 6103074625829662139
+    second: spirit_35
+  - first:
+      213: -4330230160077108539
+    second: spirit_36
+  - first:
+      213: 883903351965109282
+    second: spirit_37
+  - first:
+      213: 1957286554736883909
+    second: spirit_38
+  - first:
+      213: 6423483841055712159
+    second: spirit_39
+  - first:
+      213: -7551530245214458208
+    second: spirit_40
+  - first:
+      213: 3957363508556230104
+    second: spirit_41
+  - first:
+      213: -2082138262772405317
+    second: spirit_42
+  - first:
+      213: -8497407369494896987
+    second: spirit_43
+  - first:
+      213: -3847935522821731595
+    second: spirit_44
+  - first:
+      213: 1737803002721438140
+    second: spirit_45
+  - first:
+      213: 5180788769907149414
+    second: spirit_46
+  - first:
+      213: -5443843754341959074
+    second: spirit_47
+  - first:
+      213: 4092746737532806825
+    second: spirit_48
+  - first:
+      213: -7629134312822250118
+    second: spirit_49
+  - first:
+      213: -1613163513106647731
+    second: spirit_50
+  - first:
+      213: -8256950065624714526
+    second: spirit_51
+  - first:
+      213: -2267153845399334023
+    second: spirit_52
+  - first:
+      213: -1574244094791964420
+    second: spirit_53
+  - first:
+      213: 2673617365644837189
+    second: spirit_54
+  - first:
+      213: 2414820118065595224
+    second: spirit_55
+  - first:
+      213: -4508511822032394374
+    second: spirit_56
+  - first:
+      213: -5928163067373027018
+    second: spirit_57
+  - first:
+      213: -6299465166327694977
+    second: spirit_58
+  - first:
+      213: -2967298582986334941
+    second: spirit_59
+  - first:
+      213: 8539460721496707966
+    second: spirit_60
+  - first:
+      213: -1202365820080666993
+    second: spirit_61
+  - first:
+      213: -7662371994504804969
+    second: spirit_62
+  - first:
+      213: -919672959444759509
+    second: spirit_63
+  - first:
+      213: -5180382176888735384
+    second: spirit_64
+  - first:
+      213: -3666726659226351260
+    second: spirit_65
+  - first:
+      213: -2752611440217533978
+    second: spirit_66
+  - first:
+      213: -1280213463519053736
+    second: spirit_67
+  - first:
+      213: -3547594117125234635
+    second: spirit_68
+  - first:
+      213: 2360312991584926143
+    second: spirit_69
+  - first:
+      213: -3105181496317250740
+    second: spirit_70
+  - first:
+      213: 622637243692151302
+    second: spirit_71
+  - first:
+      213: -2249688968288097155
+    second: spirit_72
+  - first:
+      213: -7236484770694853500
+    second: spirit_73
+  - first:
+      213: -2320109907886201760
+    second: spirit_74
+  - first:
+      213: 5214663864587679209
+    second: spirit_75
+  - first:
+      213: 6785310407523551874
+    second: spirit_76
+  - first:
+      213: -7965363061804218325
+    second: spirit_77
+  - first:
+      213: -5958535395957291030
+    second: spirit_78
+  - first:
+      213: -8772160932812726512
+    second: spirit_79
+  - first:
+      213: -4956235446147650303
+    second: spirit_80
+  - first:
+      213: 4076553985056388692
+    second: spirit_81
+  - first:
+      213: 4242363523570897238
+    second: spirit_82
+  - first:
+      213: 2044077091882015045
+    second: spirit_83
+  - first:
+      213: -2394317016605606026
+    second: spirit_84
+  - first:
+      213: 3269573475600250957
+    second: spirit_85
+  - first:
+      213: -2606705341027446964
+    second: spirit_86
+  - first:
+      213: 722604500449281860
+    second: spirit_87
+  - first:
+      213: -2536302983469837308
+    second: spirit_88
+  - first:
+      213: -3041971253519768778
+    second: spirit_89
+  - first:
+      213: -1862371369802590612
+    second: spirit_90
+  - first:
+      213: 8605110203742307571
+    second: spirit_91
+  - first:
+      213: 5905554039944424835
+    second: spirit_92
+  - first:
+      213: -1898328117133445841
+    second: spirit_93
+  - first:
+      213: -2626193080894746069
+    second: spirit_94
+  - first:
+      213: -7614060173119215419
+    second: spirit_95
+  - first:
+      213: 5434746061037497758
+    second: spirit_96
+  - first:
+      213: -7405691146088402710
+    second: spirit_97
+  - first:
+      213: 4860000508701547939
+    second: spirit_98
+  - first:
+      213: -3504595178237454525
+    second: spirit_99
+  - first:
+      213: 209082310075338917
+    second: spirit_100
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +335,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +344,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +371,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +404,2107 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spirit_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1464
+        width: 48
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e633f334a03667f40800000000000000
+      internalID: 5725872871977202542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1488
+        width: 48
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cba1b703b6739be0800000000000000
+      internalID: -1471702141919712319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_2
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1487
+        width: 46
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4724f85190d6671b0800000000000000
+      internalID: -5659215995960606092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1487
+        width: 47
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c1012ca464682b0800000000000000
+      internalID: -5582697401181791223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_4
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1487
+        width: 47
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ba6760d301d9e50800000000000000
+      internalID: 6817623265196288906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_5
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1488
+        width: 47
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fabb744aba0a960800000000000000
+      internalID: 7611272092322606891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_6
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 1554
+        width: 49
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d703db3012cdb10800000000000000
+      internalID: 2007515833843088714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_7
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 1428
+        width: 58
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52d7b52523d590d0800000000000000
+      internalID: -3416592585790598561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1230
+        width: 46
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32abbd06f45a5b630800000000000000
+      internalID: 3942238809178749475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_9
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1230
+        width: 45
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f16ead386f27b40800000000000000
+      internalID: 5436678746363273109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_10
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1231
+        width: 46
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6c5622024cf1f10800000000000000
+      internalID: 2242726781748889297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_11
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1230
+        width: 47
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5e86467d0eba040800000000000000
+      internalID: 4660065455152096747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_12
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1230
+        width: 48
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe26292faa0cd03b0800000000000000
+      internalID: -5544563725776559377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_13
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1232
+        width: 47
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a20143da2b315a0800000000000000
+      internalID: -6551696575921378795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_14
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 1298
+        width: 51
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20b9984c1f048dc0800000000000000
+      internalID: -3637765984856985554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_15
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 1171
+        width: 51
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18a606ef0409c0a0800000000000000
+      internalID: -6860948090992023522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_16
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 973
+        width: 46
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef21bfa01c74dd1b0800000000000000
+      internalID: -5630265064704765186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_17
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 974
+        width: 46
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b62f50556c97cd80800000000000000
+      internalID: -8230437835042249035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_18
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 974
+        width: 46
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028333a732458f750800000000000000
+      internalID: 6338908986874738720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_19
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 973
+        width: 48
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b0e216d93771310800000000000000
+      internalID: 1375695330962443095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_20
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 975
+        width: 47
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6361698542e06b080800000000000000
+      internalID: -9172128041825593802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_21
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 975
+        width: 46
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aabd0f681f350180800000000000000
+      internalID: -9149837693758358880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_22
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1040
+        width: 52
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e871255b17ffe00800000000000000
+      internalID: 1080707459172503068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_23
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 909
+        width: 52
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9100ad8ca69eaf0800000000000000
+      internalID: -366644483770541635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_24
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 717
+        width: 46
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0992273630418320800000000000000
+      internalID: 2558396664920578314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_25
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 716
+        width: 45
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa94c6b7967c5df70800000000000000
+      internalID: 9211487868712405418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_26
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 785
+        width: 48
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23022a39af2ad8460800000000000000
+      internalID: 7245626572611395634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_27
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 783
+        width: 48
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cd2627bb21e3980800000000000000
+      internalID: -8557381645670097887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_28
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 783
+        width: 49
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50343e1706b1c5d0800000000000000
+      internalID: -3043951731437981601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_29
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 786
+        width: 51
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d23d59fe298ab8e0800000000000000
+      internalID: -1676877076396952876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_30
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 785
+        width: 51
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94999de0d5d36d830800000000000000
+      internalID: 4095528381030439241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_31
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 786
+        width: 51
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212f56665cf78c4a0800000000000000
+      internalID: -6572863170343996910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_32
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 784
+        width: 52
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae693c71e61e15510800000000000000
+      internalID: 1536256810871396074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_33
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 777
+        width: 43
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8eb7b7ae602b6d30800000000000000
+      internalID: 4425666718453972618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_34
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 773
+        width: 43
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d67e470381584f60800000000000000
+      internalID: 8018748759738316502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_35
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 655
+        width: 48
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbde646690a72b450800000000000000
+      internalID: 6103074625829662139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_36
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 654
+        width: 49
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cacbe8ac9ee7e3c0800000000000000
+      internalID: -4330230160077108539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_37
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 657
+        width: 51
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c48ad5a61444c00800000000000000
+      internalID: 883903351965109282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_38
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 657
+        width: 51
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c87dba50cda92b10800000000000000
+      internalID: 1957286554736883909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_39
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 658
+        width: 52
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f936696358cc42950800000000000000
+      internalID: 6423483841055712159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_40
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 655
+        width: 52
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aeaf5f6043933790800000000000000
+      internalID: -7551530245214458208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_41
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 655
+        width: 51
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd669ed4216be630800000000000000
+      internalID: 3957363508556230104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_42
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 642
+        width: 43
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbba33a1842ca13e0800000000000000
+      internalID: -2082138262772405317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_43
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 642
+        width: 42
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae5875c405231a80800000000000000
+      internalID: -8497407369494896987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_44
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 530
+        width: 48
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa8a9b7703699ac0800000000000000
+      internalID: -3847935522821731595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_45
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 528
+        width: 48
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb981daaf9aed1810800000000000000
+      internalID: 1737803002721438140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_46
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 527
+        width: 48
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a06aeefebd5e740800000000000000
+      internalID: 5180788769907149414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_47
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 525
+        width: 49
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5af7b9b2f49374b0800000000000000
+      internalID: -5443843754341959074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_48
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 530
+        width: 41
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a62846397b5cc830800000000000000
+      internalID: 4092746737532806825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_50
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 527
+        width: 52
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4538ace454ec99e0800000000000000
+      internalID: -1613163513106647731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_51
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 529
+        width: 51
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2fc4a99ab696d80800000000000000
+      internalID: -8256950065624714526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_52
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 526
+        width: 60
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973dfc9e6937980e0800000000000000
+      internalID: -2267153845399334023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_53
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 524
+        width: 53
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf82b242659272ae0800000000000000
+      internalID: -1574244094791964420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_54
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 528
+        width: 50
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541839024d89a1520800000000000000
+      internalID: 2673617365644837189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_55
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 517
+        width: 43
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85344c56a1a238120800000000000000
+      internalID: 2414820118065595224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_56
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 515
+        width: 43
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a772c1e826c8e61c0800000000000000
+      internalID: -4508511822032394374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_57
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 514
+        width: 43
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63104a6591feabda0800000000000000
+      internalID: -5928163067373027018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_58
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 395
+        width: 49
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f793716aecdc398a0800000000000000
+      internalID: -6299465166327694977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_59
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 399
+        width: 48
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d549209a902d6d0800000000000000
+      internalID: -2967298582986334941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_60
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 397
+        width: 48
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73563e3842428670800000000000000
+      internalID: 8539460721496707966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_61
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 398
+        width: 49
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86450438a6505fe0800000000000000
+      internalID: -1202365820080666993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_62
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 398
+        width: 52
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795c3aa9449c9a590800000000000000
+      internalID: -7662371994504804969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_63
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 400
+        width: 51
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c43c6e05aac33f0800000000000000
+      internalID: -919672959444759509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_64
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 395
+        width: 54
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86938c16bd59b18b0800000000000000
+      internalID: -5180382176888735384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_65
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 395
+        width: 53
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469cb54d78b2d1dc0800000000000000
+      internalID: -3666726659226351260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_66
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 398
+        width: 51
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e15825aa72ccc9d0800000000000000
+      internalID: -2752611440217533978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_67
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 389
+        width: 43
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858364643a4cb3ee0800000000000000
+      internalID: -1280213463519053736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_68
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 388
+        width: 43
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5302c7942f964cec0800000000000000
+      internalID: -3547594117125234635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_69
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 385
+        width: 43
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9b82e092481c020800000000000000
+      internalID: 2360312991584926143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_70
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 269
+        width: 48
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43f4ec81ed28e4d0800000000000000
+      internalID: -3105181496317250740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_71
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 268
+        width: 48
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602f236364d04a800800000000000000
+      internalID: 622637243692151302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_72
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 269
+        width: 49
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ca21e7dcf77c0e0800000000000000
+      internalID: -2249688968288097155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_73
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 269
+        width: 52
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c853c0177d29b90800000000000000
+      internalID: -7236484770694853500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_74
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 271
+        width: 51
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064249cc4505dcfd0800000000000000
+      internalID: -2320109907886201760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_75
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 270
+        width: 51
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e570d708253e5840800000000000000
+      internalID: 5214663864587679209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_76
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 266
+        width: 53
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ac3339dd34a2e50800000000000000
+      internalID: 6785310407523551874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_77
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 270
+        width: 50
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2844226f78557190800000000000000
+      internalID: -7965363061804218325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_78
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 260
+        width: 43
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7cf5680a70f4da0800000000000000
+      internalID: -5958535395957291030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_79
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 260
+        width: 43
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f5327cb16034680800000000000000
+      internalID: -8772160932812726512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_80
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 259
+        width: 42
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d6b29fe1ae73bb0800000000000000
+      internalID: -4956235446147650303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_81
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 139
+        width: 48
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4563dfa3044d29830800000000000000
+      internalID: 4076553985056388692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_82
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 140
+        width: 49
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651948ec527efda30800000000000000
+      internalID: 4242363523570897238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_83
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 141
+        width: 52
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549142bf8450e5c10800000000000000
+      internalID: 2044077091882015045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_84
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 142
+        width: 51
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fbc89eb5da5ced0800000000000000
+      internalID: -2394317016605606026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_85
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 141
+        width: 50
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48313cc0cbdf5d20800000000000000
+      internalID: 3269573475600250957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_86
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 138
+        width: 53
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f02f1ad4f13dbd0800000000000000
+      internalID: -2606705341027446964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_87
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 140
+        width: 51
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447c062f6f4370a00800000000000000
+      internalID: 722604500449281860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_88
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 137
+        width: 43
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404548bdfdd3dccd0800000000000000
+      internalID: -2536302983469837308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_89
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 131
+        width: 43
+        height: 121
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6332101134fb8c5d0800000000000000
+      internalID: -3041971253519768778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_90
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 130
+        width: 42
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c661f0f3b178726e0800000000000000
+      internalID: -1862371369802590612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_91
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 12
+        width: 49
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f44623732e7b6770800000000000000
+      internalID: 8605110203742307571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_92
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 12
+        width: 52
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38da2c04c1eb4f150800000000000000
+      internalID: 5905554039944424835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_93
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 14
+        width: 52
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25ff1f92a8c7a5e0800000000000000
+      internalID: -1898328117133445841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_94
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 12
+        width: 50
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b221ead9e43ed8bd0800000000000000
+      internalID: -2626193080894746069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_95
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 8
+        width: 53
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8a7c21d9c655690800000000000000
+      internalID: -7614060173119215419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_96
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 12
+        width: 50
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9de79c7fb81c6b40800000000000000
+      internalID: 5434746061037497758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_97
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 2
+        width: 43
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae03521c323b93990800000000000000
+      internalID: -7405691146088402710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_98
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 2
+        width: 43
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad9f5996b0327340800000000000000
+      internalID: 4860000508701547939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_99
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1
+        width: 42
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3471c97e04d2d5fc0800000000000000
+      internalID: -3504595178237454525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spirit_100
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1
+        width: 43
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0dbd4d04fc6e200800000000000000
+      internalID: 209082310075338917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

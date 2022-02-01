@@ -1,7 +1,49 @@
 fileFormatVersion: 2
 guid: ed612e3379bc2ad46ae49b5d8a29b658
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4424313640468311424
+    second: spooky_kids_assets_0
+  - first:
+      213: 6079032802383464401
+    second: spooky_kids_assets_1
+  - first:
+      213: -5445022196847138624
+    second: spooky_kids_assets_2
+  - first:
+      213: -6953600494739663859
+    second: spooky_kids_assets_3
+  - first:
+      213: 488393354178294834
+    second: spooky_kids_assets_4
+  - first:
+      213: -9077604345339220318
+    second: spooky_kids_assets_5
+  - first:
+      213: -2019233168324887175
+    second: spooky_kids_assets_6
+  - first:
+      213: -7426111000021759205
+    second: spooky_kids_assets_7
+  - first:
+      213: -4893687815672667223
+    second: spooky_kids_assets_8
+  - first:
+      213: -2199193099676019109
+    second: spooky_kids_assets_9
+  - first:
+      213: 5108320300718177756
+    second: spooky_kids_assets_10
+  - first:
+      213: -5104694905602307573
+    second: spooky_kids_assets_11
+  - first:
+      213: 8855658548452146841
+    second: spooky_kids_assets_12
+  - first:
+      213: 2571420920528605063
+    second: spooky_kids_assets_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +83,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,10 +107,34 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +143,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spooky_kids_assets_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1521
+        width: 556
+        height: 527
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d6703a0d1566d30800000000000000
+      internalID: 4424313640468311424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_1
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1517
+        width: 558
+        height: 531
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7830c20201d5450800000000000000
+      internalID: 6079032802383464401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_2
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1640
+        width: 464
+        height: 408
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c82fc239256f64b0800000000000000
+      internalID: -5445022196847138624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_3
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 1639
+        width: 449
+        height: 409
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04df091139df7f90800000000000000
+      internalID: -6953600494739663859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_4
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 1477
+        width: 399
+        height: 571
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23475720b2f17c600800000000000000
+      internalID: 488393354178294834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_5
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 1482
+        width: 406
+        height: 566
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae638071fed50280800000000000000
+      internalID: -9077604345339220318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_6
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 1499
+        width: 382
+        height: 549
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dfe4bb12e3af3e0800000000000000
+      internalID: -2019233168324887175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_7
+      rect:
+        serializedVersion: 2
+        x: 3281
+        y: 1507
+        width: 380
+        height: 541
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b0515046721f890800000000000000
+      internalID: -7426111000021759205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_8
+      rect:
+        serializedVersion: 2
+        x: 3670
+        y: 1564
+        width: 358
+        height: 484
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a36c290cd0261cb0800000000000000
+      internalID: -4893687815672667223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 973
+        width: 354
+        height: 495
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5612551785ea71e0800000000000000
+      internalID: -2199193099676019109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_10
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 935
+        width: 493
+        height: 532
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd393b9f3664e640800000000000000
+      internalID: 5108320300718177756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_11
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 943
+        width: 482
+        height: 525
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a04d8770b7829b0800000000000000
+      internalID: -5104694905602307573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_12
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 943
+        width: 442
+        height: 524
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e34a0d78e95ea70800000000000000
+      internalID: 8855658548452146841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spooky_kids_assets_13
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 934
+        width: 437
+        height: 533
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f8d1804b58fa320800000000000000
+      internalID: 2571420920528605063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

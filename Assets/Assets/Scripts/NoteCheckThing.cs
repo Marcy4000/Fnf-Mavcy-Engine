@@ -54,10 +54,10 @@ public class NoteCheckThing : MonoBehaviour
             }
         }
 
-        if (clicked)
-        {
+        //if (clicked)
+        //{
             StartCoroutine(CheckNote());
-        }
+        //}
         if (Songdata.barNumber > currentNoteToCheck && nextNoteToCheck != -1)
         {
             currentIndex++;

@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 2d51762930168e347b678527d3e37eae
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5534044693895506206
+    second: DADDY_DEAREST_0
+  - first:
+      213: -7538622500390714866
+    second: DADDY_DEAREST_1
+  - first:
+      213: 1330997969342809946
+    second: DADDY_DEAREST_2
+  - first:
+      213: -7026948129458906877
+    second: DADDY_DEAREST_3
+  - first:
+      213: -8463712068902222107
+    second: DADDY_DEAREST_4
+  - first:
+      213: 6708086091001061094
+    second: DADDY_DEAREST_5
+  - first:
+      213: 1964456690050906328
+    second: DADDY_DEAREST_6
+  - first:
+      213: 686936115519466795
+    second: DADDY_DEAREST_7
+  - first:
+      213: 3795078565991522380
+    second: DADDY_DEAREST_8
+  - first:
+      213: -3847010828987720937
+    second: DADDY_DEAREST_9
+  - first:
+      213: 5837718398635915532
+    second: DADDY_DEAREST_10
+  - first:
+      213: -7450719209943066530
+    second: DADDY_DEAREST_11
+  - first:
+      213: 1221542713190270956
+    second: DADDY_DEAREST_12
+  - first:
+      213: -4474852956063795539
+    second: DADDY_DEAREST_13
+  - first:
+      213: 6093249990374796752
+    second: DADDY_DEAREST_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,10 +110,34 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +146,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DADDY_DEAREST_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1256
+        width: 465
+        height: 792
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19e6c61450eccc40800000000000000
+      internalID: 5534044693895506206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_1
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1255
+        width: 452
+        height: 793
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02c178f6ce616790800000000000000
+      internalID: -7538622500390714866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_2
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1255
+        width: 452
+        height: 793
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57c177e997a87210800000000000000
+      internalID: 1330997969342809946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_3
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1318
+        width: 470
+        height: 730
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309918818e34b7e90800000000000000
+      internalID: -7026948129458906877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_4
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1313
+        width: 463
+        height: 735
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e685eb47bada8a80800000000000000
+      internalID: -8463712068902222107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_5
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1230
+        width: 409
+        height: 818
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee5bd042c8e71d50800000000000000
+      internalID: 6708086091001061094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_6
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 1239
+        width: 409
+        height: 809
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8bf1393f6234b10800000000000000
+      internalID: 1964456690050906328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_7
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 1239
+        width: 409
+        height: 809
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2dacece1cc788900800000000000000
+      internalID: 686936115519466795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_8
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 1290
+        width: 430
+        height: 758
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40af9c39d3daa430800000000000000
+      internalID: 3795078565991522380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 424
+        height: 757
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b1b1b880cac9ac0800000000000000
+      internalID: -3847010828987720937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 489
+        width: 420
+        height: 767
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09b47934fdb30150800000000000000
+      internalID: 5837718398635915532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_11
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 479
+        width: 371
+        height: 777
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e581a2aaa5ab99890800000000000000
+      internalID: -7450719209943066530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_12
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 551
+        width: 420
+        height: 767
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce74ca920aac3f010800000000000000
+      internalID: 1221542713190270956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_13
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 546
+        width: 420
+        height: 767
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6f5bbf1f026e1c0800000000000000
+      internalID: -4474852956063795539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DADDY_DEAREST_14
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 531
+        width: 424
+        height: 758
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd21f335929f8450800000000000000
+      internalID: 6093249990374796752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

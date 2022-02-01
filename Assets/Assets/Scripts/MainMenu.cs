@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public Animator storyButton;
     public Animator freeplayButton;
     public Animator optionsButton;
+    public Animator bgAnimator;
 
     public AudioSource scrollMenu;
     public AudioSource selectMenu;
@@ -40,6 +41,8 @@ public class MainMenu : MonoBehaviour
         {
             selectedMenu = 2;
         }
+
+        bgAnimator.SetInteger("SelectedMenu", selectedMenu);
 
         CheckMenuState();
 

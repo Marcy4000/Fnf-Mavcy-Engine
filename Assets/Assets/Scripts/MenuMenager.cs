@@ -26,10 +26,14 @@ public class MenuMenager : MonoBehaviour
 
     public AudioSource selectSound;
     public AudioSource backSound;
+    public AudioSource song;
 
     public bool IsClicked;
 
-    
+    private void Start()
+    {
+        Songdata.Initialize(102f);
+    }
 
     // Update is called once per frame
     void Update()
@@ -42,6 +46,8 @@ public class MenuMenager : MonoBehaviour
         {
             StartCoroutine(LoadMainMenu());
         }
+
+        Songdata.SetSongTime(song);
 
     }
 
@@ -68,7 +74,7 @@ public class MenuMenager : MonoBehaviour
 
         blackFade.SetTrigger("Transition");
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.2f);
 
         IsClicked = false;
         startMenu.SetActive(false);
@@ -83,7 +89,7 @@ public class MenuMenager : MonoBehaviour
         backSound.Play();
         blackFade.SetTrigger("Transition");
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.2f);
 
         IsClicked = false;
         optionsMenu.SetActive(false);
