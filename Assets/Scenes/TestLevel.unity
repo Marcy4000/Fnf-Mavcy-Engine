@@ -3429,6 +3429,7 @@ MonoBehaviour:
   gf: {fileID: 3319478636160043844}
   songStarted: 0
   blackFade: {fileID: 599306790}
+  ratingObject: {fileID: 3236426512051180831, guid: bcc0e44782d48a34880adccfad5dd0f1, type: 3}
 --- !u!1 &1252344179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3845,6 +3846,15 @@ MonoBehaviour:
   playerIcon: {fileID: 629317848}
   opponentIcon: {fileID: 301001028}
   hp: 50
+  score: 0
+  playerOneStats:
+    highestSickCombo: 0
+    currentSickCombo: 0
+    hitNotes: 0
+    totalNoteHits: 0
+    currentScore: 0
+    missedHits: 0
+  scoreText: {fileID: 1330517335}
 --- !u!1 &1330517333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,8 +3889,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.813599, y: -525.2112}
-  m_SizeDelta: {x: 619.6272, y: 29.5776}
+  m_AnchoredPosition: {x: 0.001049, y: -525.2112}
+  m_SizeDelta: {x: 847.55, y: 29.5776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1330517335
 MonoBehaviour:
@@ -3945,7 +3955,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}

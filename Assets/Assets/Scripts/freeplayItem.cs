@@ -8,6 +8,7 @@ public class freeplayItem : MonoBehaviour
 {
     public FreeplayMenu freeplay;
     public string songName;
+    public PlayerStat songStats;
     public int id;
 
     private void Start()

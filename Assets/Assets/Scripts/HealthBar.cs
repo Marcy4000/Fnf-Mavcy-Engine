@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class HealthBar : MonoBehaviour
 {
@@ -11,7 +13,9 @@ public class HealthBar : MonoBehaviour
     public Sprite bf, bfDed, opponent, opponentDed;
     public Image playerIcon, opponentIcon;
     private RectTransform playerRec, opponentRec;
-    public int hp = 50;
+    public int hp = 50, score = 0;
+    public PlayerStat playerOneStats;
+    public TMP_Text scoreText;
 
     private void Start()
     {
@@ -77,5 +81,36 @@ public class HealthBar : MonoBehaviour
     public void SubtractHp()
     {
         hp -= 5;
+    }
+
+    public void AddHp(int amount)
+    {
+        hp += amount;
+    }
+
+    public void SubtractHp(int amount)
+    {
+        hp -= amount;
+    }
+
+    public void UpdateScoringInfo()
+    {
+        if (!Player.playAsEnemy || Player.twoPlayers || Player.demoMode)
+        {
+            float accuracyPercent;
+            if (playerOneStats.totalNoteHits != 0)
+            {
+                var accuracy = (float)playerOneStats.hitNotes / playerOneStats.totalNoteHits;
+                accuracyPercent = (float)Math.Round(accuracy, 4);
+                accuracyPercent *= 100;
+            }
+            else
+            {
+                accuracyPercent = 0;
+            }
+
+            scoreText.text =
+                $"Score: {playerOneStats.currentScore} Accuracy: {accuracyPercent}% Combo: {playerOneStats.currentSickCombo} ({playerOneStats.highestSickCombo}) Misses: {playerOneStats.missedHits}";
+        }
     }
 }

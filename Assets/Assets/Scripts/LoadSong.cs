@@ -8,6 +8,7 @@ using System.Linq;
 using NaughtyAttributes;
 using System.Diagnostics;
 using UnityEngine.SceneManagement;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class LoadSong : MonoBehaviour
 {
@@ -64,6 +65,7 @@ public class LoadSong : MonoBehaviour
     public bool songStarted;
     private bool exiting;
     public Animator blackFade;
+    public GameObject ratingObject;
 
     private string jsonDir;
     #endregion
@@ -106,6 +108,7 @@ public class LoadSong : MonoBehaviour
 
         if (songStarted && Songdata.songPosition >= inst.clip.length && !exiting)
         {
+            SaveStats();
             StartCoroutine(GoToMainMenu());
         }
 
@@ -113,6 +116,20 @@ public class LoadSong : MonoBehaviour
         {
             StartCoroutine(GoToMainMenu());
         }
+    }
+
+    private void SaveStats()
+    {
+        string destination = Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/stats.dat";
+        FileStream file;
+
+        if (File.Exists(destination)) file = File.OpenWrite(destination);
+        else file = File.Create(destination);
+
+        PlayerStat data = HealthBar.instance.playerOneStats;
+        BinaryFormatter bf = new BinaryFormatter();
+        bf.Serialize(file, data);
+        file.Close();
     }
 
     IEnumerator GoToMainMenu()
@@ -421,7 +438,15 @@ public class LoadSong : MonoBehaviour
     }
 
     #region nonLoadSongCode
-    
+
+    public enum Rating
+    {
+        Sick = 1,
+        Good = 2,
+        Bad = 3,
+        Shit = 4
+    }
+
     public void NoteHit(NoteObject note)
     {
         if (note == null) return;
@@ -442,7 +467,6 @@ public class LoadSong : MonoBehaviour
         switch (player)
         {
             case 1:
-                HealthBar.instance.AddHp();
                 switch (noteType)
                 {
                     case 0:
@@ -489,161 +513,84 @@ public class LoadSong : MonoBehaviour
                 //AnimateNote(2, noteType, "Activated");
                 break;
         }
-        /*
-        bool modifyScore = true;
-
-        if (player == 1 & Player.playAsEnemy & !Player.twoPlayers)
-            modifyScore = false;
-        else if (player == 2 & !Player.playAsEnemy & !Player.twoPlayers)
-            modifyScore = false;
-
-        if (Player.demoMode) modifyScore = true;
-
-        CameraMovement.instance.focusOnPlayerOne = note.layer == 1;
 
         Rating rating;
-        if (!note.susNote & modifyScore)
+
+        float noteDiff = Math.Abs(note.strumTime - stopwatch.ElapsedMilliseconds + Player.visualOffset + Player.inputOffset);
+
+        if (noteDiff > 0.9 * Player.safeZoneOffset) // way early or late
+            rating = Rating.Shit;
+        else if (noteDiff > .75 * Player.safeZoneOffset) // early or late
+            rating = Rating.Bad;
+        else if (noteDiff > .35 * Player.safeZoneOffset) // your kinda there
+            rating = Rating.Good;
+        else
+            rating = Rating.Sick;
+
+        if (!note.susNote)
         {
             if (player == 1)
             {
-                playerOneStats.totalNoteHits++;
+                HealthBar.instance.playerOneStats.totalNoteHits++;
+                RateObject ratingObj = Instantiate(ratingObject).GetComponent<RateObject>();
+                ratingObj.SetSprite((int)rating);
             }
-            else
-            {
-                playerTwoStats.totalNoteHits++;
-            }
-
-            float yPos = note.transform.position.y;
-
-            GameObject newRatingObject = Instantiate(ratingObject);
-
-            Vector3 ratingPos = newRatingObject.transform.position;
-            if (player == 2)
-            {
-                ratingPos.x = -ratingPos.x;
-                newRatingObject.transform.position = ratingPos;
-            }
-
-
-            var ratingObjectScript = newRatingObject.GetComponent<RatingObject>();
-
-            // Rating and difference calulations from FNF Week 6 update
-
-            float noteDiff = Math.Abs(note.strumTime - stopwatch.ElapsedMilliseconds + Player.visualOffset + Player.inputOffset);
-
-            if (noteDiff > 0.9 * Player.safeZoneOffset) // way early or late
-                rating = Rating.Shit;
-            else if (noteDiff > .75 * Player.safeZoneOffset) // early or late
-                rating = Rating.Bad;
-            else if (noteDiff > .35 * Player.safeZoneOffset) // your kinda there
-                rating = Rating.Good;
-            else
-                rating = Rating.Sick;
 
             switch (rating)
             {
                 case Rating.Sick:
                     {
-                        ratingObjectScript.sprite.sprite = sickSprite;
-
-                        if (!invertHealth)
-                            health += 5;
-                        else
-                            health -= 5;
                         if (player == 1)
                         {
-                            playerOneStats.currentSickCombo++;
-                            playerOneStats.currentScore += 10;
-                        }
-                        else
-                        {
-                            playerTwoStats.currentSickCombo++;
-                            playerTwoStats.currentScore += 10;
+                            HealthBar.instance.AddHp(5);
+                            HealthBar.instance.playerOneStats.currentSickCombo++;
+                            HealthBar.instance.playerOneStats.currentScore += 10;
                         }
                         break;
                     }
                 case Rating.Good:
                     {
-                        ratingObjectScript.sprite.sprite = goodSprite;
-
-                        if (!invertHealth)
-                            health += 2;
-                        else
-                            health -= 2;
-
                         if (player == 1)
                         {
-                            playerOneStats.currentSickCombo++;
-                            playerOneStats.currentScore += 5;
-                        }
-                        else
-                        {
-                            playerTwoStats.currentSickCombo++;
-                            playerTwoStats.currentScore += 5;
+                            HealthBar.instance.AddHp(2);
+                            HealthBar.instance.playerOneStats.currentSickCombo++;
+                            HealthBar.instance.playerOneStats.currentScore += 5;
                         }
                         break;
                     }
                 case Rating.Bad:
                     {
-                        ratingObjectScript.sprite.sprite = badSprite;
-
-                        if (!invertHealth)
-                            health += 1;
-                        else
-                            health -= 1;
-
                         if (player == 1)
                         {
-                            playerOneStats.currentSickCombo++;
-                            playerOneStats.currentScore += 1;
-                        }
-                        else
-                        {
-                            playerTwoStats.currentSickCombo++;
-                            playerTwoStats.currentScore += 1;
+                            HealthBar.instance.AddHp(1);
+                            HealthBar.instance.playerOneStats.currentSickCombo++;
+                            HealthBar.instance.playerOneStats.currentScore += 1;
                         }
                         break;
                     }
                 case Rating.Shit:
-                    ratingObjectScript.sprite.sprite = shitSprite;
-
-                    if (player == 1)
                     {
-                        playerOneStats.currentSickCombo = 0;
+                        if (player == 1)
+                        {
+                            HealthBar.instance.SubtractHp(2);
+                            HealthBar.instance.playerOneStats.currentSickCombo = 0;
+                        }
+                        break;
                     }
-                    else
-                    {
-                        playerTwoStats.currentSickCombo = 0;
-                    }
-                    break;
             }
 
             if (player == 1)
             {
-                if (playerOneStats.highestSickCombo < playerOneStats.currentSickCombo)
+                if (HealthBar.instance.playerOneStats.highestSickCombo < HealthBar.instance.playerOneStats.currentSickCombo)
                 {
-                    playerOneStats.highestSickCombo = playerOneStats.currentSickCombo;
+                    HealthBar.instance.playerOneStats.highestSickCombo = HealthBar.instance.playerOneStats.currentSickCombo;
                 }
-                playerOneStats.hitNotes++;
-            }
-            else
-            {
-                if (playerTwoStats.highestSickCombo < playerTwoStats.currentSickCombo)
-                {
-                    playerTwoStats.highestSickCombo = playerTwoStats.currentSickCombo;
-                }
-                playerTwoStats.hitNotes++;
+                HealthBar.instance.playerOneStats.hitNotes++;
             }
 
-
-
-
-            _currentRatingLayer++;
-            ratingObjectScript.sprite.sortingOrder = _currentRatingLayer;
-            ratingLayerTimer = _ratingLayerDefaultTime;
+            HealthBar.instance.UpdateScoringInfo();
         }
 
-        UpdateScoringInfo();*/
         if (player == 1)
         {
             player1NotesObjects[noteType].Remove(note);
@@ -654,7 +601,6 @@ public class LoadSong : MonoBehaviour
         }
 
         Destroy(note.gameObject);
-
     }
 
     public void NoteMiss(NoteObject note)
@@ -675,7 +621,7 @@ public class LoadSong : MonoBehaviour
         switch (player)
         {
             case 1:
-                HealthBar.instance.SubtractHp();
+                HealthBar.instance.SubtractHp(8);
                 switch (noteType)
                 {
                     case 0:
@@ -719,37 +665,20 @@ public class LoadSong : MonoBehaviour
                 break;
         }
 
-        /*bool modifyHealth = true;
-
-        if (player == 1 & Player.playAsEnemy & !Player.twoPlayers)
-            modifyHealth = false;
-        else if (player == 2 & !Player.playAsEnemy & !Player.twoPlayers)
-            modifyHealth = false;
-
-        if (modifyHealth)
-        {
-            if (!invertHealth)
-                health -= 8;
-            else
-                health += 8;
-        }
-
         if (player == 1)
         {
-            playerOneStats.currentScore -= 5;
-            playerOneStats.currentSickCombo = 0;
-            playerOneStats.missedHits++;
-            playerOneStats.totalNoteHits++;
-        }
-        else
-        {
-            playerTwoStats.currentScore -= 5;
-            playerTwoStats.currentSickCombo = 0;
-            playerTwoStats.missedHits++;
-            playerTwoStats.totalNoteHits++;
+            RateObject ratingObj = Instantiate(ratingObject).GetComponent<RateObject>();
+            ratingObj.SetSprite(4);
         }
 
-        UpdateScoringInfo();*/
+        HealthBar.instance.playerOneStats.currentScore -= 5;
+        HealthBar.instance.playerOneStats.currentSickCombo = 0;
+        HealthBar.instance.playerOneStats.missedHits++;
+        HealthBar.instance.playerOneStats.totalNoteHits++;
+
+        HealthBar.instance.UpdateScoringInfo();
+
+        
 
     }
 

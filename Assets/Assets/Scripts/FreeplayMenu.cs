@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class FreeplayMenu : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class FreeplayMenu : MonoBehaviour
     public AudioSource scrollSound;
     private VerticalLayoutGroup layoutGroup;
     public Image background;
+    public TMP_Text stats;
+    public freeplayItem[] items;
 
 
     //public int totalHeight;
@@ -25,21 +28,50 @@ public class FreeplayMenu : MonoBehaviour
         layoutGroup = contents.GetComponent<VerticalLayoutGroup>();
         DirectoryInfo dir = new DirectoryInfo(Application.persistentDataPath + "/Songs/");
         DirectoryInfo[] info = dir.GetDirectories();
+        items = new freeplayItem[info.Length];
         for (int i = 0; i < info.Length; i++)
         {
             TMP_Text text;
             freeplayItem itemComponent;
-            //Button thing = Instantiate(button, contents.content.transform);
             GameObject lmao = Instantiate(item, contents.transform);
             itemComponent = lmao.GetComponent<freeplayItem>();
             itemComponent.id = i;
+            itemComponent.songStats = LoadFile(Application.persistentDataPath + "/Songs/" + info[i].Name + "/stats.dat");
+            items[i] = itemComponent;
             text = lmao.GetComponent<TMP_Text>();
             itemComponent.songName = info[i].Name;
             text.text = info[i].Name;
-
-            //totalHeight = totalHeight + 84;
         }
         lenght = info.Length;
+    }
+
+    public PlayerStat LoadFile(string _destination)
+    {
+        string destination;
+
+        if (!string.IsNullOrWhiteSpace(_destination))
+        {
+            destination = _destination;
+        }
+        else
+        {
+            destination = Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/stats.dat";
+        }
+        
+        FileStream file;
+
+        if (File.Exists(destination)) file = File.OpenRead(destination);
+        else
+        {
+            Debug.LogError("File not found");
+            return null;
+        }
+
+        BinaryFormatter bf = new BinaryFormatter();
+        PlayerStat data = (PlayerStat)bf.Deserialize(file);
+        file.Close();
+        return data;
+
     }
 
     private void Update()
@@ -79,6 +111,8 @@ public class FreeplayMenu : MonoBehaviour
             //StartCoroutine(ChangeSomeValue(currentPosition, 210 * (lenght - 1) * -1, 0.35f));
             StartCoroutine(MoveList(2));
         }
+
+        stats.text = $"Stats:\nScore:{items[selectedItem].songStats.currentScore}\nMisses:{items[selectedItem].songStats.missedHits}\nCombo:{items[selectedItem].songStats.highestSickCombo}";
     }
 
     IEnumerator MoveList(int Operation)

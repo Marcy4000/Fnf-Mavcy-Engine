@@ -1,7 +1,220 @@
 fileFormatVersion: 2
 guid: 545a1b676771f1d49ae099ee94eeffa2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7470215404819118179
+    second: campaign_menu_UI_characters_0
+  - first:
+      213: -2072091930460830823
+    second: campaign_menu_UI_characters_1
+  - first:
+      213: -2440611316189695248
+    second: campaign_menu_UI_characters_2
+  - first:
+      213: -6491038351740522125
+    second: campaign_menu_UI_characters_3
+  - first:
+      213: -9061773867612345944
+    second: campaign_menu_UI_characters_4
+  - first:
+      213: 3992843148614914322
+    second: campaign_menu_UI_characters_5
+  - first:
+      213: -2047024387376384020
+    second: campaign_menu_UI_characters_6
+  - first:
+      213: -980524652431581936
+    second: campaign_menu_UI_characters_7
+  - first:
+      213: -482462932535643239
+    second: campaign_menu_UI_characters_8
+  - first:
+      213: -2931693691891943403
+    second: campaign_menu_UI_characters_9
+  - first:
+      213: 3646126095740081039
+    second: campaign_menu_UI_characters_10
+  - first:
+      213: -6476470449328067136
+    second: campaign_menu_UI_characters_11
+  - first:
+      213: -3817665899315730435
+    second: campaign_menu_UI_characters_12
+  - first:
+      213: 3692150883089417132
+    second: campaign_menu_UI_characters_13
+  - first:
+      213: -4021740068276035577
+    second: campaign_menu_UI_characters_14
+  - first:
+      213: 8500788739544228645
+    second: campaign_menu_UI_characters_15
+  - first:
+      213: 8005784170087265342
+    second: campaign_menu_UI_characters_16
+  - first:
+      213: 4272879483190574757
+    second: campaign_menu_UI_characters_17
+  - first:
+      213: 3670624628999219638
+    second: campaign_menu_UI_characters_18
+  - first:
+      213: -714917605837790436
+    second: campaign_menu_UI_characters_19
+  - first:
+      213: 9215590665008495068
+    second: campaign_menu_UI_characters_20
+  - first:
+      213: 3458385922936995563
+    second: campaign_menu_UI_characters_21
+  - first:
+      213: -184703443820731689
+    second: campaign_menu_UI_characters_22
+  - first:
+      213: -981042240415017631
+    second: campaign_menu_UI_characters_23
+  - first:
+      213: 3086923329011183596
+    second: campaign_menu_UI_characters_24
+  - first:
+      213: 5104656138913322729
+    second: campaign_menu_UI_characters_25
+  - first:
+      213: 2110761478945653504
+    second: campaign_menu_UI_characters_26
+  - first:
+      213: 4798577586353643397
+    second: campaign_menu_UI_characters_27
+  - first:
+      213: 6697548246205589807
+    second: campaign_menu_UI_characters_28
+  - first:
+      213: -7904060055446524665
+    second: campaign_menu_UI_characters_29
+  - first:
+      213: -3013559323555094162
+    second: campaign_menu_UI_characters_30
+  - first:
+      213: 1120699094646106791
+    second: campaign_menu_UI_characters_31
+  - first:
+      213: 2561757183848070602
+    second: campaign_menu_UI_characters_32
+  - first:
+      213: 6460741659281725010
+    second: campaign_menu_UI_characters_33
+  - first:
+      213: -7727413210725707106
+    second: campaign_menu_UI_characters_34
+  - first:
+      213: 1825054865645970500
+    second: campaign_menu_UI_characters_35
+  - first:
+      213: -539922515475391282
+    second: campaign_menu_UI_characters_36
+  - first:
+      213: 8559066328837062530
+    second: campaign_menu_UI_characters_37
+  - first:
+      213: 3602246121942691771
+    second: campaign_menu_UI_characters_38
+  - first:
+      213: 7902518056769083643
+    second: campaign_menu_UI_characters_39
+  - first:
+      213: 6948803366476262381
+    second: campaign_menu_UI_characters_40
+  - first:
+      213: 9105858826718742505
+    second: campaign_menu_UI_characters_41
+  - first:
+      213: -6630195988101732967
+    second: campaign_menu_UI_characters_42
+  - first:
+      213: -3937219523009397497
+    second: campaign_menu_UI_characters_43
+  - first:
+      213: -3325869625168554788
+    second: campaign_menu_UI_characters_44
+  - first:
+      213: 6161963294790889106
+    second: campaign_menu_UI_characters_45
+  - first:
+      213: -6789349635611116445
+    second: campaign_menu_UI_characters_46
+  - first:
+      213: 396529554125235370
+    second: campaign_menu_UI_characters_47
+  - first:
+      213: -334742688659951144
+    second: campaign_menu_UI_characters_48
+  - first:
+      213: -8316832809918367550
+    second: campaign_menu_UI_characters_49
+  - first:
+      213: 4247243919262069305
+    second: campaign_menu_UI_characters_50
+  - first:
+      213: 3082728418951980618
+    second: campaign_menu_UI_characters_51
+  - first:
+      213: -7532257091163707928
+    second: campaign_menu_UI_characters_52
+  - first:
+      213: 4266562617226323901
+    second: campaign_menu_UI_characters_53
+  - first:
+      213: -6518164299111699381
+    second: campaign_menu_UI_characters_54
+  - first:
+      213: 805159084391325881
+    second: campaign_menu_UI_characters_55
+  - first:
+      213: 5158118799870946121
+    second: campaign_menu_UI_characters_56
+  - first:
+      213: 6146297266651280723
+    second: campaign_menu_UI_characters_57
+  - first:
+      213: 1801173935136182735
+    second: campaign_menu_UI_characters_58
+  - first:
+      213: -5894950304108872429
+    second: campaign_menu_UI_characters_59
+  - first:
+      213: -2615394467300929634
+    second: campaign_menu_UI_characters_60
+  - first:
+      213: -6965441827607764058
+    second: campaign_menu_UI_characters_61
+  - first:
+      213: 6836353550896188248
+    second: campaign_menu_UI_characters_62
+  - first:
+      213: 855864816847021172
+    second: campaign_menu_UI_characters_63
+  - first:
+      213: 6055463068048286556
+    second: campaign_menu_UI_characters_64
+  - first:
+      213: 4079128808809272637
+    second: campaign_menu_UI_characters_65
+  - first:
+      213: -8704310988731452327
+    second: campaign_menu_UI_characters_66
+  - first:
+      213: -4363802842613924356
+    second: campaign_menu_UI_characters_67
+  - first:
+      213: -2669058105369514913
+    second: campaign_menu_UI_characters_68
+  - first:
+      213: 7805063577398645138
+    second: campaign_menu_UI_characters_69
+  - first:
+      213: -2453773016734069332
+    second: campaign_menu_UI_characters_71
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +254,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,10 +278,34 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +314,1498 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3319
+        width: 873
+        height: 777
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d970b101ba6745890800000000000000
+      internalID: -7470215404819118179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_1
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 3314
+        width: 865
+        height: 782
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993cdee1e537e33e0800000000000000
+      internalID: -2072091930460830823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_2
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 3315
+        width: 865
+        height: 780
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2f6b750f4312ed0800000000000000
+      internalID: -2440611316189695248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_3
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 3319
+        width: 866
+        height: 777
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371b11592033be5a0800000000000000
+      internalID: -6491038351740522125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_4
+      rect:
+        serializedVersion: 2
+        x: 3484
+        y: 3330
+        width: 878
+        height: 765
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a96c02cdac1e3280800000000000000
+      internalID: -9061773867612345944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_5
+      rect:
+        serializedVersion: 2
+        x: 4365
+        y: 3336
+        width: 877
+        height: 759
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2115b0d40bd696730800000000000000
+      internalID: 3992843148614914322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_6
+      rect:
+        serializedVersion: 2
+        x: 5245
+        y: 3448
+        width: 700
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce77edf4a228793e0800000000000000
+      internalID: -2047024387376384020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_7
+      rect:
+        serializedVersion: 2
+        x: 5948
+        y: 3448
+        width: 700
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d5d4e060a7462f0800000000000000
+      internalID: -980524652431581936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_8
+      rect:
+        serializedVersion: 2
+        x: 6651
+        y: 3448
+        width: 700
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9937be0e482fd49f0800000000000000
+      internalID: -482462932535643239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_9
+      rect:
+        serializedVersion: 2
+        x: 7354
+        y: 3453
+        width: 700
+        height: 643
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518f688be188057d0800000000000000
+      internalID: -2931693691891943403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2681
+        width: 703
+        height: 635
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f839ed6bd54a99230800000000000000
+      internalID: 3646126095740081039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_11
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 2673
+        width: 700
+        height: 638
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd6c7da074fe16a0800000000000000
+      internalID: -6476470449328067136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_12
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 3009
+        width: 230
+        height: 301
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7e928671de40bc0800000000000000
+      internalID: -3817665899315730435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_13
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 2674
+        width: 700
+        height: 638
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca380b39aa72d3330800000000000000
+      internalID: 3692150883089417132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_14
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 2678
+        width: 700
+        height: 637
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700a37b47b8ef28c0800000000000000
+      internalID: -4021740068276035577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_15
+      rect:
+        serializedVersion: 2
+        x: 3484
+        y: 2688
+        width: 700
+        height: 639
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523ac2bc15ed8f570800000000000000
+      internalID: 8500788739544228645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_16
+      rect:
+        serializedVersion: 2
+        x: 4365
+        y: 2696
+        width: 704
+        height: 637
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e343f7649424a1f60800000000000000
+      internalID: 8005784170087265342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_17
+      rect:
+        serializedVersion: 2
+        x: 5245
+        y: 2802
+        width: 700
+        height: 643
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aef0a350415c4b30800000000000000
+      internalID: 4272879483190574757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_18
+      rect:
+        serializedVersion: 2
+        x: 5948
+        y: 2808
+        width: 704
+        height: 637
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b96c4bf6ada0f230800000000000000
+      internalID: 3670624628999219638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_19
+      rect:
+        serializedVersion: 2
+        x: 6655
+        y: 2912
+        width: 493
+        height: 532
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13ad5ca93a1416f0800000000000000
+      internalID: -714917605837790436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_20
+      rect:
+        serializedVersion: 2
+        x: 7354
+        y: 2807
+        width: 700
+        height: 643
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9bc3f22ea54ef70800000000000000
+      internalID: 9215590665008495068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_21
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2704
+        width: 230
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beefed07ca7aeff20800000000000000
+      internalID: 3458385922936995563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_22
+      rect:
+        serializedVersion: 2
+        x: 5072
+        y: 2163
+        width: 700
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2264a423dcf6df0800000000000000
+      internalID: -184703443820731689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_23
+      rect:
+        serializedVersion: 2
+        x: 5948
+        y: 2168
+        width: 700
+        height: 637
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165d866b743a262f0800000000000000
+      internalID: -981042240415017631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_24
+      rect:
+        serializedVersion: 2
+        x: 6651
+        y: 2168
+        width: 700
+        height: 637
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefe39a9964f6da20800000000000000
+      internalID: 3086923329011183596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_25
+      rect:
+        serializedVersion: 2
+        x: 7354
+        y: 2171
+        width: 704
+        height: 633
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6127476b167d640800000000000000
+      internalID: 5104656138913322729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2045
+        width: 699
+        height: 633
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003422eb16eea4d10800000000000000
+      internalID: 2110761478945653504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_27
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1912
+        width: 425
+        height: 758
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f92cd04e8f79240800000000000000
+      internalID: 4798577586353643397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_28
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 2368
+        width: 229
+        height: 301
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29ef1115a872fc50800000000000000
+      internalID: 6697548246205589807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_29
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 1903
+        width: 420
+        height: 767
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d61cfc1432f4290800000000000000
+      internalID: -7904060055446524665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_30
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1911
+        width: 424
+        height: 759
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61aee103cfad26d0800000000000000
+      internalID: -3013559323555094162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_31
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 1916
+        width: 429
+        height: 758
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aaab7c83e58d8f00800000000000000
+      internalID: 1120699094646106791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_32
+      rect:
+        serializedVersion: 2
+        x: 2881
+        y: 1907
+        width: 420
+        height: 767
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdb11006903d8320800000000000000
+      internalID: 2561757183848070602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_33
+      rect:
+        serializedVersion: 2
+        x: 3317
+        y: 2050
+        width: 700
+        height: 635
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2561e030f4a29a950800000000000000
+      internalID: 6460741659281725010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_34
+      rect:
+        serializedVersion: 2
+        x: 4187
+        y: 2057
+        width: 700
+        height: 636
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92980e50a6b2c490800000000000000
+      internalID: -7727413210725707106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_35
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 2069
+        width: 228
+        height: 295
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4442d621bb5e35910800000000000000
+      internalID: 1825054865645970500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_36
+      rect:
+        serializedVersion: 2
+        x: 4890
+        y: 1337
+        width: 387
+        height: 822
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc9ad2355fc188f0800000000000000
+      internalID: -539922515475391282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_37
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 1345
+        width: 387
+        height: 814
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ff65b6a79e7c670800000000000000
+      internalID: 8559066328837062530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_38
+      rect:
+        serializedVersion: 2
+        x: 5775
+        y: 1335
+        width: 387
+        height: 830
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf2ceb23cfbdf130800000000000000
+      internalID: 3602246121942691771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_39
+      rect:
+        serializedVersion: 2
+        x: 6165
+        y: 1336
+        width: 387
+        height: 829
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8d4d4ad426bad60800000000000000
+      internalID: 7902518056769083643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_40
+      rect:
+        serializedVersion: 2
+        x: 6555
+        y: 1338
+        width: 387
+        height: 826
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb2bd078db1f6060800000000000000
+      internalID: 6948803366476262381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_41
+      rect:
+        serializedVersion: 2
+        x: 6945
+        y: 1340
+        width: 387
+        height: 825
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e70d65ab528e5e70800000000000000
+      internalID: 9105858826718742505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_42
+      rect:
+        serializedVersion: 2
+        x: 7354
+        y: 1401
+        width: 420
+        height: 767
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995e9f980efccf3a0800000000000000
+      internalID: -6630195988101732967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_43
+      rect:
+        serializedVersion: 2
+        x: 7777
+        y: 1338
+        width: 387
+        height: 830
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70dba4044bf2c59c0800000000000000
+      internalID: -3937219523009397497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1566
+        width: 443
+        height: 475
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd41196723328d1d0800000000000000
+      internalID: -3325869625168554788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_45
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1434
+        width: 442
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ea10918f0b38550800000000000000
+      internalID: 6161963294790889106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_46
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1439
+        width: 443
+        height: 468
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cb8795a7267c1a0800000000000000
+      internalID: -6789349635611116445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_47
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 1439
+        width: 435
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa424905781c08500800000000000000
+      internalID: 396529554125235370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_48
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1366
+        width: 380
+        height: 542
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1b3475c41ca5bf0800000000000000
+      internalID: -334742688659951144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_49
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 1442
+        width: 448
+        height: 468
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c87084bf9ca49c80800000000000000
+      internalID: -8316832809918367550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_50
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 1435
+        width: 442
+        height: 468
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932bd0a77dd31fa30800000000000000
+      internalID: 4247243919262069305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_51
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 1572
+        width: 443
+        height: 474
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4662aef92d08ca20800000000000000
+      internalID: 3082728418951980618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_52
+      rect:
+        serializedVersion: 2
+        x: 3753
+        y: 1753
+        width: 229
+        height: 293
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5254c451c087790800000000000000
+      internalID: -7532257091163707928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_53
+      rect:
+        serializedVersion: 2
+        x: 4020
+        y: 1529
+        width: 482
+        height: 525
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db76cbb5810e53b30800000000000000
+      internalID: 4266562617226323901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_54
+      rect:
+        serializedVersion: 2
+        x: 4505
+        y: 1504
+        width: 382
+        height: 549
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c60dbca14da85a0800000000000000
+      internalID: -6518164299111699381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1150
+        width: 414
+        height: 413
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0e2dcdbef7c2b00800000000000000
+      internalID: 805159084391325881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_56
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1038
+        width: 406
+        height: 392
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b629738b1559740800000000000000
+      internalID: 5158118799870946121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_57
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1019
+        width: 395
+        height: 417
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35534beacc80c4550800000000000000
+      internalID: 6146297266651280723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_58
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1036
+        width: 405
+        height: 399
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc11c76a62e0ff810800000000000000
+      internalID: 1801173935136182735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_59
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1074
+        width: 336
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d72036eede03ea0800000000000000
+      internalID: -5894950304108872429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_60
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 1026
+        width: 409
+        height: 413
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f8105c69044bbd0800000000000000
+      internalID: -2615394467300929634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_61
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 1038
+        width: 408
+        height: 394
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3aac1ff87c55f90800000000000000
+      internalID: -6965441827607764058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_62
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 1074
+        width: 355
+        height: 495
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bc520855b9fde50800000000000000
+      internalID: 6836353550896188248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_63
+      rect:
+        serializedVersion: 2
+        x: 3515
+        y: 1084
+        width: 358
+        height: 485
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474ebef2484a0eb00800000000000000
+      internalID: 855864816847021172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_64
+      rect:
+        serializedVersion: 2
+        x: 3877
+        y: 1115
+        width: 413
+        height: 411
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53e381c393590450800000000000000
+      internalID: 6055463068048286556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_65
+      rect:
+        serializedVersion: 2
+        x: 4294
+        y: 1089
+        width: 410
+        height: 412
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35932a1a0afb9830800000000000000
+      internalID: 4079128808809272637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_66
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 1052
+        width: 337
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954f12ee543143780800000000000000
+      internalID: -8704310988731452327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_67
+      rect:
+        serializedVersion: 2
+        x: 6555
+        y: 1046
+        width: 337
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd38206f68a073c0800000000000000
+      internalID: -4363802842613924356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_68
+      rect:
+        serializedVersion: 2
+        x: 6945
+        y: 1048
+        width: 337
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ca2906bc995fad0800000000000000
+      internalID: -2669058105369514913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_69
+      rect:
+        serializedVersion: 2
+        x: 7335
+        y: 1109
+        width: 337
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2919f2c78f7215c60800000000000000
+      internalID: 7805063577398645138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_characters_71
+      rect:
+        serializedVersion: 2
+        x: 7676
+        y: 1042
+        width: 228
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad8022217272fdd0800000000000000
+      internalID: -2453773016734069332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

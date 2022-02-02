@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: ce129ae7d9fd0ef46897513ed6506450
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5123934152753005659
+    second: campaign_menu_UI_assets_0
+  - first:
+      213: -101947926006106699
+    second: campaign_menu_UI_assets_4
+  - first:
+      213: -1092090241606058544
+    second: campaign_menu_UI_assets_7
+  - first:
+      213: 3862257013208300693
+    second: campaign_menu_UI_assets_13
+  - first:
+      213: 7220053290559569560
+    second: campaign_menu_UI_assets_14
+  - first:
+      213: 3960684789926117774
+    second: campaign_menu_UI_assets_15
+  - first:
+      213: -2631360056712181563
+    second: campaign_menu_UI_assets_16
+  - first:
+      213: -3708538765472254967
+    second: campaign_menu_UI_assets_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +65,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,10 +89,34 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +125,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: campaign_menu_UI_assets_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 959
+        width: 196
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab3aac290124e8b0800000000000000
+      internalID: -5123934152753005659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_assets_4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 957
+        width: 211
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b571d4c6eec59ef0800000000000000
+      internalID: -101947926006106699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_assets_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 957
+        width: 308
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd766e16bd18d0f0800000000000000
+      internalID: -1092090241606058544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_assets_13
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 565
+        width: 48
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cba875a4e799530800000000000000
+      internalID: 3862257013208300693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_assets_14
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 575
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e713bd638c23460800000000000000
+      internalID: 7220053290559569560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_assets_15
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 576
+        width: 41
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81c6d2f4dd27f630800000000000000
+      internalID: 3960684789926117774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_assets_16
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 565
+        width: 47
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8c48f48f78b7bd0800000000000000
+      internalID: -2631360056712181563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: campaign_menu_UI_assets_17
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 557
+        width: 67
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904b24834af988cc0800000000000000
+      internalID: -3708538765472254967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
