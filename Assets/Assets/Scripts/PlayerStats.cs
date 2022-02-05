@@ -7,6 +7,7 @@ public class PlayerStat
     public int currentSickCombo = 0;
     public int hitNotes = 0;
     public int totalNoteHits = 0;
+    public int totalSickHits = 0;
     public int currentScore = 0;
     public int missedHits = 0;
 }

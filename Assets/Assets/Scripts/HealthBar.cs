@@ -100,7 +100,7 @@ public class HealthBar : MonoBehaviour
             float accuracyPercent;
             if (playerOneStats.totalNoteHits != 0)
             {
-                var accuracy = (float)playerOneStats.hitNotes / playerOneStats.totalNoteHits;
+                var accuracy = (float)playerOneStats.totalSickHits / playerOneStats.totalNoteHits;
                 accuracyPercent = (float)Math.Round(accuracy, 4);
                 accuracyPercent *= 100;
             }

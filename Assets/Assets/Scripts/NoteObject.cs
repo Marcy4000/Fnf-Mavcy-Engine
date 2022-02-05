@@ -32,7 +32,7 @@ public class NoteObject : MonoBehaviour
         _sprite = GetComponentInChildren<SpriteRenderer>();
         Color color = _song.player1NoteSprites[type].color;
         if (susNote)
-            color.a = .75f;
+            color.a = 1f;
         _sprite.color = color;
     }
 
@@ -68,11 +68,6 @@ public class NoteObject : MonoBehaviour
                 oldPos.y += ((float)(Songdata.susStepCrotchet / 100 * 1.8 * ScrollSpeed) / 1.76f) * (_scrollSpeed);
             transform.position = oldPos;
         }
-
-        Color color = _song.player1NoteSprites[type].color;
-        if (susNote)
-            color.a = 1f;
-        _sprite.color = color;
 
         if (!_song.inst.isPlaying) return;
 

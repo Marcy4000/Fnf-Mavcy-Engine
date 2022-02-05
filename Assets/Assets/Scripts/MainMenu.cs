@@ -46,6 +46,10 @@ public class MainMenu : MonoBehaviour
 
         CheckMenuState();
 
+        if (Input.GetKeyDown(KeyCode.Return) && selectedMenu == 0 && !menuMenager.IsClicked)
+        {
+            menuMenager.StartCorutines(selectedMenu);
+        }
         if (Input.GetKeyDown(KeyCode.Return) && selectedMenu == 1 && !menuMenager.IsClicked)
         {
             menuMenager.StartCorutines(selectedMenu);

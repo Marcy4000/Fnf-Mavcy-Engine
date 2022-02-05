@@ -34,6 +34,7 @@ public class freeplayItem : MonoBehaviour
     public IEnumerator ActuallyLoadSong(string name)
     {
         freeplay.blackFade.SetTrigger("Transition");
+        GlobalDataSfutt.isStoryMode = false;
 
         yield return new WaitForSeconds(1.2f);
 

@@ -18,6 +18,7 @@ public class MenuMenager : MonoBehaviour
     public Animator optionsButton;
 
     public GameObject startMenu;
+    public GameObject storymodeMenu;
     public GameObject mainMenu;
     public GameObject optionsMenu;
     public GameObject freeplayMenu;
@@ -42,7 +43,7 @@ public class MenuMenager : MonoBehaviour
         {
             StartCoroutine(LoadMainMenuFromStart());
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && currentMenu == 2 && !IsClicked || Input.GetKeyDown(KeyCode.Escape) && currentMenu == 1 && !IsClicked)
+        if (Input.GetKeyDown(KeyCode.Escape) && currentMenu == 2 && !IsClicked || Input.GetKeyDown(KeyCode.Escape) && currentMenu == 1 && !IsClicked || Input.GetKeyDown(KeyCode.Escape) && currentMenu == 3 && !IsClicked)
         {
             StartCoroutine(LoadMainMenu());
         }
@@ -53,13 +54,17 @@ public class MenuMenager : MonoBehaviour
 
     public void StartCorutines(int corutine)
     {
-        if (corutine == 1)
+        switch (corutine)
         {
-            StartCoroutine(LoadFreeplayMenu());
-        }
-        else if (corutine == 2)
-        {
-            StartCoroutine(LoadOptionsMenu());
+            case 0:
+                StartCoroutine(LoadStoryModeMenu());
+                break;
+            case 1:
+                StartCoroutine(LoadFreeplayMenu());
+                break;
+            case 2:
+                StartCoroutine(LoadOptionsMenu());
+                break;
         }
     }
 
@@ -94,6 +99,7 @@ public class MenuMenager : MonoBehaviour
         IsClicked = false;
         optionsMenu.SetActive(false);
         freeplayMenu.SetActive(false);
+        storymodeMenu.SetActive(false);
         mainMenu.SetActive(true);
         currentMenu = 1;
     }
@@ -113,8 +119,29 @@ public class MenuMenager : MonoBehaviour
 
         IsClicked = false;
         mainMenu.SetActive(false);
+        storymodeMenu.SetActive(false);
         freeplayMenu.SetActive(true);
         mainMenuScript.selectedMenu = 0;
+    }
+
+    public IEnumerator LoadStoryModeMenu()
+    {
+        IsClicked = true;
+        selectSound.Play();
+        storyButton.SetTrigger("Clicked");
+        background.SetTrigger("Click");
+
+        yield return new WaitForSeconds(1);
+
+        blackFade.SetTrigger("Transition");
+        currentMenu = 3;
+
+        yield return new WaitForSeconds(1.2f);
+
+        mainMenu.SetActive(false);
+        storymodeMenu.SetActive(true);
+        mainMenuScript.selectedMenu = 1;
+        IsClicked = false;
     }
 
     public IEnumerator LoadOptionsMenu()

@@ -7,10 +7,11 @@ using System;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public TMP_Dropdown stageDropdown;
+    public TMP_Dropdown stageDropdown, resolutionsDropdown;
     public Slider volumeSlider;
-    public Toggle ghostTapping;
+    public Toggle ghostTapping, fullscreenToggle;
     private bool settingKeybind;
+    private Resolution[] resolutions;
 
     [Header("Keybinding")] public TMP_Text primaryLeftKeybindText;
     public TMP_Text primaryDownKeybindText;
@@ -29,6 +30,24 @@ public class OptionsMenu : MonoBehaviour
         stageDropdown.value = GlobalDataSfutt.selectedStage;
         volumeSlider.value = AudioListener.volume;
         ghostTapping.isOn = GlobalDataSfutt.ghostTapping;
+        fullscreenToggle.isOn = Screen.fullScreen;
+        resolutions = Screen.resolutions;
+        
+        resolutionsDropdown.ClearOptions();
+        List<string> options = new List<string>();
+        int currentResolutionIndex = 0;
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            string option = resolutions[i].width + " x " + resolutions[i].height;
+            options.Add(option);
+            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
+            {
+                currentResolutionIndex = i;
+            }
+        }
+        resolutionsDropdown.AddOptions(options);
+        resolutionsDropdown.value = currentResolutionIndex;
+        resolutionsDropdown.RefreshShownValue();
 
         primaryLeftKeybindText.text = "LEFT\n" + Player.leftArrowKey;
         primaryDownKeybindText.text = "DOWN\n" + Player.downArrowKey;
@@ -123,6 +142,18 @@ public class OptionsMenu : MonoBehaviour
     public void SetStage()
     {
         GlobalDataSfutt.selectedStage = stageDropdown.value;
+    }
+
+    public void SetFullscreen(bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
+    }
+
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width,
+                  resolution.height, Screen.fullScreen);
     }
 
     public enum KeybindSet

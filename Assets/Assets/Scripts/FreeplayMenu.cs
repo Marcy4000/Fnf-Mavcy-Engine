@@ -21,7 +21,7 @@ public class FreeplayMenu : MonoBehaviour
     //public int totalHeight;
     public int selectedItem;
     private int lenght;
-    private int currentPosition;
+    //private int currentPosition;
     
     void Start()
     {
@@ -84,7 +84,7 @@ public class FreeplayMenu : MonoBehaviour
         {
             selectedItem--;
             scrollSound.Play();
-            currentPosition = layoutGroup.padding.top;
+            //currentPosition = layoutGroup.padding.top;
             //StartCoroutine(ChangeSomeValue(currentPosition, currentPosition + 210, 0.2f));
             StartCoroutine(MoveList(0));
         }
@@ -92,7 +92,7 @@ public class FreeplayMenu : MonoBehaviour
         {
             selectedItem++;
             scrollSound.Play();
-            currentPosition = layoutGroup.padding.top;
+            //currentPosition = layoutGroup.padding.top;
             //StartCoroutine(ChangeSomeValue(currentPosition, currentPosition - 210, 0.2f));
             StartCoroutine(MoveList(1));
         }
@@ -100,14 +100,14 @@ public class FreeplayMenu : MonoBehaviour
         if (selectedItem > lenght -1)
         {
             selectedItem = 0;
-            currentPosition = layoutGroup.padding.top;
+            //currentPosition = layoutGroup.padding.top;
             //StartCoroutine(ChangeSomeValue(currentPosition, 0, 0.35f));
             StartCoroutine(MoveList(3));
         }
         if (selectedItem < 0)
         {
             selectedItem = lenght - 1;
-            currentPosition = layoutGroup.padding.top;
+            //currentPosition = layoutGroup.padding.top;
             //StartCoroutine(ChangeSomeValue(currentPosition, 210 * (lenght - 1) * -1, 0.35f));
             StartCoroutine(MoveList(2));
         }
@@ -122,28 +122,28 @@ public class FreeplayMenu : MonoBehaviour
             case 0:
                 for (int i = 0; i < 26; i++)
                 {
-                    layoutGroup.padding.top = layoutGroup.padding.top + 8;
+                    layoutGroup.padding.top += 8;
                     yield return null;
                 }
                 break;
             case 1:
                 for (int i = 0; i < 26; i++)
                 {
-                    layoutGroup.padding.top = layoutGroup.padding.top - 8;
+                    layoutGroup.padding.top -= 8;
                     yield return null;
                 }
                 break;
             case 2:
                 for (int i = 0; i < (208 * lenght) / (8 * lenght); i++)
                 {
-                    layoutGroup.padding.top = layoutGroup.padding.top - 8 * lenght;
+                    layoutGroup.padding.top -= 8 * lenght;
                     yield return null;
                 }
                 break;
             case 3:
                 for (int i = 0; i < (208 * lenght) / (8 * lenght); i++)
                 {
-                    layoutGroup.padding.top = layoutGroup.padding.top + 8 * lenght;
+                    layoutGroup.padding.top += 8 * lenght;
                     yield return null;
                 }
                 break;

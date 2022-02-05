@@ -52,7 +52,8 @@ public class LoadSong : MonoBehaviour
     public GameObject rightArrow;
 
     [Space] public GameObject holdNote;
-    public Sprite holdNoteEnd;
+    public Sprite[] holdNoteEnd;
+    public Sprite[] holdNotes;
     public bool hasVoicesLoaded;
 
     public string[] characterNames;
@@ -106,10 +107,17 @@ public class LoadSong : MonoBehaviour
             Songdata.SetSongTime(inst);
         }
 
-        if (songStarted && Songdata.songPosition >= inst.clip.length && !exiting)
+        if (songStarted && Songdata.songPosition >= inst.clip.length && !exiting || !inst.isPlaying && songStarted && !exiting)
         {
             SaveStats();
-            StartCoroutine(GoToMainMenu());
+            if (GlobalDataSfutt.isStoryMode)
+            {
+                GlobalDataSfutt.LoadNextStoryModeSong();
+            }
+            else
+            {
+                StartCoroutine(GoToMainMenu());
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -321,18 +329,55 @@ public class LoadSong : MonoBehaviour
 
                     bool setAsLastSus = false;
 
-                    /*
-                     * Math.floor returns the largest integer less than or equal to a given number.
-                     *
-                     * I uh... have no clue why this is needed or what it does but we need this
-                     * in or else it won't do hold notes right so...
-                     */
-                    newSusNoteObj = Instantiate(holdNote);
-                    if ((i + 1) == Math.Floor(susLength))
+                    switch (noteType)
                     {
-                        newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNoteEnd;
-                        setAsLastSus = true;
+                        case 0:
+                            newSusNoteObj = Instantiate(holdNote);
+                            newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNotes[0];
+                            if ((i + 1) == Math.Floor(susLength))
+                            {
+                                newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNoteEnd[0];
+                                setAsLastSus = true;
+                            }
+                            break;
+                        case 1:
+                            newSusNoteObj = Instantiate(holdNote);
+                            newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNotes[1];
+                            if ((i + 1) == Math.Floor(susLength))
+                            {
+                                newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNoteEnd[1];
+                                setAsLastSus = true;
+                            }
+                            break;
+                        case 2:
+                            newSusNoteObj = Instantiate(holdNote);
+                            newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNotes[2];
+                            if ((i + 1) == Math.Floor(susLength))
+                            {
+                                newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNoteEnd[2];
+                                setAsLastSus = true;
+                            }
+                            break;
+                        case 3:
+                            newSusNoteObj = Instantiate(holdNote);
+                            newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNotes[3];
+                            if ((i + 1) == Math.Floor(susLength))
+                            {
+                                newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNoteEnd[3];
+                                setAsLastSus = true;
+                            }
+                            break;
+                        default:
+                            newSusNoteObj = Instantiate(holdNote);
+                            newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNotes[0];
+                            if ((i + 1) == Math.Floor(susLength))
+                            {
+                                newSusNoteObj.GetComponent<SpriteRenderer>().sprite = holdNoteEnd[0];
+                                setAsLastSus = true;
+                            }
+                            break;
                     }
+                    
 
                     switch (noteType)
                     {
@@ -409,10 +454,56 @@ public class LoadSong : MonoBehaviour
             HealthBar.instance.Initialize();
         }
 
+        if (!File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/cutscene.mp4") && GlobalDataSfutt.isStoryMode)
+        {
+            if (File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt") && GlobalDataSfutt.isStoryMode)
+            {
+                string[] lines = File.ReadAllLines(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt");
+                DialogueBox.Instance.StartDialogue(lines);
+            }
+            else
+            {
+                StartCoroutine(StartSong());
+            }
+        }
+        else if (File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/cutscene.mp4") && GlobalDataSfutt.isStoryMode)
+        {
+            CutscenePlayer.instance.PlayCutscene(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/cutscene.mp4");
+        }
+        else
+        {
+            if (File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt") && GlobalDataSfutt.isStoryMode)
+            {
+                string[] lines = File.ReadAllLines(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt");
+                DialogueBox.Instance.StartDialogue(lines);
+            }
+            else
+            {
+                StartCoroutine(StartSong());
+            }
+        }
+        
+    }
+
+    public void StartDialogueAfterCutscene()
+    {
+        if (File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt") && GlobalDataSfutt.isStoryMode)
+        {
+            string[] lines = File.ReadAllLines(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt");
+            DialogueBox.Instance.StartDialogue(lines);
+        }
+        else
+        {
+            StartCoroutine(StartSong());
+        }
+    }
+
+    public void DialogueStuff()
+    {
         StartCoroutine(StartSong());
     }
 
-    IEnumerator StartSong()
+    public IEnumerator StartSong()
     {
         countdown.CountdownStart();
         
@@ -518,9 +609,9 @@ public class LoadSong : MonoBehaviour
 
         float noteDiff = Math.Abs(note.strumTime - stopwatch.ElapsedMilliseconds + Player.visualOffset + Player.inputOffset);
 
-        if (noteDiff > 0.9 * Player.safeZoneOffset) // way early or late
+        if (noteDiff > 0.75 * Player.safeZoneOffset) // way early or late
             rating = Rating.Shit;
-        else if (noteDiff > .75 * Player.safeZoneOffset) // early or late
+        else if (noteDiff > .55 * Player.safeZoneOffset) // early or late
             rating = Rating.Bad;
         else if (noteDiff > .35 * Player.safeZoneOffset) // your kinda there
             rating = Rating.Good;
@@ -544,6 +635,7 @@ public class LoadSong : MonoBehaviour
                         {
                             HealthBar.instance.AddHp(5);
                             HealthBar.instance.playerOneStats.currentSickCombo++;
+                            HealthBar.instance.playerOneStats.totalSickHits++;
                             HealthBar.instance.playerOneStats.currentScore += 10;
                         }
                         break;

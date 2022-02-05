@@ -16,8 +16,29 @@ public static class GlobalDataSfutt
         "alley",
         "car",
         "mall",
-        "school"
+        "school",
+        "school-evil"
     };
+
+    public static bool isStoryMode;
+    public static string[] weekSongs;
+    public static int currentWeekSong;
+
+    public static void LoadNextStoryModeSong()
+    {
+        currentWeekSong++;
+        if (currentWeekSong < weekSongs.Length)
+        {
+            songNameToLoad = weekSongs[currentWeekSong];
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        }
+        else
+        {
+            isStoryMode = false;
+            GoToMainMenu();
+        }
+    }
 
     public static void GoToMainMenu()
     {

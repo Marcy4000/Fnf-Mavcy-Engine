@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: a444e3661fa836143a4d11192f574305
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3888187471839239923
+    second: speech_bubble_talking_0
+  - first:
+      213: 1006973550508067690
+    second: speech_bubble_talking_1
+  - first:
+      213: -7508285027958211152
+    second: speech_bubble_talking_2
+  - first:
+      213: 6354542204915367874
+    second: speech_bubble_talking_3
+  - first:
+      213: -3604273481701715610
+    second: speech_bubble_talking_4
+  - first:
+      213: 4273414100132167247
+    second: speech_bubble_talking_5
+  - first:
+      213: 4343460682099687086
+    second: speech_bubble_talking_6
+  - first:
+      213: 5671676237803803274
+    second: speech_bubble_talking_7
+  - first:
+      213: -1081946117309245675
+    second: speech_bubble_talking_8
+  - first:
+      213: -5396167554038581763
+    second: speech_bubble_talking_9
+  - first:
+      213: -3578548963491184525
+    second: speech_bubble_talking_10
+  - first:
+      213: -6851449890306849430
+    second: speech_bubble_talking_11
+  - first:
+      213: -2909931887429993970
+    second: speech_bubble_talking_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +80,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,7 +104,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -77,7 +116,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -89,7 +128,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -101,7 +140,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: speech_bubble_talking_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1640
+        width: 1231
+        height: 408
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01e5e848126a0ac0800000000000000
+      internalID: -3888187471839239923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_1
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1627
+        width: 1229
+        height: 421
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b4f38eb1d79fd00800000000000000
+      internalID: 1006973550508067690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_2
+      rect:
+        serializedVersion: 2
+        x: 2478
+        y: 1655
+        width: 1242
+        height: 393
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdba243c863dc790800000000000000
+      internalID: -7508285027958211152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_3
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 1930
+        width: 40
+        height: 118
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf3532b77edf2850800000000000000
+      internalID: 6354542204915367874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1416
+        width: 318
+        height: 201
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6611fc95d5c0bfdc0800000000000000
+      internalID: -3604273481701715610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1334
+        width: 836
+        height: 282
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ef5888b773e4b30800000000000000
+      internalID: 4273414100132167247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_6
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1302
+        width: 1264
+        height: 314
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae7d6c4a72174c30800000000000000
+      internalID: 4343460682099687086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_7
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 1322
+        width: 334
+        height: 296
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82d15b0d77d5be40800000000000000
+      internalID: 5671676237803803274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 785
+        width: 1366
+        height: 507
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5175bab1db72cf0f0800000000000000
+      internalID: -1081946117309245675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_9
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 964
+        width: 1162
+        height: 328
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5ba012336fc15b0800000000000000
+      internalID: -5396167554038581763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_10
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 974
+        width: 1160
+        height: 318
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37004cb7da0765ec0800000000000000
+      internalID: -3578548963491184525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 1161
+        height: 315
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a650fd310a2cae0a0800000000000000
+      internalID: -6851449890306849430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: speech_bubble_talking_12
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 464
+        width: 1154
+        height: 311
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a3729ad58dd97d0800000000000000
+      internalID: -2909931887429993970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
