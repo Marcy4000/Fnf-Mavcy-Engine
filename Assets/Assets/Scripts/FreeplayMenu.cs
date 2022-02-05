@@ -26,7 +26,7 @@ public class FreeplayMenu : MonoBehaviour
     void Start()
     {
         layoutGroup = contents.GetComponent<VerticalLayoutGroup>();
-        DirectoryInfo dir = new DirectoryInfo(Application.persistentDataPath + "/Songs/");
+        DirectoryInfo dir = new DirectoryInfo(Path.GetFullPath(".") + "/data" + "/Songs/");
         DirectoryInfo[] info = dir.GetDirectories();
         items = new freeplayItem[info.Length];
         for (int i = 0; i < info.Length; i++)
@@ -36,7 +36,7 @@ public class FreeplayMenu : MonoBehaviour
             GameObject lmao = Instantiate(item, contents.transform);
             itemComponent = lmao.GetComponent<freeplayItem>();
             itemComponent.id = i;
-            itemComponent.songStats = LoadFile(Application.persistentDataPath + "/Songs/" + info[i].Name + "/stats.dat");
+            itemComponent.songStats = LoadFile(Path.GetFullPath(".") + "/data" + "/Songs/" + info[i].Name + "/stats.dat");
             items[i] = itemComponent;
             text = lmao.GetComponent<TMP_Text>();
             itemComponent.songName = info[i].Name;
@@ -55,7 +55,7 @@ public class FreeplayMenu : MonoBehaviour
         }
         else
         {
-            destination = Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/stats.dat";
+            destination = Path.GetFullPath(".") + "/data/Songs/" + GlobalDataSfutt.songNameToLoad + "/stats.dat";
         }
         
         FileStream file;

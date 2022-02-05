@@ -26,17 +26,17 @@ public class StoryMode : MonoBehaviour
         selectedDifficulty = 0;
         difficultyImage.sprite = difficulties[selectedDifficulty];
         difficultyImage.rectTransform.sizeDelta = spriteSizes[selectedDifficulty];
-        DirectoryInfo dir = new DirectoryInfo(Application.persistentDataPath + "/Weeks/");
+        DirectoryInfo dir = new DirectoryInfo(Path.GetFullPath(".") + "/data" + "/Weeks/");
         DirectoryInfo[] info = dir.GetDirectories();
         weeks = new WeekData[info.Length];
         for (int i = 0; i < info.Length; i++)
         {
             Image image = Instantiate(weekObject, weeksLayout.transform).GetComponent<Image>();
-            image.sprite = IMG2Sprite.LoadNewSprite(Application.persistentDataPath + "/Weeks/" + info[i].Name + "/img.png");
+            image.sprite = IMG2Sprite.LoadNewSprite(Path.GetFullPath(".") + "/data" + "/Weeks/" + info[i].Name + "/img.png");
             image.rectTransform.sizeDelta = new Vector2(539, 134);
             weeks[i] = image.gameObject.GetComponent<WeekData>();
             WeekData week = image.gameObject.GetComponent<WeekData>();
-            string[] lines = File.ReadAllLines(Application.persistentDataPath + "/Weeks/" + info[i].Name + "/weekData.txt");
+            string[] lines = File.ReadAllLines(Path.GetFullPath(".") + "/data" + "/Weeks/" + info[i].Name + "/weekData.txt");
             week.weekName = lines[0];
             week.tracks = new string[lines.Length - 1];
             for (int j = 1; j < lines.Length; j++)

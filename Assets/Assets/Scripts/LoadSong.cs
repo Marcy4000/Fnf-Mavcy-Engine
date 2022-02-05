@@ -9,6 +9,7 @@ using NaughtyAttributes;
 using System.Diagnostics;
 using UnityEngine.SceneManagement;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.Networking;
 
 public class LoadSong : MonoBehaviour
 {
@@ -97,7 +98,7 @@ public class LoadSong : MonoBehaviour
         bf.GetComponent<SpriteRenderer>().sortingOrder = StageSettings.instance.playerLayer;
         enemy.transform.position = StageSettings.instance.enemyPos.position;
         enemy.GetComponent<SpriteRenderer>().sortingOrder = StageSettings.instance.enemyLayer;
-        PlaySong(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad);
+        PlaySong(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad);
     }
 
     private void Update()
@@ -128,7 +129,7 @@ public class LoadSong : MonoBehaviour
 
     private void SaveStats()
     {
-        string destination = Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/stats.dat";
+        string destination = Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\stats.dat";
         FileStream file;
 
         if (File.Exists(destination)) file = File.OpenWrite(destination);
@@ -150,7 +151,6 @@ public class LoadSong : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    [Button]
     public void PlaySong(string path = "C:/Users/Marce/AppData/LocalLow/DefaultCompany/Fnf Dumbass engine/Songs/roses")
     {
         if (!string.IsNullOrWhiteSpace(path))
@@ -162,27 +162,56 @@ public class LoadSong : MonoBehaviour
             UnityEngine.Debug.LogError("Invalid song path");
         }
 
-        jsonDir = selectedSongDir + "/Chart.json";
+        jsonDir = selectedSongDir + @"\Chart.json";
 
         StartCoroutine(SetupSong());
     }
 
     IEnumerator SetupSong()
     {
-        WWW www1 = new WWW(selectedSongDir + "/Inst.ogg");
+        UnityWebRequest req = UnityWebRequestMultimedia.GetAudioClip("file:///" + selectedSongDir + @"\Inst.ogg", AudioType.OGGVORBIS);
+        //UnityWebRequest req = UnityWebRequestMultimedia.GetAudioClip("https://cdn.discordapp.com/attachments/859868869609783336/939510294340841492/Inst.ogg", AudioType.OGGVORBIS);
+        yield return req.SendWebRequest();
+        musicClip = DownloadHandlerAudioClip.GetContent(req);
+        while (musicClip.loadState != AudioDataLoadState.Loaded)
+            yield return new WaitForSeconds(0.1f);
+
+        if (File.Exists(selectedSongDir + @"\Voices.ogg"))
+        {
+            //UnityWebRequest req2 = UnityWebRequestMultimedia.GetAudioClip("https://cdn.discordapp.com/attachments/859868869609783336/939510270290722877/Voices.ogg", AudioType.OGGVORBIS);
+            UnityWebRequest req2 = UnityWebRequestMultimedia.GetAudioClip("file:///" + selectedSongDir + @"\Voices.ogg", AudioType.OGGVORBIS);
+            yield return req2.SendWebRequest();
+            vocalClip = DownloadHandlerAudioClip.GetContent(req2);
+            while (vocalClip.loadState != AudioDataLoadState.Loaded)
+                yield return new WaitForSeconds(0.1f);
+            hasVoicesLoaded = true;
+            GenerateSong();
+        }
+        else
+        {
+            hasVoicesLoaded = false;
+            GenerateSong();
+        }
+    }
+
+    /*IEnumerator SetupSong()
+    {
+        WWW www1 = new WWW(selectedSongDir + @"\Inst.ogg");
         if (www1.error != null)
         {
             UnityEngine.Debug.LogError(www1.error);
+            UnityEngine.Debug.LogError(selectedSongDir + @"\Inst.ogg");
+            UnityEngine.Debug.LogError(File.Exists(selectedSongDir + @"\Inst.ogg"));
         }
         else
         {
             musicClip = www1.GetAudioClip();
             while (musicClip.loadState != AudioDataLoadState.Loaded)
                 yield return new WaitForSeconds(0.1f);
-            if (File.Exists(selectedSongDir + "/Voices.ogg"))
+            if (File.Exists(selectedSongDir + @"\Voices.ogg"))
             {
 
-                WWW www2 = new WWW(selectedSongDir + "/Voices.ogg");
+                WWW www2 = new WWW(selectedSongDir + @"\Voices.ogg");
                 if (www2.error != null)
                 {
                     UnityEngine.Debug.LogError(www2.error);
@@ -204,7 +233,7 @@ public class LoadSong : MonoBehaviour
                 GenerateSong();
             }
         }
-    }
+    }*/
 
     void GenerateSong()
     {
@@ -454,11 +483,11 @@ public class LoadSong : MonoBehaviour
             HealthBar.instance.Initialize();
         }
 
-        if (!File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/cutscene.mp4") && GlobalDataSfutt.isStoryMode)
+        if (!File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + "/cutscene.mp4") && GlobalDataSfutt.isStoryMode)
         {
-            if (File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt") && GlobalDataSfutt.isStoryMode)
+            if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt") && GlobalDataSfutt.isStoryMode)
             {
-                string[] lines = File.ReadAllLines(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt");
+                string[] lines = File.ReadAllLines(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt");
                 DialogueBox.Instance.StartDialogue(lines);
             }
             else
@@ -466,15 +495,15 @@ public class LoadSong : MonoBehaviour
                 StartCoroutine(StartSong());
             }
         }
-        else if (File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/cutscene.mp4") && GlobalDataSfutt.isStoryMode)
+        else if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\cutscene.mp4") && GlobalDataSfutt.isStoryMode)
         {
-            CutscenePlayer.instance.PlayCutscene(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/cutscene.mp4");
+            CutscenePlayer.instance.PlayCutscene(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\cutscene.mp4");
         }
         else
         {
-            if (File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt") && GlobalDataSfutt.isStoryMode)
+            if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogue.txt") && GlobalDataSfutt.isStoryMode)
             {
-                string[] lines = File.ReadAllLines(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt");
+                string[] lines = File.ReadAllLines(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogue.txt");
                 DialogueBox.Instance.StartDialogue(lines);
             }
             else
@@ -487,9 +516,9 @@ public class LoadSong : MonoBehaviour
 
     public void StartDialogueAfterCutscene()
     {
-        if (File.Exists(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt") && GlobalDataSfutt.isStoryMode)
+        if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogue.txt") && GlobalDataSfutt.isStoryMode)
         {
-            string[] lines = File.ReadAllLines(Application.persistentDataPath + "/Songs/" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt");
+            string[] lines = File.ReadAllLines(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogue.txt");
             DialogueBox.Instance.StartDialogue(lines);
         }
         else
