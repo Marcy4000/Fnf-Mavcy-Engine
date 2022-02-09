@@ -32,11 +32,11 @@ public class StoryMode : MonoBehaviour
         for (int i = 0; i < info.Length; i++)
         {
             Image image = Instantiate(weekObject, weeksLayout.transform).GetComponent<Image>();
-            image.sprite = IMG2Sprite.LoadNewSprite(Path.GetFullPath(".") + "/data" + "/Weeks/" + info[i].Name + "/img.png");
+            image.sprite = IMG2Sprite.LoadNewSprite(Path.GetFullPath(".") + "/data/Weeks/" + info[i].Name + "/img.png");
             image.rectTransform.sizeDelta = new Vector2(539, 134);
             weeks[i] = image.gameObject.GetComponent<WeekData>();
             WeekData week = image.gameObject.GetComponent<WeekData>();
-            string[] lines = File.ReadAllLines(Path.GetFullPath(".") + "/data" + "/Weeks/" + info[i].Name + "/weekData.txt");
+            string[] lines = File.ReadAllLines(Path.GetFullPath(".") + "/data/Weeks/" + info[i].Name + "/weekData.txt");
             week.weekName = lines[0];
             week.tracks = new string[lines.Length - 1];
             for (int j = 1; j < lines.Length; j++)

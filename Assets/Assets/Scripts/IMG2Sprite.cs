@@ -20,6 +20,16 @@ public static class IMG2Sprite
         return NewSprite;
     }
 
+    public static Sprite LoadSpriteSheet(Texture2D SpriteTexture, Rect spriteRect, Vector2 piviot, float PixelsPerUnit = 100.0f, SpriteMeshType spriteType = SpriteMeshType.Tight)
+    {
+
+        // Load a PNG or JPG image from disk to a Texture2D, assign this texture to a new sprite and return its reference
+
+        Sprite NewSprite = Sprite.Create(SpriteTexture, spriteRect, piviot, PixelsPerUnit, 0, spriteType);
+
+        return NewSprite;
+    }
+
     public static Sprite ConvertTextureToSprite(Texture2D texture, float PixelsPerUnit = 100.0f, SpriteMeshType spriteType = SpriteMeshType.Tight)
     {
         // Converts a Texture2D to a sprite, assign this texture to a new sprite and return its reference

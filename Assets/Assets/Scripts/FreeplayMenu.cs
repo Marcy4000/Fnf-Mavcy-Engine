@@ -123,28 +123,28 @@ public class FreeplayMenu : MonoBehaviour
                 for (int i = 0; i < 26; i++)
                 {
                     layoutGroup.padding.top += 8;
-                    yield return null;
+                    yield return new WaitForSeconds(0.01f);
                 }
                 break;
             case 1:
                 for (int i = 0; i < 26; i++)
                 {
                     layoutGroup.padding.top -= 8;
-                    yield return null;
+                    yield return new WaitForSeconds(0.01f);
                 }
                 break;
             case 2:
                 for (int i = 0; i < (208 * lenght) / (8 * lenght); i++)
                 {
                     layoutGroup.padding.top -= 8 * lenght;
-                    yield return null;
+                    yield return new WaitForSeconds(0.01f);
                 }
                 break;
             case 3:
                 for (int i = 0; i < (208 * lenght) / (8 * lenght); i++)
                 {
                     layoutGroup.padding.top += 8 * lenght;
-                    yield return null;
+                    yield return new WaitForSeconds(0.01f);
                 }
                 break;
         }

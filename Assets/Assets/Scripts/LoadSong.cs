@@ -88,7 +88,22 @@ public class LoadSong : MonoBehaviour
 
     IEnumerator LoadShit()
     {
-        SceneManager.LoadScene(GlobalDataSfutt.stages[GlobalDataSfutt.selectedStage], LoadSceneMode.Additive);
+        if (!GlobalDataSfutt.overrideStage)
+        {
+            if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\stage.txt"))
+            {
+                string[] lines = File.ReadAllLines(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\stage.txt");
+                SceneManager.LoadScene(lines[0], LoadSceneMode.Additive);
+            }
+            else
+            {
+                SceneManager.LoadScene(GlobalDataSfutt.stages[GlobalDataSfutt.selectedStage], LoadSceneMode.Additive);
+            }
+        }
+        else
+        {
+            SceneManager.LoadScene(GlobalDataSfutt.stages[GlobalDataSfutt.selectedStage], LoadSceneMode.Additive);
+        }
 
         yield return null;
         
@@ -169,7 +184,8 @@ public class LoadSong : MonoBehaviour
 
     IEnumerator SetupSong()
     {
-        UnityWebRequest req = UnityWebRequestMultimedia.GetAudioClip("file:///" + selectedSongDir + @"\Inst.ogg", AudioType.OGGVORBIS);
+        string url = UnityWebRequest.EscapeURL(selectedSongDir);
+        UnityWebRequest req = UnityWebRequestMultimedia.GetAudioClip("file:///" + url + @"\Inst.ogg", AudioType.OGGVORBIS);
         //UnityWebRequest req = UnityWebRequestMultimedia.GetAudioClip("https://cdn.discordapp.com/attachments/859868869609783336/939510294340841492/Inst.ogg", AudioType.OGGVORBIS);
         yield return req.SendWebRequest();
         musicClip = DownloadHandlerAudioClip.GetContent(req);
@@ -179,7 +195,7 @@ public class LoadSong : MonoBehaviour
         if (File.Exists(selectedSongDir + @"\Voices.ogg"))
         {
             //UnityWebRequest req2 = UnityWebRequestMultimedia.GetAudioClip("https://cdn.discordapp.com/attachments/859868869609783336/939510270290722877/Voices.ogg", AudioType.OGGVORBIS);
-            UnityWebRequest req2 = UnityWebRequestMultimedia.GetAudioClip("file:///" + selectedSongDir + @"\Voices.ogg", AudioType.OGGVORBIS);
+            UnityWebRequest req2 = UnityWebRequestMultimedia.GetAudioClip("file:///" + url + @"\Voices.ogg", AudioType.OGGVORBIS);
             yield return req2.SendWebRequest();
             vocalClip = DownloadHandlerAudioClip.GetContent(req2);
             while (vocalClip.loadState != AudioDataLoadState.Loaded)
@@ -463,6 +479,7 @@ public class LoadSong : MonoBehaviour
         if (charactersDictionary.ContainsKey(_song.Player2))
         {
             Character enemyThing = charactersDictionary[_song.Player2];
+            enemyAnimation.Initialize(false, 0);
             enemyAnimation.enemyAnimator.runtimeAnimatorController = enemyThing.overrideAnimator;
             enemyAnimation.gameObject.GetComponent<SpriteRenderer>().flipX = enemyThing.flipX;
 
@@ -473,14 +490,35 @@ public class LoadSong : MonoBehaviour
         }
         else
         {
-            Character enemyThing = charactersDictionary["dad"];
-            enemyAnimation.enemyAnimator.runtimeAnimatorController = enemyThing.overrideAnimator;
-            enemyAnimation.gameObject.GetComponent<SpriteRenderer>().flipX = enemyThing.flipX;
+            bool thingExists = false;
+            int character = 0;
+            for (int i = 0; i < GlobalDataSfutt.customCharacters.Count; i++)
+            {
+                if (GlobalDataSfutt.customCharacters[i].characterName == _song.Player2)
+                {
+                    thingExists = true;
+                    character = i;
+                }
+            }
 
-            HealthBar.instance.opponent = enemyThing.icon;
-            HealthBar.instance.opponentDed = enemyThing.deadIcon;
-            HealthBar.instance.opponentIcon.GetComponent<RectTransform>().sizeDelta = enemyThing.iconSize;
-            HealthBar.instance.Initialize();
+            if (thingExists && GlobalDataSfutt.characterActive[character])
+            {
+                enemyAnimation.Initialize(true, character);
+                HealthBar.instance.opponent = GlobalDataSfutt.customCharacters[character].icons[0];
+                HealthBar.instance.opponentDed = GlobalDataSfutt.customCharacters[character].icons[1];
+            }
+            else
+            {
+                Character enemyThing = charactersDictionary["dad"];
+                enemyAnimation.Initialize(false, 0);
+                enemyAnimation.enemyAnimator.runtimeAnimatorController = enemyThing.overrideAnimator;
+                enemyAnimation.gameObject.GetComponent<SpriteRenderer>().flipX = enemyThing.flipX;
+
+                HealthBar.instance.opponent = enemyThing.icon;
+                HealthBar.instance.opponentDed = enemyThing.deadIcon;
+                HealthBar.instance.opponentIcon.GetComponent<RectTransform>().sizeDelta = enemyThing.iconSize;
+                HealthBar.instance.Initialize();
+            }
         }
 
         if (!File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + "/cutscene.mp4") && GlobalDataSfutt.isStoryMode)

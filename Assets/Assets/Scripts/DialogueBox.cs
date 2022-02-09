@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Networking;
 
 public class DialogueBox : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class DialogueBox : MonoBehaviour
     public Sprite[] portraitsImg;
     public string[] portraitsNames;
     public Dictionary<string, Sprite> portraitsDictionary;
-    public AudioSource dialogueText, nextPhrase;
+    public AudioSource dialogueText, nextPhrase, song;
+    public AudioClip bgSong;
 
     private void Start()
     {
@@ -30,6 +32,24 @@ public class DialogueBox : MonoBehaviour
         {
             portraitsDictionary.Add(portraitsNames[i], portraitsImg[i]);
         }
+        if (System.IO.File.Exists(System.IO.Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogueTheme.ogg"))
+        {
+            StartCoroutine(LoadSongFile(System.IO.Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad));
+        }
+        else
+        {
+            song.Stop();
+        }
+    }
+
+    private IEnumerator LoadSongFile(string selectedSongDir)
+    {
+        UnityWebRequest req = UnityWebRequestMultimedia.GetAudioClip("file:///" + selectedSongDir + @"\dialogueTheme.ogg", AudioType.OGGVORBIS);
+        yield return req.SendWebRequest();
+        bgSong = DownloadHandlerAudioClip.GetContent(req);
+        while (bgSong.loadState != AudioDataLoadState.Loaded)
+            yield return new WaitForSeconds(0.1f);
+        song.clip = bgSong;
     }
 
     private void Update()
@@ -48,6 +68,7 @@ public class DialogueBox : MonoBehaviour
     {
         senteces.Clear();
         sentencesQueue.Clear();
+        song.Play();
         inDialogue = true;
 
         for (int i = 1; i < _sentences.Length; i += 2)
@@ -115,7 +136,7 @@ public class DialogueBox : MonoBehaviour
     {
         inDialogue = false;
         animator.SetTrigger("disappear");
-        Debug.Log("End of dialogue.");
+        song.Stop();
     }
 
     public void PlaySong()

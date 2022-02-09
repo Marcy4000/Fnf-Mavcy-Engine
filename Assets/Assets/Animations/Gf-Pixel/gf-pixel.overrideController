@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: gf-pixel
+  m_Controller: {fileID: 9100000, guid: 90f8907390dfcae4caaca393822e0783, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d6f892eb99a8c2f4294954e1dda6f430, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0189e33df3fb08e4f8d4f93f51b6d1b7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d04b387f6c19dd74f8d58b2ba6fff185, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: da199cbfadd2e36478fb8a9094f00f47, type: 2}

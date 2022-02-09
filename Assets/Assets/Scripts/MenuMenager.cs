@@ -1,7 +1,9 @@
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.SceneManagement;
 
 public class MenuMenager : MonoBehaviour
 {
@@ -33,6 +35,84 @@ public class MenuMenager : MonoBehaviour
     private void Start()
     {
         Songdata.Initialize(102f);
+        LoadSettings();
+        if (!GlobalDataSfutt.hasLoadedMods)
+        {
+            LoadMods();
+        }
+    }
+
+    private void LoadMods()
+    {
+        DirectoryInfo dir = new DirectoryInfo(Path.GetFullPath(".") + "/data" + "/Mods/");
+        DirectoryInfo[] info = dir.GetDirectories();
+        GlobalDataSfutt.customCharacters.Clear();
+
+        for (int i = 0; i < info.Length; i++)
+        {
+            if (File.Exists(Path.GetFullPath(".") + "/data/Mods/" + info[i].Name + "/character.dat"))
+            {
+                ExportableFnfCharacter character;
+                character = LoadFile(Path.GetFullPath(".") + "/data/Mods/" + info[i].Name + "/character.dat");
+                FNFCharacter character1 = new FNFCharacter();
+                character1.LoadAnimations(character, Path.GetFullPath(".") + @"\data\Mods\" + info[i].Name);
+                GlobalDataSfutt.customCharacters.Add(character1);
+                GlobalDataSfutt.characterActive.Add(true);
+            }
+        }
+
+        GlobalDataSfutt.hasLoadedMods = true;
+    }
+
+    public ExportableFnfCharacter LoadFile(string _destination)
+    {
+        string destination;
+
+        if (!string.IsNullOrWhiteSpace(_destination))
+        {
+            destination = _destination;
+        }
+        else
+        {
+            return null;
+        }
+
+        FileStream file;
+
+        if (File.Exists(destination)) file = File.OpenRead(destination);
+        else
+        {
+            Debug.LogError("File not found");
+            return null;
+        }
+
+        BinaryFormatter bf = new BinaryFormatter();
+        ExportableFnfCharacter data = (ExportableFnfCharacter)bf.Deserialize(file);
+        file.Close();
+        return data;
+    }
+
+    private void LoadSettings()
+    {
+        Player.leftArrowKey = (KeyCode)PlayerPrefs.GetInt("left");
+        Player.downArrowKey = (KeyCode)PlayerPrefs.GetInt("down");
+        Player.upArrowKey = (KeyCode)PlayerPrefs.GetInt("up");
+        Player.rightArrowKey = (KeyCode)PlayerPrefs.GetInt("right");
+        Player.secLeftArrowKey = (KeyCode)PlayerPrefs.GetInt("secLeft");
+        Player.secDownArrowKey = (KeyCode)PlayerPrefs.GetInt("secDown");
+        Player.secUpArrowKey = (KeyCode)PlayerPrefs.GetInt("secUp");
+        Player.secRightArrowKey = (KeyCode)PlayerPrefs.GetInt("secRight");
+        AudioListener.volume = PlayerPrefs.GetFloat("volume");
+        GlobalDataSfutt.ghostTapping = intToBool(PlayerPrefs.GetInt("ghostTapping"));
+        GlobalDataSfutt.overrideStage = intToBool(PlayerPrefs.GetInt("overrideStage"));
+    }
+
+    bool intToBool(int val)
+    {
+        if (val != 0)
+            return true;
+        else
+            return false;
     }
 
     // Update is called once per frame
@@ -45,6 +125,10 @@ public class MenuMenager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) && currentMenu == 2 && !IsClicked || Input.GetKeyDown(KeyCode.Escape) && currentMenu == 1 && !IsClicked || Input.GetKeyDown(KeyCode.Escape) && currentMenu == 3 && !IsClicked)
         {
             StartCoroutine(LoadMainMenu());
+        }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            SceneManager.LoadScene(11);
         }
 
         Songdata.SetSongTime(song);

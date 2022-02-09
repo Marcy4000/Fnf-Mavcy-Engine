@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
+using System.Xml.Serialization;
+using System;
 
 public static class GlobalDataSfutt
 {
     public static string songNameToLoad = "DefaultSusName";
     public static int selectedStage = 0;
-    public static bool ghostTapping;
+    public static bool ghostTapping, overrideStage, hasLoadedMods;
     public static string[] stages = new string[]
     {
         "stage",
@@ -19,6 +21,9 @@ public static class GlobalDataSfutt
         "school",
         "school-evil"
     };
+
+    public static List<FNFCharacter> customCharacters = new List<FNFCharacter>();
+    public static List<bool> characterActive = new List<bool>();
 
     public static bool isStoryMode;
     public static string[] weekSongs;
@@ -31,7 +36,6 @@ public static class GlobalDataSfutt
         {
             songNameToLoad = weekSongs[currentWeekSong];
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
         }
         else
         {
@@ -74,6 +78,23 @@ public static class GlobalDataSfutt
         else
         {
             return Application.persistentDataPath + "/" + songName + ".json";
+        }
+    }
+
+    public static T ImportXml<T>(string path)
+    {
+        try
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            using (var stream = new FileStream(path, FileMode.Open))
+            {
+                return (T)serializer.Deserialize(stream);
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Exception importing xml file: " + e);
+            return default;
         }
     }
 }

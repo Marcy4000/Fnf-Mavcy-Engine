@@ -9,7 +9,7 @@ public class OptionsMenu : MonoBehaviour
 {
     public TMP_Dropdown stageDropdown, resolutionsDropdown;
     public Slider volumeSlider;
-    public Toggle ghostTapping, fullscreenToggle;
+    public Toggle ghostTapping, fullscreenToggle, overrideStageToggle;
     private bool settingKeybind;
     private Resolution[] resolutions;
 
@@ -31,6 +31,7 @@ public class OptionsMenu : MonoBehaviour
         volumeSlider.value = AudioListener.volume;
         ghostTapping.isOn = GlobalDataSfutt.ghostTapping;
         fullscreenToggle.isOn = Screen.fullScreen;
+        overrideStageToggle.isOn = GlobalDataSfutt.overrideStage;
         resolutions = Screen.resolutions;
         
         resolutionsDropdown.ClearOptions();
@@ -61,8 +62,38 @@ public class OptionsMenu : MonoBehaviour
         resetKeybindText.text = "RESET\n" + Player.resetKey;
     }
 
+    public void SavePlayerPrefs()
+    {
+        PlayerPrefs.SetInt("left", (int)Player.leftArrowKey);
+        PlayerPrefs.SetInt("down", (int)Player.downArrowKey);
+        PlayerPrefs.SetInt("up", (int)Player.upArrowKey);
+        PlayerPrefs.SetInt("right", (int)Player.rightArrowKey);
+        PlayerPrefs.SetInt("secLeft", (int)Player.secLeftArrowKey);
+        PlayerPrefs.SetInt("secDown", (int)Player.secDownArrowKey);
+        PlayerPrefs.SetInt("secUp", (int)Player.secUpArrowKey);
+        PlayerPrefs.SetInt("secRight", (int)Player.secRightArrowKey);
+        PlayerPrefs.SetFloat("volume", AudioListener.volume);
+        PlayerPrefs.SetInt("ghostTapping", boolToInt(GlobalDataSfutt.ghostTapping));
+        PlayerPrefs.SetInt("overrideStage", boolToInt(GlobalDataSfutt.overrideStage));
+        PlayerPrefs.Save();
+    }
+
+    int boolToInt(bool val)
+    {
+        if (val)
+            return 1;
+        else
+            return 0;
+    }
+
+
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SavePlayerPrefs();
+        }
+
         if (settingKeybind)
         {
             if (!Input.anyKeyDown) return;
@@ -154,6 +185,11 @@ public class OptionsMenu : MonoBehaviour
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width,
                   resolution.height, Screen.fullScreen);
+    }
+
+    public void SetOverrideStage(bool value)
+    {
+        GlobalDataSfutt.overrideStage = value;
     }
 
     public enum KeybindSet

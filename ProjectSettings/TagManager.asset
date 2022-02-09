@@ -9,6 +9,7 @@ TagManager:
   - UpSection
   - RightSection
   - HoldNote
+  - animation
   layers:
   - Default
   - TransparentFX
