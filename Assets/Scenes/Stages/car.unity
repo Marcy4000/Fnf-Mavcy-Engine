@@ -245,8 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 0
-  crocket: 0
-  beatnumber: 4
+  gfAnimator: {fileID: 0}
 --- !u!95 &91735908
 Animator:
   serializedVersion: 3
@@ -510,8 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 0
-  crocket: 0
-  beatnumber: 4
+  gfAnimator: {fileID: 0}
 --- !u!95 &133401837
 Animator:
   serializedVersion: 3
@@ -563,8 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 0
-  crocket: 0
-  beatnumber: 4
+  gfAnimator: {fileID: 0}
 --- !u!95 &224097625
 Animator:
   serializedVersion: 3
@@ -751,6 +748,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &366029940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366029941}
+  m_Layer: 0
+  m_Name: EnemyCam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &366029941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366029940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.27, y: -0.65, z: -13.786375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &506250469
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,8 +810,8 @@ MonoBehaviour:
   playerPos: {fileID: 54832006}
   gfPos: {fileID: 68230879}
   enemyPos: {fileID: 32119419}
-  playerCam: {fileID: 0}
-  enemyCam: {fileID: 0}
+  playerCam: {fileID: 1228992482}
+  enemyCam: {fileID: 366029941}
   playerLayer: 10
   gfLayer: 5
   enemyLayer: 10
@@ -904,6 +931,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1228992481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1228992482}
+  m_Layer: 0
+  m_Name: BfCam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1228992482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228992481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.12, y: -0.05, z: -13.786375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1233531061
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,8 +993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 0
-  crocket: 0
-  beatnumber: 4
+  gfAnimator: {fileID: 0}
 --- !u!95 &1233531063
 Animator:
   serializedVersion: 3

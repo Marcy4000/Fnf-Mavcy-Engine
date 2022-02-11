@@ -38,6 +38,7 @@ public class freeplayItem : MonoBehaviour
 
         yield return new WaitForSeconds(1.2f);
 
+        Songdata.ResetThings();
         GlobalDataSfutt.songNameToLoad = name;
         SceneManager.LoadScene(1);
     }

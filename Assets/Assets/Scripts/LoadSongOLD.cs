@@ -70,7 +70,7 @@ public class LoadSongOLD : MonoBehaviour
 
         if (Songdata.bpm != 0)
         {
-            bf.crocket = 60 / Songdata.bpm;
+            //bf.crocket = 60 / Songdata.bpm;
         }
         Songdata.Initialize();
 

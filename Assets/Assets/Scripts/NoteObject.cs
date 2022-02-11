@@ -6,6 +6,8 @@ public class NoteObject : MonoBehaviour
 {
     private float _scrollSpeed;
     private SpriteRenderer _sprite;
+    private Transform cameraTransform;
+    private float oldX = 0f;
 
     public float strumTime;
     private LoadSong _song;
@@ -28,12 +30,14 @@ public class NoteObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cameraTransform = Camera.main.transform;
         _song = LoadSong.instance;
         _sprite = GetComponentInChildren<SpriteRenderer>();
         Color color = _song.player1NoteSprites[type].color;
         if (susNote)
             color.a = 1f;
         _sprite.color = color;
+        oldX = transform.position.x;
     }
 
     public void GenerateHold(NoteObject prevNote)
@@ -77,6 +81,7 @@ public class NoteObject : MonoBehaviour
         if (lastSusNote)
             oldPos.y += ((float)(Songdata.susStepCrotchet / 100 * 1.8 * ScrollSpeed) / 1.76f) * (_scrollSpeed);
 
+        oldPos = new Vector3(oldX + cameraTransform.position.x, oldPos.y + cameraTransform.position.y, 0);
         transform.position = oldPos;
 
         if (!mustHit)
@@ -86,7 +91,7 @@ public class NoteObject : MonoBehaviour
             {
                 if (!(strumTime + Player.visualOffset - _song.stopwatch.ElapsedMilliseconds < Player.maxHitRoom)) return;
                 _song.NoteMiss(this);
-                //CameraController.instance.Transition(true);
+                CameraController.instance.Transition(true);
                 _song.player2NotesObjects[type].Remove(this);
                 Destroy(gameObject);
             }
@@ -95,7 +100,7 @@ public class NoteObject : MonoBehaviour
 
                 if (strumTime + Player.visualOffset >= _song.stopwatch.ElapsedMilliseconds) return;
                 _song.NoteHit(this);
-                //CameraController.instance.Transition(true);
+                CameraController.instance.Transition(true);
 
             }
         }
@@ -106,7 +111,7 @@ public class NoteObject : MonoBehaviour
             {
                 if (!(strumTime + Player.visualOffset - _song.stopwatch.ElapsedMilliseconds < Player.maxHitRoom)) return;
                 _song.NoteMiss(this);
-                //CameraController.instance.Transition(false);
+                CameraController.instance.Transition(false);
                 _song.player1NotesObjects[type].Remove(this);
                 Destroy(gameObject);
             }
@@ -114,7 +119,7 @@ public class NoteObject : MonoBehaviour
             {
                 if (strumTime + Player.visualOffset >= _song.stopwatch.ElapsedMilliseconds) return;
                 _song.NoteHit(this);
-                //CameraController.instance.Transition(false);
+                CameraController.instance.Transition(false);
             }
         }
     }

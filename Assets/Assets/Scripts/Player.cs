@@ -164,6 +164,7 @@ public class Player : MonoBehaviour
                 {
                     LoadSong.instance.AnimateNote(1, 0, "Hit");
                     LoadSong.instance.NoteHit(leftNote);
+                    CameraController.instance.Transition(false);
                 }
                 else
                 {
@@ -180,6 +181,7 @@ public class Player : MonoBehaviour
                 {
                     LoadSong.instance.AnimateNote(1, 1, "Hit");
                     LoadSong.instance.NoteHit(downNote);
+                    CameraController.instance.Transition(false);
                 }
                 else
                 {
@@ -196,6 +198,7 @@ public class Player : MonoBehaviour
                 {
                     LoadSong.instance.AnimateNote(1, 2, "Hit");
                     LoadSong.instance.NoteHit(upNote);
+                    CameraController.instance.Transition(false);
                 }
                 else
                 {
@@ -212,6 +215,7 @@ public class Player : MonoBehaviour
                 {
                     LoadSong.instance.AnimateNote(1, 3, "Hit");
                     LoadSong.instance.NoteHit(rightNote);
+                    CameraController.instance.Transition(false);
                 }
                 else
                 {
@@ -380,6 +384,7 @@ public class Player : MonoBehaviour
                     {
                         LoadSong.instance.AnimateNote(1, 0, "Hit");
                         LoadSong.instance.NoteHit(leftNote);
+                        CameraController.instance.Transition(false);
                     }
                 }
             }
@@ -423,6 +428,7 @@ public class Player : MonoBehaviour
                 {
                     LoadSong.instance.AnimateNote(1, 0, "Hit");
                     LoadSong.instance.NoteHit(leftNote);
+                    CameraController.instance.Transition(false);
                 }
                 else
                 {
@@ -439,6 +445,7 @@ public class Player : MonoBehaviour
                 {
                     LoadSong.instance.AnimateNote(1, 1, "Hit");
                     LoadSong.instance.NoteHit(downNote);
+                    CameraController.instance.Transition(false);
                 }
                 else
                 {
@@ -455,6 +462,7 @@ public class Player : MonoBehaviour
                 {
                     LoadSong.instance.AnimateNote(1, 2, "Hit");
                     LoadSong.instance.NoteHit(upNote);
+                    CameraController.instance.Transition(false);
                 }
                 else
                 {
@@ -471,6 +479,7 @@ public class Player : MonoBehaviour
                 {
                     LoadSong.instance.AnimateNote(1, 3, "Hit");
                     LoadSong.instance.NoteHit(rightNote);
+                    CameraController.instance.Transition(false);
                 }
                 else
                 {
@@ -506,10 +515,6 @@ public class Player : MonoBehaviour
 
     public bool CanHitNote(NoteObject noteObject)
     {
-        /*
-        var position = noteObject.transform.position;
-        return position.y <= 4.55 + LoadSong.instance.topSafeWindow & position.y >= 4.55 - LoadSong.instance.bottomSafeWindow & !noteObject.dummyNote;
-    */
         float noteDiff = noteObject.strumTime + visualOffset - LoadSong.instance.stopwatch.ElapsedMilliseconds + inputOffset;
 
         return noteDiff <= 135 * Time.timeScale & noteDiff >= -135 * Time.timeScale & !noteObject.dummyNote;

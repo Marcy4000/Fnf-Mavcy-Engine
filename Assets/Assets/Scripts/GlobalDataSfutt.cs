@@ -35,6 +35,7 @@ public static class GlobalDataSfutt
         if (currentWeekSong < weekSongs.Length)
         {
             songNameToLoad = weekSongs[currentWeekSong];
+            Songdata.ResetThings();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         else

@@ -21,7 +21,6 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-
         if (fraction < 1)
         {
             fraction += Time.deltaTime * speed;

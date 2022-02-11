@@ -6,9 +6,6 @@ public class opponentAnimations : MonoBehaviour
 {
     public bool ShouldMove = true;
     public Animator enemyAnimator;
-    public float crocket;
-    public int beatnumber = 4;
-    double lastBeat;
     private bool isCustomChar;
     private int currentChar;
     private SpriteRenderer spriteRenderer;
@@ -19,7 +16,16 @@ public class opponentAnimations : MonoBehaviour
     {
         enemyAnimator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        lastBeat = 0;
+    }
+
+    private void OnEnable()
+    {
+        Songdata.OnBeat += BeatStuff;
+    }
+
+    private void OnDisable()
+    {
+        Songdata.OnBeat -= BeatStuff;
     }
 
     public void Initialize(bool customChar, int _currentChar)
@@ -37,45 +43,35 @@ public class opponentAnimations : MonoBehaviour
         }
     }
 
-    private void OnEnable()
+    private void BeatStuff()
     {
-        lastBeat = 0;
-    }
-
-    private void Update()
-    {
-        if (Songdata.songPosition > lastBeat + Songdata.crotchet)
+        if (!isCustomChar)
         {
-            if (!isCustomChar)
+            switch (ShouldMove)
             {
-                switch (ShouldMove)
-                {
-                    case true:
-                        enemyAnimator.SetBool("ShouldMove", false);
-                        ShouldMove = false;
-                        break;
-                    case false:
-                        enemyAnimator.SetBool("ShouldMove", true);
-                        ShouldMove = true;
-                        break;
-                }
+                case true:
+                    enemyAnimator.SetBool("ShouldMove", false);
+                    ShouldMove = false;
+                    break;
+                case false:
+                    enemyAnimator.SetBool("ShouldMove", true);
+                    ShouldMove = true;
+                    break;
             }
-            else
+        }
+        else
+        {
+            switch (ShouldMove)
             {
-                switch (ShouldMove)
-                {
-                    case true:
-                        ShouldMove = false;
-                        break;
-                    case false:
-                        if (!singing)
-                            AnimationSystem.instance.Play(spriteRenderer, "idle", currentChar, false);
-                        ShouldMove = true;
-                        break;
-                }
+                case true:
+                    ShouldMove = false;
+                    break;
+                case false:
+                    if (!singing)
+                        AnimationSystem.instance.Play(spriteRenderer, "idle", currentChar, false);
+                    ShouldMove = true;
+                    break;
             }
-
-            lastBeat += Songdata.crotchet;
         }
     }
 

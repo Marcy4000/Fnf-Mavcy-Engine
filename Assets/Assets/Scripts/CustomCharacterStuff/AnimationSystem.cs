@@ -20,28 +20,45 @@ public class AnimationSystem : MonoBehaviour
         lastRoutine = StartCoroutine(PlayAnimation(renderer, character, animName, shouldLoop));
     }
 
+    public static void PlayFrame(SpriteRenderer renderer, string animName, int character, int frame)
+    {
+        List<Sprite> _frames;
+        GlobalDataSfutt.customCharacters[character].animations.TryGetValue(animName, out _frames);
+        renderer.sprite = _frames[frame];
+    }
+
+    public static int GetNumberOfFrames(string animName, int character)
+    {
+        List<Sprite> _frames;
+        GlobalDataSfutt.customCharacters[character].animations.TryGetValue(animName, out _frames);
+        return _frames.Count - 1;
+    }
+
     private IEnumerator PlayAnimation(SpriteRenderer _renderer, int _character, string _animName, bool _shouldLoop)
     {
         List<Sprite> _frames;
+        //List<SerializableVector2> _piviots;
+        GlobalDataSfutt.customCharacters[_character].animations.TryGetValue(_animName, out _frames);
+        //GlobalDataSfutt.customCharacters[_character].piviots.TryGetValue(_animName, out _piviots);
 
         switch (_shouldLoop)
         {
             case true:
-                GlobalDataSfutt.customCharacters[_character].animations.TryGetValue(_animName, out _frames);
                 while (_shouldLoop)
                 {
                     for (int i = 0; i < _frames.Count; i++)
                     {
                         _renderer.sprite = _frames[i];
+                        //_renderer.transform.localPosition = new Vector3(_piviots[i].x, _piviots[i].y);
                         yield return new WaitForSeconds(0.025f);
                     }
                 }
                 break;
             case false:
-                GlobalDataSfutt.customCharacters[_character].animations.TryGetValue(_animName, out _frames);
                 for (int i = 0; i < _frames.Count; i++)
                 {
                     _renderer.sprite = _frames[i];
+                    //_renderer.transform.localPosition = new Vector3(_piviots[i].x, _piviots[i].y);
                     yield return new WaitForSeconds(0.025f);
                 }
                 break;

@@ -69,6 +69,10 @@ public class LoadSong : MonoBehaviour
     public Animator blackFade;
     public GameObject ratingObject;
 
+    [Space]
+    public GameObject pauseScreen;
+    public bool paused = false;
+
     private string jsonDir;
     #endregion
 
@@ -112,7 +116,7 @@ public class LoadSong : MonoBehaviour
         bf.transform.position = StageSettings.instance.playerPos.position;
         bf.GetComponent<SpriteRenderer>().sortingOrder = StageSettings.instance.playerLayer;
         enemy.transform.position = StageSettings.instance.enemyPos.position;
-        enemy.GetComponent<SpriteRenderer>().sortingOrder = StageSettings.instance.enemyLayer;
+        enemy.GetComponentInChildren<SpriteRenderer>().sortingOrder = StageSettings.instance.enemyLayer;
         PlaySong(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad);
     }
 
@@ -123,7 +127,7 @@ public class LoadSong : MonoBehaviour
             Songdata.SetSongTime(inst);
         }
 
-        if (songStarted && Songdata.songPosition >= inst.clip.length && !exiting || !inst.isPlaying && songStarted && !exiting)
+        if (songStarted && Songdata.songPosition >= inst.clip.length && !exiting && !paused || !inst.isPlaying && songStarted && !exiting && !paused)
         {
             SaveStats();
             if (GlobalDataSfutt.isStoryMode)
@@ -133,6 +137,19 @@ public class LoadSong : MonoBehaviour
             else
             {
                 StartCoroutine(GoToMainMenu());
+            }
+        }
+
+        if (Input.GetKeyDown(Player.pauseKey) && !exiting)
+        {
+            switch (paused)
+            {
+                case true:
+                    ContinueSong();
+                    break;
+                case false:
+                    PauseSong();
+                    break;
             }
         }
 
@@ -836,9 +853,6 @@ public class LoadSong : MonoBehaviour
         HealthBar.instance.playerOneStats.totalNoteHits++;
 
         HealthBar.instance.UpdateScoringInfo();
-
-        
-
     }
 
     public void AnimateNote(int player, int type, string animName)
@@ -869,6 +883,43 @@ public class LoadSong : MonoBehaviour
                 }
                 break;*/
         }
+    }
+
+    public void PauseSong()
+    {
+        paused = true;
+        stopwatch.Stop();
+        beatStopwatch.Stop();
+
+        inst.Pause();
+        if (hasVoicesLoaded)
+            voices.Pause();
+
+        pauseScreen.SetActive(true);
+    }
+
+    public void ContinueSong()
+    {
+        paused = false;
+        stopwatch.Start();
+        beatStopwatch.Start();
+
+        inst.UnPause();
+
+        if (hasVoicesLoaded)
+            voices.UnPause();
+
+        pauseScreen.SetActive(false);
+    }
+
+    public void RestartSong()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitSong()
+    {
+        StartCoroutine(GoToMainMenu());
     }
 
     #endregion

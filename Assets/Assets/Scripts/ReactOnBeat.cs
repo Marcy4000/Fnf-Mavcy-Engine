@@ -7,49 +7,48 @@ public class ReactOnBeat : MonoBehaviour
     Animator animator;
     public string animationName;
     public int beatnumber = 4;
-    float lastBeat;
     int currentBeat;
     // Start is called before the first frame update
     void Start()
     {
-        animator = this.GetComponent<Animator>();
-        lastBeat = 0;
+        animator = GetComponent<Animator>();
     }
 
     private void OnEnable()
     {
-        lastBeat = 0;
+        Songdata.OnBeat += BeatStuff;
     }
 
-    private void Update()
+    private void OnDisable()
     {
-        if (Songdata.songPosition > lastBeat + Songdata.crotchet)
-        {
-            currentBeat++;
-            if (currentBeat > 3)
-            {
-                currentBeat = 0;
-            }
-            switch (beatnumber)
-            {
-                case 0:
-                    animator.Play(animationName);
-                    break;
-                case 1:
-                    if (currentBeat == 0)
-                    {
-                        animator.Play(animationName);
-                    }
-                    break;
-                case 2:
-                    if (currentBeat == 0 || currentBeat == 2)
-                    {
-                        animator.Play(animationName);
-                    }
-                    break;
-            }
+        Songdata.OnBeat -= BeatStuff;
+    }
 
-            lastBeat += Songdata.crotchet;
+
+    private void BeatStuff()
+    {
+        currentBeat++;
+        if (currentBeat > 3)
+        {
+            currentBeat = 0;
+        }
+        switch (beatnumber)
+        {
+            case 0:
+                animator.Play(animationName);
+                break;
+            case 1:
+                if (currentBeat == 0)
+                {
+                    animator.Play(animationName);
+                }
+                break;
+            case 2:
+                if (currentBeat == 0 || currentBeat == 2)
+                {
+                    animator.Play(animationName);
+                }
+                break;
         }
     }
 }

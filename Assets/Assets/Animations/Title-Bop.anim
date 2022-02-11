@@ -22,7 +22,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 717
+        value: 712.6968
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -31,7 +31,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.4
-        value: 687
+        value: 682.6968
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -50,7 +50,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 448
+        value: 443.69675
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -59,7 +59,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.4
-        value: 426
+        value: 421.69675
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -81,7 +81,7 @@ AnimationClip:
     path: 
     classID: 114
     script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_SampleRate: 30
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -116,7 +116,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.43333334
+    m_StopTime: 0.4166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -137,7 +137,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 717
+        value: 712.6968
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -146,7 +146,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.4
-        value: 687
+        value: 682.6968
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -165,7 +165,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 448
+        value: 443.69675
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -174,7 +174,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.4
-        value: 426
+        value: 421.69675
         inSlope: 0
         outSlope: 0
         tangentMode: 136

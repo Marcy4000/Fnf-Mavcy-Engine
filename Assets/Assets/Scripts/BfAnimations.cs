@@ -6,38 +6,34 @@ public class BfAnimations : MonoBehaviour
 {
     public bool ShouldMove = true;
     Animator bfAnimator;
-    public float crocket;
-    public int beatnumber = 4;
-    double lastBeat;
-    // Start is called before the first frame update
+
     void Start()
     {
-        bfAnimator = this.GetComponent<Animator>();
-        lastBeat = 0;
+        bfAnimator = GetComponent<Animator>();
     }
 
     private void OnEnable()
     {
-        lastBeat = 0;
+        Songdata.OnBeat += BeatStuff;
     }
 
-    private void Update()
+    private void OnDisable()
     {
-        if (Songdata.songPosition > lastBeat + Songdata.crotchet)
-        {
-            switch (ShouldMove)
-            {
-                case true:
-                    bfAnimator.SetBool("ShouldMove", false);
-                    ShouldMove = false;
-                    break;
-                case false:
-                    bfAnimator.SetBool("ShouldMove", true);
-                    ShouldMove = true;
-                    break;
-            }
+        Songdata.OnBeat -= BeatStuff;
+    }
 
-            lastBeat += Songdata.crotchet;
+    public void BeatStuff()
+    {
+        switch (ShouldMove)
+        {
+            case true:
+                bfAnimator.SetBool("ShouldMove", false);
+                ShouldMove = false;
+                break;
+            case false:
+                bfAnimator.SetBool("ShouldMove", true);
+                ShouldMove = true;
+                break;
         }
     }
 

@@ -34,6 +34,7 @@ public class MenuMenager : MonoBehaviour
 
     private void Start()
     {
+        Songdata.ResetThings();
         Songdata.Initialize(102f);
         LoadSettings();
         if (!GlobalDataSfutt.hasLoadedMods)

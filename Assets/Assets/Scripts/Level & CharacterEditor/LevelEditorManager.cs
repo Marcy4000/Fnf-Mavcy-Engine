@@ -208,6 +208,8 @@ public class LevelEditorManager : MonoBehaviour
         character.icons[0] = IMG2Sprite.LoadNewSprite(defPath + @"\icon.png");
         character.icons[1] = IMG2Sprite.LoadNewSprite(defPath + @"\icon-ded.png");
 
+        character.piviots = PiviotEditor.instance.piviots;
+
         GlobalDataSfutt.customCharacters.Add(character);
         hasSetAnimations = true;
     }
@@ -270,6 +272,7 @@ public class LevelEditorManager : MonoBehaviour
             animsNames4.Add(anims[i].name);
         }
         data.animations.Add("Sing Right", animsNames4);
+        data.piviots = GlobalDataSfutt.customCharacters[charList.value].piviots;
 
         BinaryFormatter bf = new BinaryFormatter();
         bf.Serialize(file, data);

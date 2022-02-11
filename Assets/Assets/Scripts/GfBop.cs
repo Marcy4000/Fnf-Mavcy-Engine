@@ -5,40 +5,35 @@ using UnityEngine;
 public class GfBop : MonoBehaviour
 {
     public bool isLeft = false;
-    Animator gfAnimator;
-    public float crocket;
-    public int beatnumber = 4;
-    float lastBeat;
-    // Start is called before the first frame update
+    public Animator gfAnimator;
+
     void Start()
     {
-        gfAnimator = this.GetComponent<Animator>();
-        lastBeat = 0;
-        crocket = Songdata.crotchet;
+        gfAnimator = GetComponent<Animator>();
     }
 
     private void OnEnable()
     {
-        lastBeat = 0;
+        Songdata.OnBeat += BeatStuff;
     }
 
-    private void Update()
+    private void OnDisable()
     {
-        if (Songdata.songPosition > lastBeat + Songdata.crotchet)
-        {
-            switch (isLeft)
-            {
-                case true:
-                    gfAnimator.SetBool("IsLeft", false);
-                    isLeft = false;
-                    break;
-                case false:
-                    gfAnimator.SetBool("IsLeft", true);
-                    isLeft = true;
-                    break;
-            }
+        Songdata.OnBeat -= BeatStuff;
+    }
 
-            lastBeat += Songdata.crotchet;
+    private void BeatStuff()
+    {
+        switch (isLeft)
+        {
+            case true:
+                gfAnimator.SetBool("IsLeft", false);
+                isLeft = false;
+                break;
+            case false:
+                gfAnimator.SetBool("IsLeft", true);
+                isLeft = true;
+                break;
         }
     }
 }

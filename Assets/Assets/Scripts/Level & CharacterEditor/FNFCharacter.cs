@@ -11,10 +11,13 @@ public class FNFCharacter
     public Sprite[] icons = new Sprite[2];
     public Dictionary<string, List<Sprite>> animations;
 
+    public Dictionary<string, List<SerializableVector2>> piviots;
+
     public void LoadAnimations(ExportableFnfCharacter loadedThing, string filePath)
     {
         characterName = loadedThing.characterName;
         xmlPath = loadedThing.xmlPath;
+        piviots = loadedThing.piviots;
         animations = new Dictionary<string, List<Sprite>>();
 
         Sprite[] frames;
@@ -124,4 +127,6 @@ public class ExportableFnfCharacter
     public string xmlPath;
 
     public Dictionary<string, List<string>> animations;
+
+    public Dictionary<string, List<SerializableVector2>> piviots;
 }

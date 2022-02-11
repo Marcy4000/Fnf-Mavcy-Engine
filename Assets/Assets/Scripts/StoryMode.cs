@@ -104,6 +104,7 @@ public class StoryMode : MonoBehaviour
 
         yield return new WaitForSeconds(1.2f);
 
+        Songdata.ResetThings();
         SceneManager.LoadScene(1);
     }
 
@@ -125,7 +126,7 @@ public class StoryMode : MonoBehaviour
                     weeksLayout.padding.top += 5;
                     weeksLayout.enabled = false;
                     weeksLayout.enabled = true;
-                    yield return null;
+                    yield return new WaitForSeconds(0.001f);
                 }
                 break;
             case 1:
@@ -134,7 +135,7 @@ public class StoryMode : MonoBehaviour
                     weeksLayout.padding.top -= 5;
                     weeksLayout.enabled = false;
                     weeksLayout.enabled = true;
-                    yield return null;
+                    yield return new WaitForSeconds(0.001f);
                 }
                 break;
         }
