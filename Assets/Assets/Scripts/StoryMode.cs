@@ -14,7 +14,7 @@ public class StoryMode : MonoBehaviour
     public Sprite[] difficulties;
     public Vector2[] spriteSizes;
     public int selectedWeek = 0, selectedDifficulty = 0;
-    public WeekData[] weeks;
+    public List<WeekData> weeks;
     public GameObject weekObject;
     public Animator blackFade;
     public AudioSource scrollSound;
@@ -28,20 +28,43 @@ public class StoryMode : MonoBehaviour
         difficultyImage.rectTransform.sizeDelta = spriteSizes[selectedDifficulty];
         DirectoryInfo dir = new DirectoryInfo(Path.GetFullPath(".") + "/data" + "/Weeks/");
         DirectoryInfo[] info = dir.GetDirectories();
-        weeks = new WeekData[info.Length];
+        if (weeks.Count != 0)
+        {
+            for (int i = 0; i < weeks.Count; i++)
+            {
+                Destroy(weeks[i].gameObject);
+            }
+        }
+        weeks.Clear();
         for (int i = 0; i < info.Length; i++)
         {
             Image image = Instantiate(weekObject, weeksLayout.transform).GetComponent<Image>();
             image.sprite = IMG2Sprite.LoadNewSprite(Path.GetFullPath(".") + "/data/Weeks/" + info[i].Name + "/img.png");
             image.rectTransform.sizeDelta = new Vector2(539, 134);
-            weeks[i] = image.gameObject.GetComponent<WeekData>();
+            weeks.Add(image.gameObject.GetComponent<WeekData>());
             WeekData week = image.gameObject.GetComponent<WeekData>();
             string[] lines = File.ReadAllLines(Path.GetFullPath(".") + "/data/Weeks/" + info[i].Name + "/weekData.txt");
             week.weekName = lines[0];
             week.tracks = new string[lines.Length - 1];
+            week.songsPath = Path.GetFullPath(".") + @"\data\Songs\";
             for (int j = 1; j < lines.Length; j++)
             {
                 week.tracks[j - 1] = lines[j];
+            }
+        }
+        for (int i = 0; i < GlobalDataSfutt.mods.Count; i++)
+        {
+            Mod mod = GlobalDataSfutt.mods[i];
+            for (int j = 0; j < mod.weeks.Count; j++)
+            {
+                Image image = Instantiate(weekObject, weeksLayout.transform).GetComponent<Image>();
+                image.sprite = mod.weeks[j].weekIcon;
+                image.rectTransform.sizeDelta = new Vector2(539, 134);
+                weeks.Add(image.gameObject.GetComponent<WeekData>());
+                WeekData week = image.gameObject.GetComponent<WeekData>();
+                week.weekName = mod.weeks[j].weekName;
+                week.tracks = mod.weeks[j].tracks;
+                week.songsPath = mod.modPath + @"\Songs\";
             }
         }
         UpdateUI();
@@ -71,7 +94,7 @@ public class StoryMode : MonoBehaviour
             difficultyImage.rectTransform.sizeDelta = spriteSizes[selectedDifficulty];
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow) && selectedWeek < weeks.Length - 1 && weeks.Length != 0)
+        if (Input.GetKeyDown(KeyCode.DownArrow) && selectedWeek < weeks.Count - 1 && weeks.Count != 0)
         {
             selectedWeek++;
             scrollSound.Play();
@@ -100,11 +123,12 @@ public class StoryMode : MonoBehaviour
         GlobalDataSfutt.weekSongs = weeks[selectedWeek].tracks;
         GlobalDataSfutt.currentWeekSong = 0;
         GlobalDataSfutt.songNameToLoad = GlobalDataSfutt.weekSongs[0];
+        GlobalDataSfutt.selectedDifficulty = (Diffuculty)selectedDifficulty;
+        GlobalDataSfutt.songPath = weeks[selectedWeek].songsPath;
         blackFade.SetTrigger("Transition");
 
         yield return new WaitForSeconds(1.2f);
 
-        Songdata.ResetThings();
         SceneManager.LoadScene(1);
     }
 

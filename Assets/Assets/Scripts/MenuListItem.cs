@@ -8,6 +8,6 @@ public class MenuListItem : MonoBehaviour
 
     public void SetValue(bool value)
     {
-        GlobalDataSfutt.characterActive[ID] = value;
+        
     }
 }

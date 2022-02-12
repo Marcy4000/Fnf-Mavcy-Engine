@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 using System.IO;
 using System.Xml.Serialization;
 using System;
+using System.Runtime.Serialization.Formatters.Binary;
+
+public enum Diffuculty
+{
+    easy,
+    normal,
+    hard
+}
 
 public static class GlobalDataSfutt
 {
@@ -22,9 +30,11 @@ public static class GlobalDataSfutt
         "school-evil"
     };
 
+    public static string songPath = Path.GetFullPath(".") + @"\data\Songs\";
+    public static List<Mod> mods = new List<Mod>();
     public static List<FNFCharacter> customCharacters = new List<FNFCharacter>();
-    public static List<bool> characterActive = new List<bool>();
 
+    public static Diffuculty selectedDifficulty = Diffuculty.normal;
     public static bool isStoryMode;
     public static string[] weekSongs;
     public static int currentWeekSong;
@@ -50,6 +60,7 @@ public static class GlobalDataSfutt
         SceneManager.LoadScene(0);
     }
 
+    //Old Stuff
     public static string ReadShit(string songName)
     {
         string path = GetFilePath(songName);
@@ -70,6 +81,7 @@ public static class GlobalDataSfutt
         }
     }
 
+    //Old Stuff
     public static string GetFilePath(string songName)
     {
         if (songNameToLoad != "" || songNameToLoad != null)
@@ -97,5 +109,33 @@ public static class GlobalDataSfutt
             Debug.LogError("Exception importing xml file: " + e);
             return default;
         }
+    }
+
+    public static T LoadFile<T>(string _destination)
+    {
+        string destination;
+
+        if (!string.IsNullOrWhiteSpace(_destination))
+        {
+            destination = _destination;
+        }
+        else
+        {
+            return default(T);
+        }
+
+        FileStream file;
+
+        if (File.Exists(destination)) file = File.OpenRead(destination);
+        else
+        {
+            Debug.LogError("File not found");
+            return default(T);
+        }
+
+        BinaryFormatter bf = new BinaryFormatter();
+        T data = (T)bf.Deserialize(file);
+        file.Close();
+        return data;
     }
 }

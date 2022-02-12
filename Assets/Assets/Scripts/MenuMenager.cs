@@ -40,57 +40,27 @@ public class MenuMenager : MonoBehaviour
         if (!GlobalDataSfutt.hasLoadedMods)
         {
             LoadMods();
+            GlobalDataSfutt.customCharacters.Clear();
+            for (int i = 0; i < GlobalDataSfutt.mods.Count; i++)
+            {
+                for (int j = 0; j < GlobalDataSfutt.mods[i].characters.Count; j++)
+                {
+                    GlobalDataSfutt.customCharacters.Add(GlobalDataSfutt.mods[i].characters[j]);
+                }
+            }
         }
     }
 
     private void LoadMods()
     {
-        DirectoryInfo dir = new DirectoryInfo(Path.GetFullPath(".") + "/data" + "/Mods/");
+        DirectoryInfo dir = new DirectoryInfo(Path.GetFullPath(".") + @"\data\Mods\");
         DirectoryInfo[] info = dir.GetDirectories();
-        GlobalDataSfutt.customCharacters.Clear();
-
-        for (int i = 0; i < info.Length; i++)
+        GlobalDataSfutt.mods.Clear();
+        foreach (DirectoryInfo info2 in info)
         {
-            if (File.Exists(Path.GetFullPath(".") + "/data/Mods/" + info[i].Name + "/character.dat"))
-            {
-                ExportableFnfCharacter character;
-                character = LoadFile(Path.GetFullPath(".") + "/data/Mods/" + info[i].Name + "/character.dat");
-                FNFCharacter character1 = new FNFCharacter();
-                character1.LoadAnimations(character, Path.GetFullPath(".") + @"\data\Mods\" + info[i].Name);
-                GlobalDataSfutt.customCharacters.Add(character1);
-                GlobalDataSfutt.characterActive.Add(true);
-            }
+            GlobalDataSfutt.mods.Add(ModLoader.LoadMod(Path.GetFullPath(".") + @"\data\Mods\" + info2.Name));
         }
-
         GlobalDataSfutt.hasLoadedMods = true;
-    }
-
-    public ExportableFnfCharacter LoadFile(string _destination)
-    {
-        string destination;
-
-        if (!string.IsNullOrWhiteSpace(_destination))
-        {
-            destination = _destination;
-        }
-        else
-        {
-            return null;
-        }
-
-        FileStream file;
-
-        if (File.Exists(destination)) file = File.OpenRead(destination);
-        else
-        {
-            Debug.LogError("File not found");
-            return null;
-        }
-
-        BinaryFormatter bf = new BinaryFormatter();
-        ExportableFnfCharacter data = (ExportableFnfCharacter)bf.Deserialize(file);
-        file.Close();
-        return data;
     }
 
     private void LoadSettings()

@@ -7,11 +7,15 @@ public class ReactOnBeat : MonoBehaviour
     Animator animator;
     public string animationName;
     public int beatnumber = 4;
-    int currentBeat;
-    // Start is called before the first frame update
+    //int currentBeat;
+
     void Start()
     {
         animator = GetComponent<Animator>();
+        if (beatnumber == 0)
+        {
+            beatnumber = 1;
+        }
     }
 
     private void OnEnable()
@@ -27,7 +31,13 @@ public class ReactOnBeat : MonoBehaviour
 
     private void BeatStuff()
     {
-        currentBeat++;
+        if (Songdata.beatNumber % beatnumber == 0)
+        {
+            animator.Play(animationName);
+        }
+        
+        
+        /*currentBeat++;
         if (currentBeat > 3)
         {
             currentBeat = 0;
@@ -49,6 +59,6 @@ public class ReactOnBeat : MonoBehaviour
                     animator.Play(animationName);
                 }
                 break;
-        }
+        }*/
     }
 }

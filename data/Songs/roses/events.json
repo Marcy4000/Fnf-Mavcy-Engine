@@ -1,0 +1,2409 @@
+{
+	"song": {
+		"speed": 2.5,
+		"stage": null,
+		"player1": "bf-pixel-chungus",
+		"player2": "senpai-angry-chungus",
+		"player3": null,
+		"events": [
+			[
+				4000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						"1"
+					]
+				]
+			],
+			[
+				8000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"boyfriend-pixel-opponent"
+					]
+				]
+			],
+			[
+				13125,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				16500,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				16875,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				17250,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				17625,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				18000,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				18375,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				18750,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				19125,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				19500,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				20500,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				20875,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				21250,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				21625,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				22000,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				22375,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				22750,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				23125,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				23500,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"dad"
+					]
+				]
+			],
+			[
+				24000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"pico"
+					]
+				]
+			],
+			[
+				24125,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				26000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"pico"
+					]
+				]
+			],
+			[
+				26125,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				27375,
+				[
+					[
+						"Change Character",
+						"dad",
+						"pico"
+					]
+				]
+			],
+			[
+				27500,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				27750,
+				[
+					[
+						"Change Character",
+						"dad",
+						"pico"
+					]
+				]
+			],
+			[
+				27875,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				32000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				32125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				32250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				32375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				32500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				32625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				32750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				32875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				33000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				33125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				33250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				33375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				33500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				33625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				33750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				33875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				34000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				34125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				34250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				34375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				34500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				34625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				34750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				34875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				35000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				35125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				35250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				35375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				35500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				35625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				35750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				35875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				36000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				36125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				36250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				36375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				36500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				36625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				36750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				36875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				37000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				37125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				37250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				37375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				37500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				37625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				37750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				37875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				38000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				38125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				38250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				38375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				38500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				38625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				38750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				38875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				39000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				39125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				39250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				39375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				39500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				39625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				39750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				39875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				40000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf-pixel-chungus"
+					]
+				]
+			],
+			[
+				41000,
+				[
+					[
+						"Screen Shake",
+						"1",
+						"0.05"
+					]
+				]
+			],
+			[
+				44000,
+				[
+					[
+						"Screen Shake",
+						"1",
+						"0.05"
+					]
+				]
+			],
+			[
+				46125,
+				[
+					[
+						"Screen Shake",
+						"1",
+						"0.05"
+					]
+				]
+			],
+			[
+				47000,
+				[
+					[
+						"Screen Shake",
+						"1",
+						"0.05"
+					]
+				]
+			],
+			[
+				47250,
+				[
+					[
+						"Screen Shake",
+						"1",
+						"0.05"
+					]
+				]
+			],
+			[
+				47625,
+				[
+					[
+						"Screen Shake",
+						"1",
+						"0.05"
+					]
+				]
+			],
+			[
+				47750,
+				[
+					[
+						"Screen Shake",
+						"1",
+						"0.05"
+					]
+				]
+			],
+			[
+				47875,
+				[
+					[
+						"Screen Shake",
+						"1",
+						"0.05"
+					]
+				]
+			],
+			[
+				56000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				56250,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				56500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				56750,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				57000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				57250,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				57500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				57750,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58250,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58750,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				59000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				59250,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				59500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				59750,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				60000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				60250,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				60500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				60750,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				61000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				61250,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				61500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				61750,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				62000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				62250,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				62500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				62750,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				63000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				63250,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				63500,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				63750,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				64000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"pico-player"
+					]
+				]
+			],
+			[
+				64031.25,
+				[
+					[
+						"Change Character",
+						"dad",
+						"mom"
+					]
+				]
+			],
+			[
+				64062.5,
+				[
+					[
+						"Change Character",
+						"gf",
+						"gf-car"
+					]
+				]
+			],
+			[
+				72000,
+				[
+					[
+						"Change Character",
+						"gf",
+						"gf-pixel"
+					]
+				]
+			],
+			[
+				72031.25,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf-pixel"
+					]
+				]
+			],
+			[
+				72062.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai"
+					]
+				]
+			],
+			[
+				80000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				80125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				80250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				80375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				80500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				80625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				80750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				80875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				81000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				81125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				81250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				81375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				81500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				81625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				81750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				81875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				82000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				82125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				82250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				82375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				82500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				82625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				82750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				82875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				83000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				83125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				83250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				83375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				83500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				83625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				83750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				83875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				84000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				84062.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				84125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				84187.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				84250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				84312.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				84375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				84437.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				84500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				84562.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				84625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				84687.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				84750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				84812.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				84875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				84937.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				85000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				85062.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				85125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				85187.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				85250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				85312.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				85375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				85437.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				85500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				85562.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				85625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				85687.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				85750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				85812.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				85875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				85937.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				86000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				86062.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				86125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				86187.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				86250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				86312.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				86375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				86437.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				86500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				86562.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				86625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				86687.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				86750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				86812.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				86875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				86937.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				87000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				87062.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				87125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				87187.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				87250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				87312.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				87375,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				87437.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				87500,
+				[
+					[
+						"Change Character",
+						"bf",
+						"1"
+					]
+				]
+			],
+			[
+				87562.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				87625,
+				[
+					[
+						"Change Character",
+						"bf",
+						"2"
+					]
+				]
+			],
+			[
+				87687.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				87750,
+				[
+					[
+						"Change Character",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				87812.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry-chungus"
+					]
+				]
+			],
+			[
+				87875,
+				[
+					[
+						"Change Character",
+						"bf",
+						"4"
+					]
+				]
+			],
+			[
+				87937.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"senpai-angry"
+					]
+				]
+			],
+			[
+				88000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bf"
+					]
+				]
+			],
+			[
+				88015.625,
+				[
+					[
+						"Change Character",
+						"gf",
+						"bf"
+					]
+				]
+			],
+			[
+				88031.25,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf-pixel",
+		"bpm": 120,
+		"arrowSkin": null,
+		"needsVoices": false,
+		"song": "Roses"
+	}
+}

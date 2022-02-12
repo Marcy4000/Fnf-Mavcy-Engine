@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Collections.Generic;
 
 public class FreeplayMenu : MonoBehaviour
 {
@@ -15,7 +16,9 @@ public class FreeplayMenu : MonoBehaviour
     private VerticalLayoutGroup layoutGroup;
     public Image background;
     public TMP_Text stats;
-    public freeplayItem[] items;
+    public List<freeplayItem> items;
+    public int selectedDifficulty = 0;
+    private Diffuculty diffuculty;
 
 
     //public int totalHeight;
@@ -28,7 +31,9 @@ public class FreeplayMenu : MonoBehaviour
         layoutGroup = contents.GetComponent<VerticalLayoutGroup>();
         DirectoryInfo dir = new DirectoryInfo(Path.GetFullPath(".") + "/data" + "/Songs/");
         DirectoryInfo[] info = dir.GetDirectories();
-        items = new freeplayItem[info.Length];
+        items = new List<freeplayItem>();
+        items.Clear();
+        int oldI = 0;
         for (int i = 0; i < info.Length; i++)
         {
             TMP_Text text;
@@ -37,12 +42,35 @@ public class FreeplayMenu : MonoBehaviour
             itemComponent = lmao.GetComponent<freeplayItem>();
             itemComponent.id = i;
             itemComponent.songStats = LoadFile(Path.GetFullPath(".") + "/data" + "/Songs/" + info[i].Name + "/stats.dat");
-            items[i] = itemComponent;
+            items.Add(itemComponent);
             text = lmao.GetComponent<TMP_Text>();
             itemComponent.songName = info[i].Name;
+            itemComponent.songPath = Path.GetFullPath(".") + @"\data\Songs\";
             text.text = info[i].Name;
+            oldI = i;
         }
         lenght = info.Length;
+        oldI++;
+        for (int i = 0; i < GlobalDataSfutt.mods.Count; i++)
+        {
+            Mod mod = GlobalDataSfutt.mods[i];
+            for (int j = 0; j < mod.songNames.Count; j++)
+            {
+                TMP_Text text;
+                freeplayItem itemComponent;
+                GameObject lmao = Instantiate(item, contents.transform);
+                itemComponent = lmao.GetComponent<freeplayItem>();
+                itemComponent.id = oldI;
+                itemComponent.songStats = LoadFile(mod.modPath + @"\Songs\" + mod.songNames[j] + @"\stats.dat");
+                items.Add(itemComponent);
+                text = lmao.GetComponent<TMP_Text>();
+                itemComponent.songName = mod.songNames[j];
+                itemComponent.songPath = mod.modPath + @"\Songs\";
+                text.text = mod.songNames[j];
+                lenght++;
+                oldI++;
+            }
+        }
     }
 
     public PlayerStat LoadFile(string _destination)
@@ -112,7 +140,27 @@ public class FreeplayMenu : MonoBehaviour
             StartCoroutine(MoveList(2));
         }
 
-        stats.text = $"Stats:\nScore:{items[selectedItem].songStats.currentScore}\nMisses:{items[selectedItem].songStats.missedHits}\nCombo:{items[selectedItem].songStats.highestSickCombo}";
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            selectedDifficulty--;
+            if (selectedDifficulty < 0)
+            {
+                selectedDifficulty = 2;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            selectedDifficulty++;
+            if (selectedDifficulty > 2)
+            {
+                selectedDifficulty = 0;
+            }
+        }
+
+        diffuculty = (Diffuculty)selectedDifficulty;
+
+        stats.text = $"Stats:\nScore:{items[selectedItem].songStats.currentScore}\nMisses:{items[selectedItem].songStats.missedHits}\nCombo:{items[selectedItem].songStats.highestSickCombo}\nSelected Difficulty:\n{diffuculty}";
     }
 
     IEnumerator MoveList(int Operation)

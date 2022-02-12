@@ -18,6 +18,8 @@ public static class Songdata
     public static bool hasOffsetAdjusted = false;
     public static int beatNumber = 0;
     public static int barNumber = 0;
+    public static int currSection = 0;
+    private static bool changeSection = false;
 
     public delegate void BeatEvent();
     public static event BeatEvent OnBeat;
@@ -36,6 +38,8 @@ public static class Songdata
         lastHitB = 0f;
         beatNumber = 0;
         barNumber = 0;
+        changeSection = false;
+        currSection = 0;
         songPosition = 0f;
         susStepCrotchet = 60 / bpm * 1000 / 4;
     }
@@ -61,7 +65,14 @@ public static class Songdata
         if (songPosition > lastHitB + stepCrotchet)
         {
             barNumber++;
+            changeSection = true;
             lastHitB += stepCrotchet;
+        }
+
+        if (barNumber % 16 == 0 && changeSection)
+        {
+            currSection++;
+            changeSection = false;
         }
     }
 

@@ -12,6 +12,7 @@ public class OptionsMenu : MonoBehaviour
     public Toggle ghostTapping, fullscreenToggle, overrideStageToggle;
     private bool settingKeybind;
     private Resolution[] resolutions;
+    public GameObject modList;
 
     [Header("Keybinding")] public TMP_Text primaryLeftKeybindText;
     public TMP_Text primaryDownKeybindText;
@@ -86,6 +87,10 @@ public class OptionsMenu : MonoBehaviour
             return 0;
     }
 
+    public void ShowModList()
+    {
+        modList.SetActive(!modList.activeInHierarchy);
+    }
 
     private void Update()
     {

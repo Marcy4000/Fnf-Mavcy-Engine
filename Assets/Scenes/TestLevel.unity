@@ -778,6 +778,8 @@ MonoBehaviour:
   animator: {fileID: 249383173}
   senteces: []
   characters: []
+  inDialogue: 0
+  hasTextBeenWritten: 0
   portraitsImg:
   - {fileID: 3719970459037850701, guid: 60e829b82de4a544896ed8fbc56b8b84, type: 3}
   - {fileID: -6843586369693579763, guid: 60e829b82de4a544896ed8fbc56b8b84, type: 3}
@@ -4104,6 +4106,7 @@ MonoBehaviour:
   blackFade: {fileID: 599306790}
   ratingObject: {fileID: 3236426512051180831, guid: bcc0e44782d48a34880adccfad5dd0f1, type: 3}
   pauseScreen: {fileID: 1483510969}
+  paused: 0
 --- !u!1 &1252344179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4292,7 +4295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationName: Beat
-  beatnumber: 1
+  beatnumber: 4
 --- !u!114 &1252344187
 MonoBehaviour:
   m_ObjectHideFlags: 0

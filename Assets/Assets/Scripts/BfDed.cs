@@ -37,7 +37,7 @@ public class BfDed : MonoBehaviour
         dedMusic.clip = selectSound;
         dedMusic.Play();
 
-        yield return new WaitForSeconds(4.1f);
+        yield return new WaitForSeconds(3.1f);
         transition.SetActive(true);
         transitionAnim.SetTrigger("Change");
         yield return new WaitForSeconds(1.4f);

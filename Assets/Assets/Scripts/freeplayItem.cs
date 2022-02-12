@@ -8,6 +8,7 @@ public class freeplayItem : MonoBehaviour
 {
     public FreeplayMenu freeplay;
     public string songName;
+    public string songPath;
     public PlayerStat songStats;
     public int id;
 
@@ -35,6 +36,8 @@ public class freeplayItem : MonoBehaviour
     {
         freeplay.blackFade.SetTrigger("Transition");
         GlobalDataSfutt.isStoryMode = false;
+        GlobalDataSfutt.selectedDifficulty = (Diffuculty)freeplay.selectedDifficulty;
+        GlobalDataSfutt.songPath = songPath;
 
         yield return new WaitForSeconds(1.2f);
 

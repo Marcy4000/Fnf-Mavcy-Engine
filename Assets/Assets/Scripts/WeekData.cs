@@ -6,6 +6,7 @@ using UnityEngine;
 [Serializable]
 public class WeekData : MonoBehaviour
 {
+    public string songsPath;
     public string weekName;
     public string[] tracks;
     public int weekScore;

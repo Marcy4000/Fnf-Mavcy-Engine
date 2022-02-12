@@ -15,7 +15,7 @@ public class DialogueBox : MonoBehaviour
     public List<string> characters;
     public Queue<string> sentencesQueue;
     public Queue<string> charactersQueue;
-    private bool inDialogue, hasTextBeenWritten;
+    public bool inDialogue, hasTextBeenWritten;
     public Sprite[] portraitsImg;
     public string[] portraitsNames;
     public Dictionary<string, Sprite> portraitsDictionary;

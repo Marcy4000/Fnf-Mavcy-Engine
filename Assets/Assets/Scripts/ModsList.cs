@@ -6,9 +6,9 @@ using TMPro;
 
 public class ModsList : MonoBehaviour
 {
-    public GameObject togglePrefab;
-    public Transform viewport;
-    public List<GameObject> toggles;
+    public GameObject thingPrefab;
+    public RectTransform viewport;
+    public List<GameObject> things;
 
     private void Start()
     {
@@ -17,18 +17,25 @@ public class ModsList : MonoBehaviour
 
     public void UpdateModList()
     {
-        for (int i = 0; i < toggles.Count; i++)
+        if (things.Count != 0)
         {
-            Destroy(toggles[i]);
+            foreach (GameObject gameObject in things)
+            {
+                Destroy(gameObject);
+            }
         }
-        toggles.Clear();
-        for (int i = 0; i < GlobalDataSfutt.customCharacters.Count; i++)
+        things.Clear();
+        for (int i = 0; i < GlobalDataSfutt.mods.Count; i++)
         {
-            GameObject thing = Instantiate(togglePrefab, viewport);
-            thing.GetComponentInChildren<TMP_Text>().text = GlobalDataSfutt.customCharacters[i].characterName;
-            thing.GetComponent<Toggle>().isOn = GlobalDataSfutt.characterActive[i];
-            thing.GetComponent<MenuListItem>().ID = i;
-            toggles.Add(thing);
+            ModListItem item = Instantiate(thingPrefab, viewport).GetComponent<ModListItem>();
+            item.title.text = GlobalDataSfutt.mods[i].data.title;
+            item.description.text = GlobalDataSfutt.mods[i].data.description;
+            item.icon.sprite = GlobalDataSfutt.mods[i].modIcon;
+            item.hasCustomCharacter.isOn = GlobalDataSfutt.mods[i].characters.Count > 0;
+            item.hasCustomSongs.isOn = GlobalDataSfutt.mods[i].songNames.Count > 0;
+            item.hasCustomWeeks.isOn = GlobalDataSfutt.mods[i].weeks.Count > 0;
+            things.Add(item.gameObject);
         }
+        viewport.sizeDelta = new Vector2(viewport.sizeDelta.x, 300 * things.Count + 10 * things.Count - 1);
     }
 }

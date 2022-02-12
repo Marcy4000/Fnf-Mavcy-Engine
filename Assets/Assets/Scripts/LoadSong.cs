@@ -117,7 +117,7 @@ public class LoadSong : MonoBehaviour
         bf.GetComponent<SpriteRenderer>().sortingOrder = StageSettings.instance.playerLayer;
         enemy.transform.position = StageSettings.instance.enemyPos.position;
         enemy.GetComponentInChildren<SpriteRenderer>().sortingOrder = StageSettings.instance.enemyLayer;
-        PlaySong(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad);
+        PlaySong(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad);
     }
 
     private void Update()
@@ -140,7 +140,7 @@ public class LoadSong : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(Player.pauseKey) && !exiting)
+        if (Input.GetKeyDown(Player.pauseKey) && !exiting && songStarted)
         {
             switch (paused)
             {
@@ -152,16 +152,11 @@ public class LoadSong : MonoBehaviour
                     break;
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            StartCoroutine(GoToMainMenu());
-        }
     }
 
     private void SaveStats()
     {
-        string destination = Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\stats.dat";
+        string destination = GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\stats.dat";
         FileStream file;
 
         if (File.Exists(destination)) file = File.OpenWrite(destination);
@@ -194,7 +189,18 @@ public class LoadSong : MonoBehaviour
             UnityEngine.Debug.LogError("Invalid song path");
         }
 
-        jsonDir = selectedSongDir + @"\Chart.json";
+        switch (GlobalDataSfutt.selectedDifficulty)
+        {
+            case Diffuculty.easy:
+                jsonDir = selectedSongDir + @"\" + GlobalDataSfutt.songNameToLoad + "-easy.json";
+                break;
+            case Diffuculty.normal:
+                jsonDir = selectedSongDir + @"\" + GlobalDataSfutt.songNameToLoad + ".json";
+                break;
+            case Diffuculty.hard:
+                jsonDir = selectedSongDir + @"\" + GlobalDataSfutt.songNameToLoad + "-hard.json";
+                break;
+        }
 
         StartCoroutine(SetupSong());
     }
@@ -336,7 +342,7 @@ public class LoadSong : MonoBehaviour
 
                 float susLength = (float)data[2];
 
-                susLength = susLength / Songdata.susStepCrotchet;
+                susLength /= Songdata.susStepCrotchet;
 
                 switch (noteType)
                 {
@@ -518,7 +524,7 @@ public class LoadSong : MonoBehaviour
                 }
             }
 
-            if (thingExists && GlobalDataSfutt.characterActive[character])
+            if (thingExists)
             {
                 enemyAnimation.Initialize(true, character);
                 HealthBar.instance.opponent = GlobalDataSfutt.customCharacters[character].icons[0];

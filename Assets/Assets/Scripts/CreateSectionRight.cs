@@ -31,7 +31,7 @@ public class CreateSectionRight : MonoBehaviour
         { 
             TogglesObject.Add(child.gameObject);
         }
-        StartCoroutine(DoTheLoading());
+        //StartCoroutine(DoTheLoading());
         
     }
     //updates chart list with booleans, gonna change this soon
