@@ -26,6 +26,10 @@ public class CameraController : MonoBehaviour
             fraction += Time.deltaTime * speed;
             transform.position = Vector3.Lerp(start, des, fraction);
         }
+        if (transform.position.z > -10f)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -10f);
+        }
     }
 
     public void Transition(bool lookAtEnemy)

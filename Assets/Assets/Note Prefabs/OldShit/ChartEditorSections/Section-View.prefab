@@ -3654,19 +3654,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TogglesObject: []
   Values: 
+  noteTime: []
   HoldTime: 
   song:
     songName: DefaultSusName
     bpm: 150
     scrollSpeed: 7
-    notesLeft: 
-    notesDown: 
-    notesUp: 
-    notesRight: 
+    notesLeft: []
+    notesDown: []
+    notesUp: []
+    notesRight: []
     holdNotesLeft: 
     holdNotesDown: 
     holdNotesUp: 
     holdNotesRight: 
+  songTime: 0
+  crocket: 0
   SectionId: 0
   id: {fileID: -4263449079456089735}
 --- !u!1 &1173881974088650881
@@ -9611,8 +9614,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1173881974518837181}
   m_HandleRect: {fileID: 1173881974518837180}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9475217
+  m_Value: 0.0019022373
+  m_Size: 0.9495496
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10163,8 +10166,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.027, y: 14.6502}
-  m_SizeDelta: {x: 280.56, y: 962.9097}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 280.56, y: 1006.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1173881974883820478
 CanvasRenderer:
@@ -10783,10 +10786,10 @@ RectTransform:
   m_Father: {fileID: 1173881975231347185}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: 26.1945}
-  m_SizeDelta: {x: -199.5601, y: 52.389}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 99.78, y: 26.194504}
+  m_SizeDelta: {x: 64.439896, y: 1042.3889}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1173881974905999447
 GameObject:
@@ -11290,10 +11293,10 @@ RectTransform:
   m_Father: {fileID: 1173881974903109750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -99.78234, y: -2.1222534}
-  m_SizeDelta: {x: 0, y: 4.2443}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 32, y: 0}
+  m_SizeDelta: {x: 64, y: 1042}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1173881974974990249
 CanvasRenderer:
@@ -11371,19 +11374,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TogglesObject: []
   Values: 
+  noteTime: []
   HoldTime: 
   song:
     songName: DefaultSusName
     bpm: 150
     scrollSpeed: 7
-    notesLeft: 
-    notesDown: 
-    notesUp: 
-    notesRight: 
+    notesLeft: []
+    notesDown: []
+    notesUp: []
+    notesRight: []
     holdNotesLeft: 
     holdNotesDown: 
     holdNotesUp: 
     holdNotesRight: 
+  crocket: 0
   SectionId: 0
   id: {fileID: -4263449079456089735}
 --- !u!1 &1173881974984260134
@@ -12047,19 +12052,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TogglesObject: []
   Values: 
+  noteTime: []
   HoldTime: 
   song:
     songName: DefaultSusName
     bpm: 150
     scrollSpeed: 7
-    notesLeft: 
-    notesDown: 
-    notesUp: 
-    notesRight: 
+    notesLeft: []
+    notesDown: []
+    notesUp: []
+    notesRight: []
     holdNotesLeft: 
     holdNotesDown: 
     holdNotesUp: 
     holdNotesRight: 
+  crocket: 0
   SectionId: 0
   id: {fileID: -4263449079456089735}
 --- !u!1 &1173881975087074279
@@ -19911,21 +19918,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TogglesObject: []
   Values: 
+  noteTime: []
   HoldTime: 
   song:
     songName: DefaultSusName
     bpm: 150
     scrollSpeed: 7
-    notesLeft: 
-    notesDown: 
-    notesUp: 
-    notesRight: 
+    notesLeft: []
+    notesDown: []
+    notesUp: []
+    notesRight: []
     holdNotesLeft: 
     holdNotesDown: 
     holdNotesUp: 
     holdNotesRight: 
+  crocket: 0
   SectionId: 0
   id: {fileID: -4263449079456089735}
+  songTime: 0
 --- !u!1 &1173881975801342192
 GameObject:
   m_ObjectHideFlags: 0

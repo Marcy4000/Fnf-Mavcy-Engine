@@ -1,7 +1,103 @@
 fileFormatVersion: 2
 guid: f1c5c548db1e75140be9731315239b55
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1828362878313007664
+    second: MavcyFiles_0
+  - first:
+      213: -4845596528647935550
+    second: MavcyFiles_2
+  - first:
+      213: 3860546152059335456
+    second: MavcyFiles_3
+  - first:
+      213: -1234350925678656317
+    second: MavcyFiles_4
+  - first:
+      213: 396991250344850288
+    second: MavcyFiles_5
+  - first:
+      213: 6808386892556741003
+    second: MavcyFiles_8
+  - first:
+      213: 5080137801360128773
+    second: MavcyFiles_11
+  - first:
+      213: -5129192637130489518
+    second: MavcyFiles_12
+  - first:
+      213: 5443044250557592187
+    second: MavcyFiles_14
+  - first:
+      213: -7268035218446152936
+    second: MavcyFiles_15
+  - first:
+      213: -962584620286077157
+    second: MavcyFiles_17
+  - first:
+      213: 3013465312886179436
+    second: MavcyFiles_22
+  - first:
+      213: 234231723529402888
+    second: MavcyFiles_23
+  - first:
+      213: 4054727393861273421
+    second: MavcyFiles_27
+  - first:
+      213: 2038091550863444779
+    second: MavcyFiles_28
+  - first:
+      213: 5780873192666071146
+    second: MavcyFiles_31
+  - first:
+      213: 2287239036768346968
+    second: MavcyFiles_33
+  - first:
+      213: 1131156248616247247
+    second: MavcyFiles_34
+  - first:
+      213: 227890960102184731
+    second: MavcyFiles_35
+  - first:
+      213: 2850547533778689051
+    second: MavcyFiles_38
+  - first:
+      213: -4161297710460178800
+    second: MavcyFiles_41
+  - first:
+      213: 6752829510125863758
+    second: MavcyFiles_42
+  - first:
+      213: -3410810826286184261
+    second: MavcyFiles_43
+  - first:
+      213: -3726639091251533417
+    second: MavcyFiles_44
+  - first:
+      213: -7101575548464002670
+    second: MavcyFiles_45
+  - first:
+      213: 6674225362335902432
+    second: MavcyFiles_46
+  - first:
+      213: 4182322707708588280
+    second: MavcyFiles_47
+  - first:
+      213: -5757729397705478282
+    second: MavcyFiles_48
+  - first:
+      213: -1687012642701344207
+    second: MavcyFiles_49
+  - first:
+      213: -5521150221702946767
+    second: MavcyFiles_50
+  - first:
+      213: 2508768554694879261
+    second: MavcyFiles_51
+  - first:
+      213: 4139981063305313510
+    second: MavcyFiles_52
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +137,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -65,10 +161,34 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +197,679 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MavcyFiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 391
+        width: 209
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d574a536a950a6e0800000000000000
+      internalID: -1828362878313007664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 546
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9e21951abf0ccb0800000000000000
+      internalID: -4845596528647935550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_3
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 540
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0237f70754a639530800000000000000
+      internalID: 3860546152059335456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_4
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 541
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4cfba7f54bedee0800000000000000
+      internalID: -1234350925678656317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_5
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 539
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0733eb75075628500800000000000000
+      internalID: 396991250344850288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_8
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 566
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8925407ecf3c7e50800000000000000
+      internalID: 6808386892556741003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_11
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 554
+        width: 50
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bba142a66408640800000000000000
+      internalID: 5080137801360128773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_12
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 523
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251c94fd87271d8b0800000000000000
+      internalID: -5129192637130489518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_14
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 430
+        width: 142
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72b73b48e3998b40800000000000000
+      internalID: 5443044250557592187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_15
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 502
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b0d7df970c22b90800000000000000
+      internalID: -7268035218446152936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_17
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 508
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b171899436634a2f0800000000000000
+      internalID: -962584620286077157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_22
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 389
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66ca8d6cbaf1d920800000000000000
+      internalID: 3013465312886179436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_23
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 379
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80af814f288204300800000000000000
+      internalID: 234231723529402888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_27
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 413
+        width: 99
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d478524f419454830800000000000000
+      internalID: 4054727393861273421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_28
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 391
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bc0fc9771c84c10800000000000000
+      internalID: 2038091550863444779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_31
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 373
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6080745a89c93050800000000000000
+      internalID: 5780873192666071146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_33
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 323
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853ebfe19c7edbf10800000000000000
+      internalID: 2287239036768346968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_34
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 321
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf1c307d9ca2bf00800000000000000
+      internalID: 1131156248616247247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_35
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 322
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17d96cee91a92300800000000000000
+      internalID: 227890960102184731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_38
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 382
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c9e3e01ed2f8720800000000000000
+      internalID: 2850547533778689051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_41
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 298
+        width: 143
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eef53a7c91046c0800000000000000
+      internalID: -4161297710460178800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_42
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 315
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43c3d359aed6bd50800000000000000
+      internalID: 6752829510125863758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_43
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 310
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8c72fef9d5aa0d0800000000000000
+      internalID: -3410810826286184261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_44
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 299
+        width: 56
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7992ed7bd71584cc0800000000000000
+      internalID: -3726639091251533417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_45
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 296
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29904381aa2227d90800000000000000
+      internalID: -7101575548464002670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_46
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 348
+        width: 53
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea2fe00b9c9f9c50800000000000000
+      internalID: 6674225362335902432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_47
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 253
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0350108589a0a30800000000000000
+      internalID: 4182322707708588280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_48
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 215
+        width: 107
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fe0f85e9f6810b0800000000000000
+      internalID: -5757729397705478282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_49
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 187
+        width: 107
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132813c80f68698e0800000000000000
+      internalID: -1687012642701344207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_50
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 200
+        width: 143
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130a3db202fe063b0800000000000000
+      internalID: -5521150221702946767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_51
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 195
+        width: 143
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18224e55bfe0d220800000000000000
+      internalID: 2508768554694879261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFiles_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec382fa7da247930800000000000000
+      internalID: 4139981063305313510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Stages/school-evil.unity
     guid: 4dd893d71855eee4e8fd29f16a00842d
   - enabled: 1
-    path: Assets/Scenes/LevelCreator.unity
+    path: Assets/Scenes/CharacterCreator.unity
     guid: 16374a0999f9ffe47af461e301ebb42a
+  - enabled: 1
+    path: Assets/Scenes/Stages/customStage.unity
+    guid: 3015006caaf6de4419be3f210588c775
   m_configObjects: {}

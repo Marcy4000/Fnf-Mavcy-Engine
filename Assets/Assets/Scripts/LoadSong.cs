@@ -31,6 +31,8 @@ public class LoadSong : MonoBehaviour
     public List<List<NoteObject>> player1NotesObjects;
     public List<List<NoteObject>> player2NotesObjects;
     public Animator[] player1NotesAnimators;
+    public Animator[] player2NotesAnimators;
+    public Animator[] player1NotesSplashAnimators;
     public BfAnimations boyfriendAnimation;
     public opponentAnimations enemyAnimation;
 
@@ -68,12 +70,16 @@ public class LoadSong : MonoBehaviour
     private bool exiting;
     public Animator blackFade;
     public GameObject ratingObject;
+    public GfBop gfAnimation;
 
     [Space]
     public GameObject pauseScreen;
     public bool paused = false;
 
     private string jsonDir;
+    public AudioSource oopsSource;
+    public AudioClip[] noteMissClip;
+    private Coroutine[] corutines = new Coroutine[4];
     #endregion
 
     // Start is called before the first frame update
@@ -87,6 +93,7 @@ public class LoadSong : MonoBehaviour
         {
             charactersDictionary.Add(characterNames[i], characters[i]);
         }
+        gfAnimation = gf.GetComponent<GfBop>();
         StartCoroutine(LoadShit());
     }
 
@@ -94,10 +101,36 @@ public class LoadSong : MonoBehaviour
     {
         if (!GlobalDataSfutt.overrideStage)
         {
-            if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\stage.txt"))
+            if (File.Exists(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\stage.txt"))
             {
-                string[] lines = File.ReadAllLines(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\stage.txt");
-                SceneManager.LoadScene(lines[0], LoadSceneMode.Additive);
+                string[] lines = File.ReadAllLines(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\stage.txt");
+                bool coolName = false;
+                string idk = "";
+                Level stage = null;
+                for (int i = 0; i < GlobalDataSfutt.mods.Count; i++)
+                {
+                    for (int j = 0; j < GlobalDataSfutt.mods[i].stages.Count; j++)
+                    {
+                        if (GlobalDataSfutt.mods[i].stages[j].levelName == lines[0])
+                        {
+                            coolName = true;
+                            idk = GlobalDataSfutt.mods[i].stages[j].stagePath;
+                            stage = GlobalDataSfutt.mods[i].stages[j];
+                            goto LoopEnd;
+                        }
+                    }
+                }
+                LoopEnd:
+                    if (coolName)
+                    {
+                        SceneManager.LoadScene("customStage", LoadSceneMode.Additive);
+                        yield return null;
+                        StageLoader.Instance.LoadStage(stage, idk);
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(lines[0], LoadSceneMode.Additive);
+                    }
             }
             else
             {
@@ -138,6 +171,11 @@ public class LoadSong : MonoBehaviour
             {
                 StartCoroutine(GoToMainMenu());
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            SceneManager.LoadScene(2);
         }
 
         if (Input.GetKeyDown(Player.pauseKey) && !exiting && songStarted)
@@ -723,6 +761,7 @@ public class LoadSong : MonoBehaviour
                     {
                         if (player == 1)
                         {
+                            player1NotesSplashAnimators[noteType].SetBool("Hit", !player1NotesSplashAnimators[noteType].GetBool("Hit"));
                             HealthBar.instance.AddHp(5);
                             HealthBar.instance.playerOneStats.currentSickCombo++;
                             HealthBar.instance.playerOneStats.totalSickHits++;
@@ -790,8 +829,8 @@ public class LoadSong : MonoBehaviour
 
         if (hasVoicesLoaded)
             voices.mute = true;
-        //oopsSource.clip = noteMissClip[Random.Range(0, noteMissClip.Length)];
-        //oopsSource.Play();
+        oopsSource.clip = noteMissClip[UnityEngine.Random.Range(0, noteMissClip.Length)];
+        oopsSource.Play();
 
         var player = note.mustHit ? 1 : 2;
 
@@ -803,7 +842,7 @@ public class LoadSong : MonoBehaviour
         switch (player)
         {
             case 1:
-                HealthBar.instance.SubtractHp(8);
+                HealthBar.instance.SubtractHp(5);
                 switch (noteType)
                 {
                     case 0:
@@ -874,21 +913,26 @@ public class LoadSong : MonoBehaviour
                 player1NotesAnimators[type].speed = 1;
 
                 break;
-            /*case 2:
+            case 2:
 
                 player2NotesAnimators[type].Play(animName, 0, 0);
                 player2NotesAnimators[type].speed = 0;
 
                 player2NotesAnimators[type].Play(animName);
                 player2NotesAnimators[type].speed = 1;
-
-                if (animName == "Activated" & !Player.twoPlayers)
+                if (corutines[type] != null)
                 {
-                    if (!Player.playAsEnemy)
-                        _currentEnemyNoteTimers[type] = enemyNoteTimer;
+                    StopCoroutine(corutines[type]);
                 }
-                break;*/
+                corutines[type] = StartCoroutine(DumbThing(type));
+                break;
         }
+    }
+
+    private IEnumerator DumbThing(int _type)
+    {
+        yield return new WaitForSeconds(0.15f);
+        player2NotesAnimators[_type].Play("Normal");
     }
 
     public void PauseSong()

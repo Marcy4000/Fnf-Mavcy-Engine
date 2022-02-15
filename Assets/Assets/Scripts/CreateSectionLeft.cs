@@ -24,8 +24,8 @@ public class CreateSectionLeft : MonoBehaviour
     //create a list of the toggles, kinda useless. just needed fot the update list method
     void Start()
     {
-        string json = GlobalDataSfutt.ReadShit(GlobalDataSfutt.songNameToLoad);
-        JsonUtility.FromJsonOverwrite(json, song);
+        //string json = GlobalDataSfutt.ReadShit(GlobalDataSfutt.songNameToLoad);
+        //JsonUtility.FromJsonOverwrite(json, song);
 
         SectionId = id.currentSectionId;
 

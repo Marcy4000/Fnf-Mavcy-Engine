@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RedSplash
+  m_Controller: {fileID: 9100000, guid: 0e26687cd15ae7148933291af518b6e8, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: abcc7ba95eed4244a876710737215287, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0bab1aa7840374b4c8b3fe96277d7e22, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0a315c0b66996a84699592f5a4687bd5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 759284673a18e15468c1feefb9ee21d8, type: 2}

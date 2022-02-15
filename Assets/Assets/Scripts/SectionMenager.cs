@@ -31,10 +31,6 @@ public class SectionMenager : MonoBehaviour
             SectionId section;
             section = sectionView[i].GetComponent<SectionId>();
             section.currentSectionId = i;
-            exportSong.leftSection = GameObject.FindGameObjectsWithTag("LeftSection");
-            exportSong.downSection = GameObject.FindGameObjectsWithTag("DownSection");
-            exportSong.upSection = GameObject.FindGameObjectsWithTag("UpSection");
-            exportSong.rightSection = GameObject.FindGameObjectsWithTag("RightSection");
         }
         for (int i = 0; i < 99; i++)
         {

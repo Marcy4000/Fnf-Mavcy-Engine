@@ -97,9 +97,9 @@ public class NoteObject : MonoBehaviour
             }
             else
             {
-
                 if (strumTime + Player.visualOffset >= _song.stopwatch.ElapsedMilliseconds) return;
                 _song.NoteHit(this);
+                _song.AnimateNote(2, type, "Hit");
                 CameraController.instance.Transition(true);
 
             }
@@ -113,6 +113,7 @@ public class NoteObject : MonoBehaviour
                 _song.NoteMiss(this);
                 CameraController.instance.Transition(false);
                 _song.player1NotesObjects[type].Remove(this);
+                _song.gfAnimation.gfAnimator.Play("Gf-Cry");
                 Destroy(gameObject);
             }
             else

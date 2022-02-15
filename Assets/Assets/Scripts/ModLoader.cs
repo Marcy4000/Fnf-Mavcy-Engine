@@ -63,6 +63,22 @@ public static class ModLoader
                 _mod.songNames.Add(info2.Name);
             }
         }
+        if (Directory.Exists(path + @"\Stages"))
+        {
+            _mod.weeks.Clear();
+            DirectoryInfo dir = new DirectoryInfo(path + @"\Stages");
+            DirectoryInfo[] info = dir.GetDirectories();
+            foreach (DirectoryInfo info2 in info)
+            {
+                Level stage = new Level();
+                StreamReader idk = new StreamReader(path + @"\Stages\" + info2.Name + @"\stage.json");
+                string jsonStage = idk.ReadToEnd();
+                stage = JsonConvert.DeserializeObject<Level>(jsonStage);
+                stage.levelName = info2.Name;
+                stage.stagePath = path + @"\Stages\" + info2.Name;
+                _mod.stages.Add(stage);
+            }
+        }
 
         return _mod;
     }
@@ -83,6 +99,7 @@ public class Mod
     public List<FNFCharacter> characters = new List<FNFCharacter>();
     public List<WeekStuff> weeks = new List<WeekStuff>();
     public List<string> songNames = new List<string>();
+    public List<Level> stages = new List<Level>();
 }
 
 public class ModData

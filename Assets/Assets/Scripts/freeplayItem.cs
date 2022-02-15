@@ -11,12 +11,16 @@ public class freeplayItem : MonoBehaviour
     public string songPath;
     public PlayerStat songStats;
     public int id;
+    private TMP_Text text;
+    private float fontSize;
 
     private void Start()
     {
         GameObject gameObject1;
         gameObject1 = GameObject.Find("FreeplayMenu");
         freeplay = gameObject1.GetComponent<FreeplayMenu>();
+        text = GetComponent<TMP_Text>();
+        fontSize = text.fontSize;
     }
 
     public void LoadSong(TMP_Text songName)
@@ -26,6 +30,15 @@ public class freeplayItem : MonoBehaviour
 
     private void Update()
     {
+        if (freeplay.selectedItem == id)
+        {
+            text.fontSize = fontSize * 1.3f;
+        }
+        else
+        {
+            text.fontSize = fontSize;
+        }
+
         if (Input.GetKeyDown(KeyCode.Return) && freeplay.selectedItem == id)
         {
             StartCoroutine(ActuallyLoadSong(songName));

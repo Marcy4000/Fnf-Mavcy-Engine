@@ -10,6 +10,7 @@ TagManager:
   - RightSection
   - HoldNote
   - animation
+  - LevelObject
   layers:
   - Default
   - TransparentFX
