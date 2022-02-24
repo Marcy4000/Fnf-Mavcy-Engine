@@ -175,6 +175,11 @@ public class OptionsMenu : MonoBehaviour
         AudioListener.volume = volumeSlider.value;
     }
 
+    public void LoadScene(int id)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(id, UnityEngine.SceneManagement.LoadSceneMode.Single);
+    }
+
     public void SetStage()
     {
         GlobalDataSfutt.selectedStage = stageDropdown.value;

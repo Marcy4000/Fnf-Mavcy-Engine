@@ -10,5 +10,5 @@ public class ModListItem : MonoBehaviour
     public TMP_Text title;
     public TMP_Text description;
 
-    public Toggle hasCustomCharacter, hasCustomSongs, hasCustomWeeks;
+    public Toggle hasCustomCharacter, hasCustomSongs, hasCustomWeeks, hasCustomStages;
 }

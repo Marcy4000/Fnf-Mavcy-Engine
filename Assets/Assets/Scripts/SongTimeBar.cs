@@ -7,6 +7,7 @@ using System;
 
 public class SongTimeBar : MonoBehaviour
 {
+    public static TimeSpan ts;
     public TMP_Text timeText;
     public Slider timeBar;
 
@@ -19,7 +20,7 @@ public class SongTimeBar : MonoBehaviour
         if (!LoadSong.instance.songStarted)
             return;
 
-        TimeSpan ts = TimeSpan.FromSeconds(LoadSong.instance.inst.clip.length) - TimeSpan.FromSeconds(Songdata.songPosition);
+        ts = TimeSpan.FromSeconds(LoadSong.instance.inst.clip.length) - TimeSpan.FromSeconds(Songdata.songPosition);
         timeBar.value = Songdata.songPosition;
         timeText.text = $"{ts.Minutes}:{ts.Seconds}";
         

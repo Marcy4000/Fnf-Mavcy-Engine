@@ -5,6 +5,7 @@ using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using SimpleFileBrowser;
 
 public class LevelCreatorManager : MonoBehaviour
 {
@@ -12,11 +13,12 @@ public class LevelCreatorManager : MonoBehaviour
     private Camera mainCamera;
     public GameObject selectedObject;
     public LevelObject selectedSelectableObject;
-    public TMP_InputField proprietiesName, xCoord, yCoord, xScale, yScale, layer, exportPath;
+    public TMP_InputField proprietiesName, xCoord, yCoord, xScale, yScale, layer, exportPath, imageName;
+    public TMP_Dropdown animDropdown;
     public GameObject prefab;
     public Vector3 oldMousePos;
     public float scrollMult = 1f;
-    public bool moveObjectOnSelect = true;
+    public bool moveObjectOnSelect = true, selectingSprite = false, canSelectStaticObjects = true;
     public Transform bfPos, gfPos, enemyPos, bfCamPos, enemyCamPos;
 
     private void Start()
@@ -50,7 +52,7 @@ public class LevelCreatorManager : MonoBehaviour
     }
 
     public void SelectObject(GameObject _gameObject, LevelObject objData)
-    {
+    {      
         selectedObject = _gameObject;
         selectedSelectableObject = objData;
         proprietiesName.text = objData.objName;
@@ -75,12 +77,72 @@ public class LevelCreatorManager : MonoBehaviour
         selectedSelectableObject.objName = _name;
     }
 
+    public void SetCanSelectThing(bool value)
+    {
+        canSelectStaticObjects = value;
+    }
+
     public void SetPosition()
     {
         if (selectedObject == null)
             return;
 
         selectedObject.transform.position = new Vector3(float.Parse(xCoord.text), float.Parse(yCoord.text), 0);
+    }
+
+    public void PlayAnimatioThing()
+    {
+        if (selectedSelectableObject == null)
+            return;
+
+        selectedSelectableObject.Play(animDropdown.value);
+    }
+
+    public void LoadXmlFile()
+    {
+        if (selectedObject == null)
+            return;
+
+        if (string.IsNullOrWhiteSpace(imageName.text))
+            return;
+
+        StartCoroutine(ShowLoadXmlCoroutine(imageName.text));
+    }
+
+    IEnumerator ShowLoadXmlCoroutine(string _name)
+    {
+        yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.Folders, false, null, null, "Select Sprites Folder", "Select");
+
+        Debug.Log(FileBrowser.Success);
+
+        if (FileBrowser.Success)
+        {
+            for (int i = 0; i < FileBrowser.Result.Length; i++)
+                Debug.Log(FileBrowser.Result[i]);
+
+            string _path = FileBrowser.Result[0];
+            Debug.Log(_path);
+            FinishLoading(_path, _name);
+            selectingSprite = false;
+        }
+        else
+        {
+            selectingSprite = false;
+        }
+    }
+
+    private void FinishLoading(string path, string _name)
+    {
+        TextureAtlasXml spriteSheet = GlobalDataSfutt.ImportXml<TextureAtlasXml>(path + @"\" + _name + ".xml");
+        Texture2D SpriteTexture = IMG2Sprite.LoadTexture(path + @"\" + spriteSheet.imagePath);
+        selectedSelectableObject.frames = new Sprite[spriteSheet.frame.Length];
+        for (int i = 0; i < spriteSheet.frame.Length; i++)
+        {
+            selectedSelectableObject.frames[i] = IMG2Sprite.LoadSpriteSheet(SpriteTexture, new Rect(spriteSheet.frame[i].x, SpriteTexture.height - spriteSheet.frame[i].y, spriteSheet.frame[i].width, -spriteSheet.frame[i].height), new Vector2(0.5f, 1), 100f, SpriteMeshType.Tight);
+            selectedSelectableObject.frames[i].name = spriteSheet.frame[i].name;
+        }
+        selectedSelectableObject.OrderAnimations();
+        selectedSelectableObject.imagePath = path + @"\" + spriteSheet.imagePath;
     }
 
     public void SetScale()
@@ -91,21 +153,49 @@ public class LevelCreatorManager : MonoBehaviour
         selectedObject.transform.localScale = new Vector3(float.Parse(xScale.text), float.Parse(yScale.text), 1);
     }
 
-    public void LoadCustomSprite(string _path)
+    public void LoadCustomSprite()
     {
         if (selectedObject == null || selectedSelectableObject.isStaticObject)
             return;
 
-        if (string.IsNullOrWhiteSpace(_path))
-            return;
+        FileBrowser.SetFilters(true, new FileBrowser.Filter("Images", ".jpg", ".png"));
+        FileBrowser.SetDefaultFilter(".png");
+        selectingSprite = true;
 
-        selectedSelectableObject.spriteRenderer.sprite = IMG2Sprite.LoadNewSprite(_path);
-        selectedSelectableObject.imagePath = _path;
+        StartCoroutine(ShowLoadSpriteCoroutine());
+    }
+
+    IEnumerator ShowLoadSpriteCoroutine()
+    {
+        yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.Files, false, null, null, "Select Image", "Load");
+
+        Debug.Log(FileBrowser.Success);
+
+        if (FileBrowser.Success)
+        {
+            for (int i = 0; i < FileBrowser.Result.Length; i++)
+                Debug.Log(FileBrowser.Result[i]);
+
+            string _path = FileBrowser.Result[0];
+            Debug.Log(_path);
+            selectedSelectableObject.spriteRenderer.sprite = IMG2Sprite.LoadNewSprite(_path);
+            selectedSelectableObject.imagePath = _path;
+            selectingSprite = false;
+        }
+        else
+        {
+            selectingSprite = false;
+        }
     }
 
     public void SetMoveObject(bool _value)
     {
         moveObjectOnSelect = _value;
+    }
+
+    public void SetDefaultAnimation()
+    {
+        selectedSelectableObject.defAnim = animDropdown.value;
     }
 
     public void SetLayer()
@@ -133,8 +223,28 @@ public class LevelCreatorManager : MonoBehaviour
     {
         if (string.IsNullOrWhiteSpace(exportPath.text))
             return;
-        
-        ExportLevel(exportPath.text);
+
+        selectingSprite = true;
+
+        StartCoroutine(ShowSelectExportPathCoroutine());
+    }
+
+    IEnumerator ShowSelectExportPathCoroutine()
+    {
+        yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.Folders, false, null, null, "Select Export Path", "Select");
+
+        Debug.Log(FileBrowser.Success);
+
+        if (FileBrowser.Success)
+        {
+            string path = FileBrowser.Result[0];
+            ExportLevel(path);
+            selectingSprite = false;
+        }
+        else
+        {
+            selectingSprite = false;
+        }
     }
 
     private void ExportLevel(string _path)
@@ -156,6 +266,8 @@ public class LevelCreatorManager : MonoBehaviour
             levelObject._scale.x = objectsThings[i].transform.localScale.x;
             levelObject._scale.y = objectsThings[i].transform.localScale.y;
             levelObject.layer = objectsThings[i].spriteRenderer.sortingOrder;
+            levelObject.defID = objectsThings[i].defAnim;
+            levelObject.hasAnimation = objectsThings[i].hasAnimation;
             string output = Path.GetFileName(objectsThings[i].imagePath);
             levelObject.imageName = output;
             level.levelObjects.Add(levelObject);
@@ -176,7 +288,6 @@ public class LevelCreatorManager : MonoBehaviour
         string levelStuff = JsonUtility.ToJson(level);
         File.WriteAllText(_path + @"\stage.json", levelStuff);
     }
-
 }
 
 [Serializable]
@@ -196,6 +307,7 @@ public class ExportableLevelObject
 {
     public SerializableVector2 _position = new SerializableVector2();
     public SerializableVector2 _scale = new SerializableVector2();
-    public int layer;
+    public int layer, defID;
+    public bool hasAnimation;
     public string imageName;
 }

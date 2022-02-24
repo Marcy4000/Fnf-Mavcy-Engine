@@ -20,6 +20,14 @@ public class AnimationSystem : MonoBehaviour
         lastRoutine = StartCoroutine(PlayAnimation(renderer, character, animName, shouldLoop));
     }
 
+    public void Play(SpriteRenderer renderer, Sprite[] frames, bool shouldLoop)
+    {
+        if (lastRoutine != null)
+            StopCoroutine(lastRoutine);
+
+        lastRoutine = StartCoroutine(PlayAnimation(renderer, frames, shouldLoop));
+    }
+
     public static void PlayFrame(SpriteRenderer renderer, string animName, int character, int frame)
     {
         List<Sprite> _frames;
@@ -59,6 +67,30 @@ public class AnimationSystem : MonoBehaviour
                 {
                     _renderer.sprite = _frames[i];
                     //_renderer.transform.localPosition = new Vector3(_piviots[i].x, _piviots[i].y);
+                    yield return new WaitForSeconds(0.025f);
+                }
+                break;
+        }
+    }
+
+    private IEnumerator PlayAnimation(SpriteRenderer _renderer, Sprite[] frames, bool _shouldLoop)
+    {
+        switch (_shouldLoop)
+        {
+            case true:
+                while (_shouldLoop)
+                {
+                    for (int i = 0; i < frames.Length; i++)
+                    {
+                        _renderer.sprite = frames[i];
+                        yield return new WaitForSeconds(0.025f);
+                    }
+                }
+                break;
+            case false:
+                for (int i = 0; i < frames.Length; i++)
+                {
+                    _renderer.sprite = frames[i];
                     yield return new WaitForSeconds(0.025f);
                 }
                 break;

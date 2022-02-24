@@ -58,6 +58,8 @@ public class MenuMenager : MonoBehaviour
         GlobalDataSfutt.mods.Clear();
         foreach (DirectoryInfo info2 in info)
         {
+            if (!File.Exists(Path.GetFullPath(".") + @"\data\Mods\" + info2.Name + @"\meta.json"))
+                continue;
             GlobalDataSfutt.mods.Add(ModLoader.LoadMod(Path.GetFullPath(".") + @"\data\Mods\" + info2.Name));
         }
         GlobalDataSfutt.hasLoadedMods = true;
@@ -65,17 +67,17 @@ public class MenuMenager : MonoBehaviour
 
     private void LoadSettings()
     {
-        Player.leftArrowKey = (KeyCode)PlayerPrefs.GetInt("left");
-        Player.downArrowKey = (KeyCode)PlayerPrefs.GetInt("down");
-        Player.upArrowKey = (KeyCode)PlayerPrefs.GetInt("up");
-        Player.rightArrowKey = (KeyCode)PlayerPrefs.GetInt("right");
-        Player.secLeftArrowKey = (KeyCode)PlayerPrefs.GetInt("secLeft");
-        Player.secDownArrowKey = (KeyCode)PlayerPrefs.GetInt("secDown");
-        Player.secUpArrowKey = (KeyCode)PlayerPrefs.GetInt("secUp");
-        Player.secRightArrowKey = (KeyCode)PlayerPrefs.GetInt("secRight");
-        AudioListener.volume = PlayerPrefs.GetFloat("volume");
-        GlobalDataSfutt.ghostTapping = intToBool(PlayerPrefs.GetInt("ghostTapping"));
-        GlobalDataSfutt.overrideStage = intToBool(PlayerPrefs.GetInt("overrideStage"));
+        Player.leftArrowKey = (KeyCode)PlayerPrefs.GetInt("left", (int)KeyCode.LeftArrow);
+        Player.downArrowKey = (KeyCode)PlayerPrefs.GetInt("down", (int)KeyCode.DownArrow);
+        Player.upArrowKey = (KeyCode)PlayerPrefs.GetInt("up", (int)KeyCode.UpArrow);
+        Player.rightArrowKey = (KeyCode)PlayerPrefs.GetInt("right", (int)KeyCode.RightArrow);
+        Player.secLeftArrowKey = (KeyCode)PlayerPrefs.GetInt("secLeft", (int)KeyCode.A);
+        Player.secDownArrowKey = (KeyCode)PlayerPrefs.GetInt("secDown", (int)KeyCode.S);
+        Player.secUpArrowKey = (KeyCode)PlayerPrefs.GetInt("secUp", (int)KeyCode.W);
+        Player.secRightArrowKey = (KeyCode)PlayerPrefs.GetInt("secRight", (int)KeyCode.D);
+        AudioListener.volume = PlayerPrefs.GetFloat("volume", 1f);
+        GlobalDataSfutt.ghostTapping = intToBool(PlayerPrefs.GetInt("ghostTapping", 0));
+        GlobalDataSfutt.overrideStage = intToBool(PlayerPrefs.GetInt("overrideStage", 0));
     }
 
     bool intToBool(int val)
@@ -97,13 +99,8 @@ public class MenuMenager : MonoBehaviour
         {
             StartCoroutine(LoadMainMenu());
         }
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            SceneManager.LoadScene(11);
-        }
 
         Songdata.SetSongTime(song);
-
     }
 
     public void StartCorutines(int corutine)

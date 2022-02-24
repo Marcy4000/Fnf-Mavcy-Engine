@@ -1,0 +1,432 @@
+fileFormatVersion: 2
+guid: d4a397a5fcbc8e3429480113af20317c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8689520507041141568
+    second: MavcyFnfPixel_0
+  - first:
+      213: -8880583165329255270
+    second: MavcyFnfPixel_3
+  - first:
+      213: 4349288135691959973
+    second: MavcyFnfPixel_6
+  - first:
+      213: 2870676135351494374
+    second: MavcyFnfPixel_9
+  - first:
+      213: -1009860877222066790
+    second: MavcyFnfPixel_16
+  - first:
+      213: 1491489679544239669
+    second: MavcyFnfPixel_17
+  - first:
+      213: 7325136327562343160
+    second: MavcyFnfPixel_18
+  - first:
+      213: -444051262952024190
+    second: MavcyFnfPixel_20
+  - first:
+      213: -5003693618362876148
+    second: MavcyFnfPixel_24
+  - first:
+      213: -2667036582682833709
+    second: MavcyFnfPixel_25
+  - first:
+      213: -7954739860083507228
+    second: MavcyFnfPixel_26
+  - first:
+      213: 2311518167984968620
+    second: MavcyFnfPixel_27
+  - first:
+      213: -1424876257648141368
+    second: MavcyFnfPixel_33
+  - first:
+      213: 1448877718006232736
+    second: MavcyFnfPixel_34
+  - first:
+      213: -2416112796613695703
+    second: MavcyFnfPixel_35
+  - first:
+      213: 1706112930179836580
+    second: MavcyFnfPixel_40
+  - first:
+      213: -5274636903144105199
+    second: MavcyFnfPixel_44
+  - first:
+      213: -6158477917009666601
+    second: MavcyFnfPixel_46
+  - first:
+      213: 5553111824805069229
+    second: MavcyFnfPixel_48
+  - first:
+      213: -8624314738658114254
+    second: MavcyFnfPixel_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MavcyFnfPixel_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 283
+        width: 49
+        height: 93
+      alignment: 9
+      pivot: {x: 0.4489796, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043d8a2bcd0679870800000000000000
+      internalID: 8689520507041141568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_3
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 283
+        width: 51
+        height: 94
+      alignment: 9
+      pivot: {x: 0.49019608, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a945c3899a4d1c480800000000000000
+      internalID: -8880583165329255270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_6
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 283
+        width: 50
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae7db11486cb5c30800000000000000
+      internalID: 4349288135691959973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 283
+        width: 50
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e621d05cb0b6d720800000000000000
+      internalID: 2870676135351494374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 155
+        width: 49
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a954d94f1e04cf1f0800000000000000
+      internalID: -1009860877222066790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_17
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 155
+        width: 49
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536456716f5d2b410800000000000000
+      internalID: 1491489679544239669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_18
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 155
+        width: 51
+        height: 96
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2b9affdac18a560800000000000000
+      internalID: 7325136327562343160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_20
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 155
+        width: 51
+        height: 96
+      alignment: 9
+      pivot: {x: 0.49019608, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2875ea1aab966d9f0800000000000000
+      internalID: -444051262952024190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_44
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 27
+        width: 51
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bddeccea9bcc6b0800000000000000
+      internalID: -5274636903144105199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_46
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 27
+        width: 51
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd1d87a6f0b88aa0800000000000000
+      internalID: -6158477917009666601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_48
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 27
+        width: 58
+        height: 96
+      alignment: 9
+      pivot: {x: 0.67241377, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1078378cd901d40800000000000000
+      internalID: 5553111824805069229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MavcyFnfPixel_49
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 27
+        width: 58
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6551724, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2350e135077405880800000000000000
+      internalID: -8624314738658114254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

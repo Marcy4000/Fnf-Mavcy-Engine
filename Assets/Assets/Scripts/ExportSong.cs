@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
+using System;
 
 public class ExportSong : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class ExportSong : MonoBehaviour
     void Start()
     {
         StartCoroutine(LoadSongMusic());
+        Songdata.Initialize(Songdata.bpm);
     }
 
     IEnumerator LoadSongMusic()
@@ -66,19 +68,22 @@ public class ExportSong : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.Space) && inst.isPlaying == true)
             {
-                inst.Stop();
-                voices.Stop();
-                inst.time = 0;
-                voices.time = 0;
-                Songdata.Initialize(Songdata.bpm);
+                inst.Pause();
+                voices.Pause();
             }
+            Songdata.SetSongTime(inst);
 
-            if (inst.isPlaying)
+            if (Input.mouseScrollDelta.y != 0)
             {
-                Songdata.SetSongTime(inst);
+                inst.time -= Input.mouseScrollDelta.y / 10;
+                voices.time = inst.time;
+                if (Songdata.songPosition > inst.time)
+                {
+                    Songdata.Initialize(Songdata.bpm);
+                }
             }
 
-            songStats.text = $"Bpm:{Songdata.bpm}\nSong Time:{inst.time}/{inst.clip.length}\nBeat:{Songdata.beatNumber}\nBar:{Songdata.barNumber}\nSection:{Songdata.currSection}";
+            songStats.text = $"Bpm:{Songdata.bpm}\nSong Time:{Math.Round(inst.time, 3)}/{inst.clip.length}\nBeat:{Songdata.beatNumber}\nBar:{Songdata.barNumber}\nSection:{Songdata.currSection}";
         }
         
     }

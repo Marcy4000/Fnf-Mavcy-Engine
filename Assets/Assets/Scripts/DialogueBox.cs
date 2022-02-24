@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Networking;
+using System.IO;
 
 public class DialogueBox : MonoBehaviour
 {
@@ -11,30 +12,43 @@ public class DialogueBox : MonoBehaviour
     public TMP_Text textObj;
     public Image portrait;
     public Animator animator;
-    public List<string> senteces;
-    public List<string> characters;
-    public Queue<string> sentencesQueue;
-    public Queue<string> charactersQueue;
+    public List<Dialogue> senteces;
+    public Queue<Dialogue> sentencesQueue;
     public bool inDialogue, hasTextBeenWritten;
     public Sprite[] portraitsImg;
     public string[] portraitsNames;
     public Dictionary<string, Sprite> portraitsDictionary;
     public AudioSource dialogueText, nextPhrase, song;
     public AudioClip bgSong;
+    public bool testMode = false;
 
     private void Start()
     {
         Instance = this;
-        sentencesQueue = new Queue<string>();
-        charactersQueue = new Queue<string>();
+        sentencesQueue = new Queue<Dialogue>();
         portraitsDictionary = new Dictionary<string, Sprite>();
         for (int i = 0; i < portraitsImg.Length; i++)
         {
             portraitsDictionary.Add(portraitsNames[i], portraitsImg[i]);
         }
-        if (System.IO.File.Exists(System.IO.Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogueTheme.ogg"))
+        if (Directory.Exists(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\portraits"))
         {
-            StartCoroutine(LoadSongFile(System.IO.Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad));
+            DirectoryInfo info = new DirectoryInfo(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\portraits");
+            FileInfo[] files = info.GetFiles();
+            foreach (FileInfo file in files)
+            {
+                if (string.Compare(file.Extension, ".png", System.StringComparison.OrdinalIgnoreCase) == 0)
+                {
+                    string _name = Path.ChangeExtension(file.Name, null);
+                    Debug.Log(_name);
+                    Sprite _portrait = IMG2Sprite.LoadNewSprite(file.FullName);
+                    portraitsDictionary.Add(_name, _portrait);
+                }
+            }
+        }
+        if (File.Exists(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\dialogueTheme.ogg"))
+        {
+            StartCoroutine(LoadSongFile(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad));
         }
         else
         {
@@ -64,32 +78,22 @@ public class DialogueBox : MonoBehaviour
         }
     }
 
-    public void StartDialogue(string[] _sentences)
+    public void StartDialogue(List<Dialogue> _sentences)
     {
         senteces.Clear();
         sentencesQueue.Clear();
         song.Play();
         inDialogue = true;
 
-        for (int i = 1; i < _sentences.Length; i += 2)
+        for (int i = 0; i < _sentences.Count; i ++)
         {
             senteces.Add(_sentences[i]);
         }
-        
-        for (int i = 0; i < _sentences.Length; i += 2)
-        {
-            characters.Add(_sentences[i]);
-        }
 
 
-        foreach (string sentence in senteces)
+        foreach (Dialogue sentence in senteces)
         {
             sentencesQueue.Enqueue(sentence);
-        }
-        
-        foreach (string character in characters)
-        {
-            charactersQueue.Enqueue(character);
         }
 
         animator.Play("appear");
@@ -104,10 +108,10 @@ public class DialogueBox : MonoBehaviour
             return;
         }
 
-        string _character = charactersQueue.Dequeue();
-        if (portraitsDictionary.ContainsKey(_character))
+        Dialogue sentence = sentencesQueue.Dequeue();
+        if (portraitsDictionary.ContainsKey(sentence.character))
         {
-            portrait.sprite = portraitsDictionary[_character];
+            portrait.sprite = portraitsDictionary[sentence.character];
             portrait.rectTransform.sizeDelta = new Vector2(portrait.sprite.rect.width, portrait.sprite.rect.height);
         }
         else
@@ -115,9 +119,32 @@ public class DialogueBox : MonoBehaviour
             portrait.sprite = portraitsDictionary["bf"];
             portrait.rectTransform.sizeDelta = new Vector2(portrait.sprite.rect.width, portrait.sprite.rect.height);
         }
-        string sentence = sentencesQueue.Dequeue();
+
+        switch (sentence.isRight)
+        {
+            case true:
+                if (sentence.altAnim)
+                {
+                    animator.Play("Right Alt");
+                }
+                else
+                {
+                    animator.Play("Right");
+                }
+                break;
+            case false:
+                if (sentence.altAnim)
+                {
+                    animator.Play("Left Alt");
+                }
+                else
+                {
+                    animator.Play("Left");
+                }
+                break;
+        }
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(sentence.sentece));
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -141,8 +168,28 @@ public class DialogueBox : MonoBehaviour
 
     public void PlaySong()
     {
+        if (testMode)
+        {
+            return;
+        }
         LoadSong.instance.DialogueStuff();
+        
         gameObject.SetActive(false);
     }
 
+}
+
+[System.Serializable]
+public class DialogueThing
+{
+    public List<Dialogue> dialogues = new List<Dialogue>();
+}
+
+[System.Serializable]
+public class Dialogue
+{
+    public string character = "bf";
+    public bool isRight = false;
+    public bool altAnim = false;
+    public string sentece = "beep";
 }

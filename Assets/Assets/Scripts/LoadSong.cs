@@ -10,6 +10,7 @@ using System.Diagnostics;
 using UnityEngine.SceneManagement;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.Networking;
+using Newtonsoft.Json;
 
 public class LoadSong : MonoBehaviour
 {
@@ -158,6 +159,17 @@ public class LoadSong : MonoBehaviour
         if (songStarted)
         {
             Songdata.SetSongTime(inst);
+            /*DiscordPresenceManager.UpdateActivity(new Discord.Activity
+            {
+                Details = $"Playing {_song.SongName} ({GlobalDataSfutt.selectedDifficulty})",
+                State = $"Misses: {HealthBar.instance.playerOneStats.missedHits}\n Time Left:{SongTimeBar.ts.Minutes}:{SongTimeBar.ts.Seconds}",
+                Assets =
+            {
+                LargeImage = "logo",
+                LargeText = "logo",
+            },
+                Instance = true,
+            });*/
         }
 
         if (songStarted && Songdata.songPosition >= inst.clip.length && !exiting && !paused || !inst.isPlaying && songStarted && !exiting && !paused)
@@ -176,6 +188,11 @@ public class LoadSong : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             SceneManager.LoadScene(2);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SceneManager.LoadScene(14);
         }
 
         if (Input.GetKeyDown(Player.pauseKey) && !exiting && songStarted)
@@ -582,28 +599,32 @@ public class LoadSong : MonoBehaviour
             }
         }
 
-        if (!File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + "/cutscene.mp4") && GlobalDataSfutt.isStoryMode)
+        if (!File.Exists(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\cutscene.mp4") && GlobalDataSfutt.isStoryMode)
         {
-            if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt") && GlobalDataSfutt.isStoryMode)
+            if (File.Exists(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\dialogue.json") && GlobalDataSfutt.isStoryMode)
             {
-                string[] lines = File.ReadAllLines(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + "/dialogue.txt");
-                DialogueBox.Instance.StartDialogue(lines);
+                StreamReader r = new StreamReader(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\dialogue.json");
+                string jsonString = r.ReadToEnd();
+                DialogueThing dialogue = JsonConvert.DeserializeObject<DialogueThing>(jsonString);
+                DialogueBox.Instance.StartDialogue(dialogue.dialogues);
             }
             else
             {
                 StartCoroutine(StartSong());
             }
         }
-        else if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\cutscene.mp4") && GlobalDataSfutt.isStoryMode)
+        else if (File.Exists(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\cutscene.mp4") && GlobalDataSfutt.isStoryMode)
         {
-            CutscenePlayer.instance.PlayCutscene(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\cutscene.mp4");
+            CutscenePlayer.instance.PlayCutscene(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\cutscene.mp4");
         }
         else
         {
-            if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogue.txt") && GlobalDataSfutt.isStoryMode)
+            if (File.Exists(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\dialogue.json") && GlobalDataSfutt.isStoryMode)
             {
-                string[] lines = File.ReadAllLines(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogue.txt");
-                DialogueBox.Instance.StartDialogue(lines);
+                StreamReader r = new StreamReader(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\dialogue.json");
+                string jsonString = r.ReadToEnd();
+                DialogueThing dialogue = JsonConvert.DeserializeObject<DialogueThing>(jsonString);
+                DialogueBox.Instance.StartDialogue(dialogue.dialogues);
             }
             else
             {
@@ -615,10 +636,12 @@ public class LoadSong : MonoBehaviour
 
     public void StartDialogueAfterCutscene()
     {
-        if (File.Exists(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogue.txt") && GlobalDataSfutt.isStoryMode)
+        if (File.Exists(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\dialogue.json") && GlobalDataSfutt.isStoryMode)
         {
-            string[] lines = File.ReadAllLines(Path.GetFullPath(".") + @"\data\Songs\" + GlobalDataSfutt.songNameToLoad + @"\dialogue.txt");
-            DialogueBox.Instance.StartDialogue(lines);
+            StreamReader r = new StreamReader(GlobalDataSfutt.songPath + GlobalDataSfutt.songNameToLoad + @"\dialogue.json");
+            string jsonString = r.ReadToEnd();
+            DialogueThing dialogue = JsonConvert.DeserializeObject<DialogueThing>(jsonString);
+            DialogueBox.Instance.StartDialogue(dialogue.dialogues);
         }
         else
         {

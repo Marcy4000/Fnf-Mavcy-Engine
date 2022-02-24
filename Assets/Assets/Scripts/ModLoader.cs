@@ -19,10 +19,13 @@ public static class ModLoader
         {
             _mod.modIcon = IMG2Sprite.LoadNewSprite(path + @"\icon.png");
         }
+        _mod.characters.Clear();
+        _mod.weeks.Clear();
+        _mod.songNames.Clear();
+        _mod.weeks.Clear();
 
         if (Directory.Exists(path + @"\Characters"))
         {
-            _mod.characters.Clear();
             DirectoryInfo dir = new DirectoryInfo(path + @"\Characters");
             DirectoryInfo[] info = dir.GetDirectories();
             foreach (DirectoryInfo info2 in info)
@@ -36,7 +39,6 @@ public static class ModLoader
         }
         if (Directory.Exists(path + @"\Weeks"))
         {
-            _mod.weeks.Clear();
             DirectoryInfo dir = new DirectoryInfo(path + @"\Weeks");
             DirectoryInfo[] info = dir.GetDirectories();
             foreach (DirectoryInfo info2 in info)
@@ -55,7 +57,6 @@ public static class ModLoader
         }
         if (Directory.Exists(path + @"\Songs"))
         {
-            _mod.songNames.Clear();
             DirectoryInfo dir = new DirectoryInfo(path + @"\Songs");
             DirectoryInfo[] info = dir.GetDirectories();
             foreach (DirectoryInfo info2 in info)
@@ -65,7 +66,6 @@ public static class ModLoader
         }
         if (Directory.Exists(path + @"\Stages"))
         {
-            _mod.weeks.Clear();
             DirectoryInfo dir = new DirectoryInfo(path + @"\Stages");
             DirectoryInfo[] info = dir.GetDirectories();
             foreach (DirectoryInfo info2 in info)

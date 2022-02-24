@@ -12348,6 +12348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
+  reusableList: []
   selectedFrame: 0
   maxFrames: 0
   text: {fileID: 2007462924}

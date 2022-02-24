@@ -449,7 +449,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3661
+        y: 3662
         width: 440
         height: 434
       alignment: 2
@@ -2401,9 +2401,9 @@ TextureImporter:
       name: BOYFRIEND_93
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 1359
-        width: 407
+        width: 413
         height: 393
       alignment: 9
       pivot: {x: 0.5036855, y: 0}
@@ -2464,9 +2464,9 @@ TextureImporter:
       name: BOYFRIEND_96
       rect:
         serializedVersion: 2
-        x: 1246
+        x: 1249
         y: 1340
-        width: 411
+        width: 408
         height: 413
       alignment: 9
       pivot: {x: 0.49878347, y: 0}
@@ -2485,9 +2485,9 @@ TextureImporter:
       name: BOYFRIEND_97
       rect:
         serializedVersion: 2
-        x: 1671
+        x: 1669
         y: 1339
-        width: 411
+        width: 413
         height: 414
       alignment: 9
       pivot: {x: 0.49878347, y: 0}

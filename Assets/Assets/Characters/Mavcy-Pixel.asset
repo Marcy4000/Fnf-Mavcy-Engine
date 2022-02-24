@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24131dd96d9e38a4bbd6d648e2cab4ef, type: 3}
+  m_Name: Mavcy-Pixel
+  m_EditorClassIdentifier: 
+  Name: mavcy-pixel
+  overrideAnimator: {fileID: 22100000, guid: c3720f85ede659d4ea7030e999baf551, type: 2}
+  flipX: 0
+  icon: {fileID: 2069886792323288678, guid: 173c142311a28ea4d9d3158dda47154b, type: 3}
+  deadIcon: {fileID: -5347948337932061873, guid: 173c142311a28ea4d9d3158dda47154b, type: 3}
+  iconSize: {x: 195, y: 145}

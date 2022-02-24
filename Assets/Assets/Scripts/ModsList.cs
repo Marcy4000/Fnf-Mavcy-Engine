@@ -34,6 +34,7 @@ public class ModsList : MonoBehaviour
             item.hasCustomCharacter.isOn = GlobalDataSfutt.mods[i].characters.Count > 0;
             item.hasCustomSongs.isOn = GlobalDataSfutt.mods[i].songNames.Count > 0;
             item.hasCustomWeeks.isOn = GlobalDataSfutt.mods[i].weeks.Count > 0;
+            item.hasCustomStages.isOn = GlobalDataSfutt.mods[i].stages.Count > 0;
             things.Add(item.gameObject);
         }
         viewport.sizeDelta = new Vector2(viewport.sizeDelta.x, 300 * things.Count + 10 * things.Count - 1);
