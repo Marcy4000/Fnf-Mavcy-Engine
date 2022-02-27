@@ -23,6 +23,8 @@ public static class Songdata
 
     public delegate void BeatEvent();
     public static event BeatEvent OnBeat;
+    public delegate void SectionEvent();
+    public static event SectionEvent OnChangeSection;
 
     public static void ResetThings()
     {
@@ -72,6 +74,7 @@ public static class Songdata
         if (barNumber % 16 == 0 && changeSection)
         {
             currSection++;
+            OnChangeSection?.Invoke();
             changeSection = false;
         }
     }

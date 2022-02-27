@@ -80,8 +80,19 @@ public class LoadSong : MonoBehaviour
     private string jsonDir;
     public AudioSource oopsSource;
     public AudioClip[] noteMissClip;
+    public List<BpmChangeEvent> bpmChangeEvents = new List<BpmChangeEvent>();
     private Coroutine[] corutines = new Coroutine[4];
     #endregion
+
+    private void OnEnable()
+    {
+        Songdata.OnChangeSection += CheckSectionEvent;
+    }
+
+    private void OnDisable()
+    {
+        Songdata.OnChangeSection -= CheckSectionEvent;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -205,6 +216,19 @@ public class LoadSong : MonoBehaviour
                 case false:
                     PauseSong();
                     break;
+            }
+        }
+    }
+
+    public void CheckSectionEvent()
+    {
+        foreach (var _event in bpmChangeEvents)
+        {
+            if (_event.sectionID == Songdata.currSection)
+            {
+                Songdata.ChangeBPM(_event.newBpm);
+                UnityEngine.Debug.Log($"Reached BpmChangeEvent at section {Songdata.currSection}, changing bpm from {Songdata.bpm} to {_event.newBpm}...");
+                break;
             }
         }
     }
@@ -381,8 +405,18 @@ public class LoadSong : MonoBehaviour
             return;
         }
 
+        bpmChangeEvents.Clear();
+
+        int stupid = 0;
+
         foreach (FNFSong.FNFSection section in _song.Sections)
         {
+            if (section.ChangeBpm != null && (bool)section.ChangeBpm)
+            {
+                bpmChangeEvents.Add(new BpmChangeEvent((long)section.NewBpm, stupid));
+                UnityEngine.Debug.Log($"Bpm Change Found at section {stupid}, adding event...");
+            }
+
             foreach (var noteData in section.Notes)
             {
                 GameObject newNoteObj;
@@ -551,6 +585,7 @@ public class LoadSong : MonoBehaviour
                 player1NotesObjects[i] = player1NotesObjects[i].OrderBy(s => s.strumTime).ToList();
                 player2NotesObjects[i] = player2NotesObjects[i].OrderBy(s => s.strumTime).ToList();
             }
+            stupid++;
         }
 
         print("Checking for and applying " + _song.Player2 + ". Result is " + charactersDictionary.ContainsKey(_song.Player2));
@@ -996,4 +1031,16 @@ public class LoadSong : MonoBehaviour
     }
 
     #endregion
+}
+
+public class BpmChangeEvent
+{
+    public int sectionID;
+    public float newBpm = 150f;
+
+    public BpmChangeEvent(long bpm, int id)
+    {
+        newBpm = bpm;
+        sectionID = id;
+    }
 }
